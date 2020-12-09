@@ -16,6 +16,7 @@ module.exports = {
     },
   },
   themeConfig: {
+    //在这里编辑侧边栏内容
     sidebar: [
       {
         title: 'Part1. 写在前面',
@@ -91,6 +92,7 @@ module.exports = {
         ]
       }
     ],
+    //
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
@@ -100,5 +102,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/sv.ico' }]
   ],
-  base: "/synthesizer-v-r2-docs/"
+  dest: './dist',
+  repo: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
+  title: 'Synthesizer V R2 User Manual',
 }
