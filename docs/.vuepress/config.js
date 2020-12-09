@@ -102,7 +102,8 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/sv.ico' }]
   ],
-  dest: './dist',
+  dest: './gh-pages',
   repo: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
   title: 'Synthesizer V R2 User Manual',
+  base: '/synthesizer-v-r2-docs/'
 }
