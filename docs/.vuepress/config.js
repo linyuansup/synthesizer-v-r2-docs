@@ -1,11 +1,11 @@
 module.exports = {
   plugins: {
     '@vssue/vuepress-plugin-vssue': {
-      platform: 'gitee',
+      platform: 'github',
       owner: 'linyuansup',
       repo: 'synthesizer-v-r2-docs',
-      clientId: '0356cfbc2c82cfa05443f9309ba5eaa77573ca4679d628582808c3e8581289f4',
-      clientSecret: '70905b0db0f34039b33d70acabdadd16234cd21c6fd7c20648edf2b74bceb55d',
+      clientId: 'f6c236f24c8730914455',
+      clientSecret: '03850632ccb7bafc14ec3a2f31a2aa8d3a90ebf1',
     },
   },
   locales: {
