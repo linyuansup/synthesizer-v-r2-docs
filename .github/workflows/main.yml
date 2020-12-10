@@ -12,11 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci
-    - run: npm run docs:build
-    
+    - run: npm run build   
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.KEY }}
+        ACTIONS_DEPLOY_KEY: ${{secrets.key}}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: docs/.vuepress/dist
