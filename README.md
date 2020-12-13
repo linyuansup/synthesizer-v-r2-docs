@@ -60,4 +60,6 @@ npm install
 
 ## 提交需要注意的
 
-在你的教程编写完毕后，我强烈建议运行下根目录下的`Build.bat`生成文件，然后提交Pull Request。
+请在Github提交！Gitee只做国内镜像！
+
+在你的教程编写完毕后即可直接提交Pull Request。

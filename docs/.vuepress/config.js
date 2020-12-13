@@ -34,7 +34,7 @@ module.exports = {
         children: [
           ['2/2.1', '2.1 概述'],
           ['2/2.2', '2.2 文件'],
-          ['dev/waiting', '2.3 编辑'],
+          ['2/2.3', '2.3 编辑'],
           ['dev/waiting', '2.4 视图'],
           ['dev/waiting', '2.5 修改'],
           ['dev/waiting', '2.6 项目'],
@@ -82,13 +82,14 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          ['dev/waiting', '6.1 音高偏差'],
-          ['dev/waiting', '6.2 颤音包络'],
-          ['dev/waiting', '6.3 响度'],
-          ['dev/waiting', '6.4 张力'],
-          ['dev/waiting', '6.5 气声'],
-          ['dev/waiting', '6.6 发声'],
-          ['dev/waiting', '6.7 性别'],
+          ['dev/waiting', '6.1 顶栏'],
+          ['dev/waiting', '6.2 音高偏差'],
+          ['dev/waiting', '6.3 颤音包络'],
+          ['dev/waiting', '6.4 响度'],
+          ['dev/waiting', '6.5 张力'],
+          ['dev/waiting', '6.6 气声'],
+          ['dev/waiting', '6.7 发声'],
+          ['dev/waiting', '6.8 性别']
         ]
       }
     ],
