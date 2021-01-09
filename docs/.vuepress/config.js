@@ -35,7 +35,7 @@ module.exports = {
           ['2/2.1', '2.1 概述'],
           ['2/2.2', '2.2 文件'],
           ['2/2.3', '2.3 编辑'],
-          ['dev/waiting', '2.4 视图'],
+          ['2/2.4', '2.4 视图'],
           ['dev/waiting', '2.5 修改'],
           ['dev/waiting', '2.6 项目'],
           ['dev/waiting', '2.7 播放控制'],
@@ -93,7 +93,7 @@ module.exports = {
         ]
       }
     ],
-    //
+    //在上方编辑侧边栏内容
     logo: '/sv.png',
     smoothScroll: true,
     nav: [

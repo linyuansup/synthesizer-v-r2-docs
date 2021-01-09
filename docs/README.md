@@ -29,7 +29,7 @@ Gitee（国内）地址：http://linyuansup.gitee.io/synthesizer-v-r2-docs/ 或 
 ## 我想参与编写/教程中有错误
 我欢迎更多的人参与到编辑中来。
 
-如果你会使用`Git`，则可在我的[文档存储仓库](https://linyuansup.github.io/synthesizer-v-r2-docs/)中通过Pull Requests提交，**请注意仓库Readme的提交注意事项**。
+如果你会使用`Git`，则可在我的[文档存储仓库](https://github.com/linyuansup/synthesizer-v-r2-docs/)中通过Pull Requests提交，**请注意仓库Readme的提交注意事项**。
 
 如果你不会使用`Git`，那么你可以在B站私信我提供你的想法，我仍会将你写入教程编写人员名单。
 
