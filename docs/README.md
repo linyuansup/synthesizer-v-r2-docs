@@ -21,6 +21,9 @@ Gitee（国内）地址：http://linyuansup.gitee.io/synthesizer-v-r2-docs/ 或 
 
 ## 教程的编写人员
 * [磷元素P](https://space.bilibili.com/273891297)：教程的主编写，Github仓库管理
+* [Jobsecond](https://github.com/Jobsecond)：第一个pr提交（好感动（x
+
+## 特别感谢
 * [LinR隐卫](https://space.bilibili.com/8109148)：不是官方但胜似官方的人物（x，SynthesizerV/SynthV吧吧主、微博超话主持人
 
 ## 我想参与编写/教程中有错误
