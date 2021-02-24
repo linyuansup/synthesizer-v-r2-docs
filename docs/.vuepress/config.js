@@ -37,7 +37,7 @@ module.exports = {
           ['2/2.3', '2.3 编辑'],
           ['2/2.4', '2.4 视图'],
           ['2/2.5', '2.5 修改'],
-          ['2/2.6', '2.6 项目'],
+          ['dev/waiting', '2.6 项目'],
           ['dev/waiting', '2.7 播放控制'],
           ['dev/waiting', '2.8 脚本（不包括脚本编写）'],
           ['dev/waiting', '2.9 其他']
@@ -51,7 +51,7 @@ module.exports = {
           ['dev/waiting', '3.1 概述'],
           ['dev/waiting', '3.2 音符属性'],
           ['dev/waiting', '3.3 歌声'],
-          ['dev/waiting', '3.4 音符组概述 音符组库'],
+          ['dev/waiting', '3.4 音符组库'],
           ['dev/waiting', '3.5 词典'],
           ['dev/waiting', '3.6 渲染'],
           ['dev/waiting', '3.7 授权与激活'],
