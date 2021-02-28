@@ -16,7 +16,7 @@ jobs:
       with:
         files: Synthesizer-V-R2-User-Manual.pdf
       env:
-        GITHUB_TOKEN: ${{secrets.key}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
     - run: npm run docs:build
 
