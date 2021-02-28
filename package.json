@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "pdf": "vuepress export docs"
   },
   "author": "linyuansup",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "@vssue/api-github-v3": "^1.4.4",
-    "@vssue/api-github-v4": "^1.4.0",
-    "@vssue/vuepress-plugin-vssue": "^1.4.6"
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/api-github-v4": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.7",
+    "vuepress-plugin-export": "^0.2.0"
   }
 }

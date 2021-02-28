@@ -1,12 +1,15 @@
 module.exports = {
   plugins: {
+    'vuepress-plugin-export':{
+
+    },
     '@vssue/vuepress-plugin-vssue': {
       platform: 'github',
       owner: 'linyuansup',
       repo: 'synthesizer-v-r2-docs',
       clientId: 'f6c236f24c8730914455',
       clientSecret: '03850632ccb7bafc14ec3a2f31a2aa8d3a90ebf1',
-    },
+    }
   },
   locales: {
     '/': {
@@ -97,7 +100,7 @@ module.exports = {
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
-      { text: 'bilibili', link: 'https://space.bilibili.com/273891297', target:'_self', rel:'' },
+      { text: 'bilibili', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
     ]
   },
   head: [
