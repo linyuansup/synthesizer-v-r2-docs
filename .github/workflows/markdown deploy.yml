@@ -1,9 +1,9 @@
 name: markdown deploy
 
-on:
+on: 
   push:
-    tags:
-      - 'v*.*.*'
+    branches: 
+      - maste
 
 jobs:
   build-deploy:
