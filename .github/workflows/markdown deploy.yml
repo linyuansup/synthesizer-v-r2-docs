@@ -21,9 +21,9 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: docs/.vuepress/dist
 
-    - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
-        with:
-          args: Synthesizer V R2 User Manual.pdf
-        env:
-          GITHUB_TOKEN: ${{secrets.key}}
+    - name: Upload to Release
+      uses: JasonEtco/upload-to-release@v0.1.1
+      with:
+        args: Synthesizer V R2 User Manual.pdf
+      env:
+        GITHUB_TOKEN: ${{secrets.key}}
