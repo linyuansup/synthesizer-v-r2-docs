@@ -1,4 +1,4 @@
-name: blog deploy
+name: markdown deploy
 
 on: 
   push:
@@ -20,3 +20,10 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{secrets.key}}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: docs/.vuepress/dist
+
+    - name: Upload to release
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: Synthesizer V R2 User Manual.pdf
+        env:
+          GITHUB_TOKEN: ${{secrets.key}}
