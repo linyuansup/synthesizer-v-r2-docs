@@ -107,6 +107,6 @@ module.exports = {
     ['link', { rel: 'icon', href: '/sv.ico' }]
   ],
   repo: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
-  title: 'Synthesizer V R2 User Manual',
+  title: 'Synthesizer-V-R2-User-Manual',
   base: '/synthesizer-v-r2-docs/'
 }
