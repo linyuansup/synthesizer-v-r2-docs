@@ -100,7 +100,7 @@ module.exports = {
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
-      { text: 'v0.4.2', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
+      { text: 'v1.1.0（前端v0.2.6.2 后端v1.2.3）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
     ]
   },
   head: [
