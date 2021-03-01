@@ -9,15 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci
-    - run: npm run pdf
-
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: Synthesizer-V-R2-User-Manual.pdf
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        
+  
     - run: npm run docs:build
 
     - name: Deploy

@@ -1,6 +1,6 @@
 {
   "name": "svdocs",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "非官方的Synthesizer V R2教程",
   "main": "index.js",
   "scripts": {
