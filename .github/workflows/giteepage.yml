@@ -20,4 +20,4 @@ jobs:
           gitee-username: linyuansup
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: linyuansup/synthesizer-v-r2-docs
-          branch: master
+          branch: gh-pages
