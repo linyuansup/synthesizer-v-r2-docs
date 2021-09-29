@@ -41,8 +41,8 @@ module.exports = {
           ['2/2.4', '2.4 视图'],
           ['2/2.5', '2.5 修改'],
           ['2/2.6', '2.6 项目'],
-          ['dev/waiting', '2.7 播放控制'],
-          ['dev/waiting', '2.8 脚本（不包括脚本编写）'],
+          ['2/2.7', '2.7 播放控制'],
+          ['2/2.8', '2.8 脚本（不包括脚本编写）'],
           ['dev/waiting', '2.9 其他']
         ]
       },
@@ -100,7 +100,7 @@ module.exports = {
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
-      { text: 'v1.2.1（前端v0.2.6.6 后端v1.4.1）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
+      { text: 'v2.0.0（前端v0.2.6.8 后端v1.5.0）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
     ]
   },
   head: [
