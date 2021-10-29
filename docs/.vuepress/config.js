@@ -1,8 +1,5 @@
 module.exports = {
   plugins: {
-    'vuepress-plugin-export':{
-
-    },
     '@vssue/vuepress-plugin-vssue': {
       platform: 'github',
       owner: 'linyuansup',
@@ -100,7 +97,7 @@ module.exports = {
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
-      { text: 'v2.3.0（前端v0.2.6.8 后端v1.6.0）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
+      { text: 'v3.0.0（前端v0.2.6.9 后端v1.8.0）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
     ]
   },
   head: [
