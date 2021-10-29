@@ -2,7 +2,7 @@
  * @Author: 李天阳_linyuansup
  * @Date: 2021-10-27 19:54:17
  * @LastEditors: 李天阳_linyuansup
- * @LastEditTime: 2021-10-27 20:10:12
+ * @LastEditTime: 2021-10-29 21:44:34
  * @Description: file content
  * @FilePath: /synthesizer-v-r2-docs/docs/README.md
 -->
@@ -11,7 +11,7 @@
 在这里，我会介绍一些看教程的一些需要注意的东西。相信你在看完本文档后能更好的使用这篇文档。
 
 ::: tip 提示
-本教程所有内容基于最新版 Synthesizer V 编写，目前版本号为 1.3.0
+本教程所有内容基于最新版 Synthesizer V 编写，目前版本号为 `1.3.0`
 :::
 
 ## 本文档的针对对象
