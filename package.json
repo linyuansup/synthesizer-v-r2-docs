@@ -1,12 +1,11 @@
 {
   "name": "svdocs",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "非官方的Synthesizer V R2教程",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "pdf": "vuepress export docs"
+    "docs:build": "vuepress build docs"
   },
   "author": "linyuansup",
   "license": "MIT",

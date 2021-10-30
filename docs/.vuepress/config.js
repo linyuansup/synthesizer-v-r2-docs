@@ -97,7 +97,7 @@ module.exports = {
     logo: '/sv.png',
     smoothScroll: true,
     nav: [
-      { text: 'v3.0.0（前端v0.2.6.9 后端v1.8.0）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
+      { text: 'v3.0.1（前端v0.2.8.1 后端v1.8.1）', link: 'https://space.bilibili.com/273891297', target: '_self', rel: '' },
     ]
   },
   head: [
