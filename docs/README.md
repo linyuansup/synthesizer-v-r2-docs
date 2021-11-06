@@ -4,7 +4,7 @@
  * @LastEditors: 李天阳_linyuansup
  * @LastEditTime: 2021-10-29 21:44:34
  * @Description: file content
- * @FilePath: /synthesizer-v-r2-docs/docs/README.md
+ * @FilePath: /docs/README.md
 -->
 首先，非常感谢您来看这篇手册。
 
@@ -30,7 +30,7 @@
 ## 我想参与编写 / 教程中有错误
 我欢迎更多的人参与到编辑中来。
 
-如果你会使用 `Git`，则可在我的 [文档存储仓库](https://github.com/linyuansup/synthesizer-v-r2-docs/) 中通过 Pull Requests 提交，**请注意仓库 Readme 的提交注意事项**。
+如果你会使用 `Git`，则可在我的 [文档存储仓库](https://github.com/linyuansup/) 中通过 Pull Requests 提交，**请注意仓库 Readme 的提交注意事项**。
 
 如果你不会使用 `Git`，那么你可以在 B 站私信我提供你的想法。
 
