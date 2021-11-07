@@ -1,71 +1,40 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useThemeConfig } from '@docusaurus/theme-common';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures';
 
-function Card({ title, image, link, description }) {
-  let history = useHistory();
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    history.push(link);
-  };
-
+function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <div className='col margin-vert--md'>
-      <div
-        className='card card--full-height card-radius--md card--pointer'
-        onClick={handleClick}
-      >
-        {image && (
-          <img
-            alt={title}
-            className='card__image'
-            src={useBaseUrl(image)}
-            width='337'
-            height='342'
-          />
-        )}
-        <div className='card__body padding-horiz--lg padding-bottom--lg'>
-          {title && <h3>{title}</h3>}
-          {description}
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/get_start.md">
+            快速上手 Synthesizer V - 5分钟 ⏱️
+          </Link>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
-Card.propTypes = {
-  title: PropTypes.string,
-  image: PropTypes.string,
-  link: PropTypes.string,
-  description: PropTypes.string,
-};
-
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const { cards } = useThemeConfig();
-
   return (
-    <Layout description={`${siteConfig.tagline}`}>
-      <div className='hero'>
-        <div className='container'>
-          <div className='text--center margin-bottom--lg'>
-            <h1 className='hero__title margin--none'>{siteConfig.title}</h1>
-            <p className='hero__subtitle margin--none'>{siteConfig.tagline}</p>
-          </div>
-          {cards && (
-            <div className='row'>
-              {cards.map((props, idx) => (
-                <Card key={idx} {...props} />
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
+    <Layout
+      title={`${siteConfig.title}`}
+      description="An unofficial docs for Synthesizer V r2">
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
     </Layout>
   );
 }

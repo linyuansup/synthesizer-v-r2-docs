@@ -8,10 +8,6 @@
 .docusaurus
 .cache-loader
 
-# External
-/external/*
-!/external/.keep
-
 # Misc
 .DS_Store
 .env.local
@@ -22,5 +18,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.eslintcache
