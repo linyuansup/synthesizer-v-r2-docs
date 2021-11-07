@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/get_start.md">
+            to="/docs/get_start">
             快速上手 Synthesizer V - 5分钟 ⏱️
           </Link>
         </div>
