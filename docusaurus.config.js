@@ -1,21 +1,18 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Synthesizer V r2 docs',
-  tagline: '非官方的 Synthesizer V Studio 用户手册',
-  url: 'https://linyuansup.github.io',
+  title: 'Synthesizer V Studio 用户手册',
+  tagline: '现已针对不同版本的 Synthesizer V Studio 文档共存以及全文检索提供支持',
+  url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'linyuansup', // Usually your GitHub org/user name.
-  projectName: 'synthesizer-v-r2-docs', // Usually your repo name.
-
+  organizationName: 'linyuansup',
+  projectName: 'synthesizer-v-R2-Docs',
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -23,14 +20,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'hhttps://github.com/linyuansup/synthesizer-v-r2-docs',
+            'https://github.com/linyuansup/synthesizer-v-r2-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,40 +38,72 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Synthesizer V r2 docs',
+        title: 'Synthesizer V Studio Docs',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'get_start',
+            label: "快速开始",
             position: 'left',
-            label: '快速上手',
+            items: [
+              {
+                label: "Synthesizer V Studio 简介",
+                to: 'docs/speed_start/about'
+              },
+              {
+                label: "安装编辑器与声库",
+                to: 'docs/speed_start/install',
+              },
+              {
+                label: "声库详细介绍",
+                to: 'docs/speed_start/voice_data/about',
+              },
+            ],
           },
           {
             type: 'doc',
-            docId: 'get_start',
+            docId: 'main_docs/menu/about',
             position: 'left',
             label: '详细文档',
           },
           {
             type: 'doc',
-            docId: 'get_start',
+            docId: 'api/about',
             position: 'left',
-            label: '调校指南',
+            label: '脚本 API 中文文档',
           },
           {
-            type: 'doc',
-            docId: 'get_start',
-            position: 'left',
-            label: '插件 API 中文文档',
+            label: '资源下载',
+            position: 'right',
+            items: [
+              {
+                label: '编辑器',
+                to: 'docs/download/editor',
+              },
+              {
+                label: '声库',
+                to: 'docs/download/voice',
+              },
+              {
+                label: 'Pro 脚本',
+                to: 'docs/download/script',
+              },
+              {
+                label: '其他资源',
+                to: 'docs/download/other',
+              },
+            ],
           },
-          { to: '/blog', label: '时间线', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'v3.0.1（前端v0.2.8.4 后端v2.0.2）',
+            to: '/blog',
+            label: 'v4.0.1 适配到 Synthesizer V Studio 1.3.0',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
+            label: 'Github',
             position: 'right',
           },
         ],
@@ -85,23 +112,44 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '说明文档',
+            title: '友情链接',
             items: [
               {
-                label: '快速上手',
-                to: '/docs/get_start',
+                label: '不羁阁',
+                href: 'https://bujigegroup.site/',
               },
               {
-                label: '详细文档',
-                to: '/docs/get_start',
+                label: 'CVSE+ 制作组',
+                href: 'https://cvse.cc/',
               },
               {
-                label: '调校指南',
-                to: '/docs/get_start',
+                label: 'LinR 隐卫 の 哔哩哔哩',
+                href: 'https://space.bilibili.com/8109148',
               },
               {
-                label: '插件 API 中文文档',
-                to: '/docs/get_start',
+                label: 'Dreamtonics - Synthesizer V Studio',
+                href: 'https://dreamtonics.com/synthesizerv/',
+              },
+            ],
+          },
+          {
+            title: '实用工具',
+            items: [
+              {
+                label: 'vsqx 分享平台',
+                href: 'https://www.vsqx.top/',
+              },
+              {
+                label: 'bpm 测速工具',
+                href: 'http://www.bq186.com/bpm/'
+              },
+              {
+                label: '汉拼转换',
+                href: 'https://www.qqxiuzi.cn/zh/pinyin/',
+              },
+              {
+                label: 'Utaformatix - 工程格式转换',
+                href: 'https://sdercolin.github.io/utaformatix3/',
               },
             ],
           },
@@ -110,35 +158,30 @@ const config = {
             items: [
               {
                 label: '哔哩哔哩',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://space.bilibili.com/273891297',
               },
               {
                 label: '知乎',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-            ],
-          },
-          {
-            title: '更多',
-            items: [
-              {
-                label: '时间线',
-                to: '/blog',
+                href: 'https://www.zhihu.com/people/li-tian-yang-7-66',
               },
               {
                 label: 'GitHub（可提交 Pull Requests）',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/linyuansup/',
               },
             ],
           },
         ],
-        copyright: `by 磷元素P 由 Docusaurus 强力驱动 部分图标来自于 Dreamtonics`,
+        copyright: `磷元素P & 不羁阁 - 由 Docusaurus 驱动 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.1 前端 v0.2.8.2 后端 v3.3.2`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
+  i18n: {
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN'],
+  },
 };
 
 module.exports = config;
