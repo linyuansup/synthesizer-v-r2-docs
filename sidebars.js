@@ -1,13 +1,3 @@
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 
 // @ts-check
 
@@ -27,6 +17,26 @@ const sidebars = {
       type: 'category',
       label: '菜单栏',
       items: ['main_docs/menu/about', 'main_docs/menu/file', 'main_docs/menu/edit', 'main_docs/menu/view', 'main_docs/menu/modify', 'main_docs/menu/project', 'main_docs/menu/transport', 'main_docs/menu/script', 'main_docs/menu/misc'],
+    },
+    {
+      type: 'category',
+      label: '侧边栏',
+      items: ['main_docs/sidebar/about', 'main_docs/sidebar/note_properties', 'main_docs/sidebar/voice', 'main_docs/sidebar/library', 'main_docs/sidebar/dictionary', 'main_docs/sidebar/render', 'main_docs/sidebar/licence_and_updates', 'main_docs/sidebar/settings'],
+    },
+    {
+      type: 'category',
+      label: '编曲窗口',
+      items: ['main_docs/arrangement/top', 'main_docs/arrangement/track', 'main_docs/arrangement/play'],
+    },
+    {
+      type: 'category',
+      label: '钢琴卷帘窗',
+      items: ['main_docs/piano_roll/top', 'main_docs/piano_roll/roll', 'main_docs/piano_roll/play'],
+    },
+    {
+      type: 'category',
+      label: '参数',
+      items: ['main_docs/piano_roll/top', 'main_docs/piano_roll/roll', 'main_docs/piano_roll/play'],
     },
   ],
   api_sidebar: [
