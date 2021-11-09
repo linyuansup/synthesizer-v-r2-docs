@@ -33,20 +33,20 @@
   <summary>概要</summary>
   <ol>
     <li>
-      <a href="#about-the-project">关于 Synthesizer V Studio Docs</a>
+      <a href="#关于-synthesizer-v-studio-docs">关于 Synthesizer V Studio Docs</a>
       <ul>
-        <li><a href="#built-with">开发环境</a></li>
+        <li><a href="#开发环境">开发环境</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">开始构建</a>
+      <a href="#开始构建">开始构建</a>
       <ul>
-        <li><a href="#prerequisites">依赖</a></li>
-        <li><a href="#installation">安装并运行</a></li>
+        <li><a href="#依赖">依赖</a></li>
+        <li><a href="#本地测试">本地测试</a></li>
       </ul>
     </li>
-    <li><a href="#contributing">贡献</a></li>
-    <li><a href="#contact">联系我们</a></li>
+    <li><a href="#贡献">贡献</a></li>
+    <li><a href="#联系我们">联系我们</a></li>
   </ol>
 </details>
 
