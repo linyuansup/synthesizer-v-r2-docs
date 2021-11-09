@@ -97,13 +97,22 @@ const config = {
             ],
           },
           {
-            to: '/blog',
-            label: 'v4.0.1 适配到 Synthesizer V Studio 1.3.0',
+            label: 'v4.0.3 适配到 Synthesizer V Studio 1.3.0',
             position: 'right',
+            items: [
+              {
+                label: '更新历史记录',
+                to: '/blog',
+              },
+              {
+                label: 'Docs 制作人员',
+                to: 'docs/other/author'
+              },
+            ],
           },
           {
-            href: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
-            label: 'Github',
+            href: 'https://message.bilibili.com/#/whisper/mid273891297',
+            label: '意见 / 建议',
             position: 'right',
           },
         ],
@@ -171,7 +180,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - 由 Docusaurus 驱动 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.1 前端 v0.2.8.2 后端 v3.3.2`,
+        copyright: `磷元素P & 不羁阁 - 由 Docusaurus 驱动 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.3 前端 v0.2.8.3 后端 v3.3.4`,
       },
       prism: {
         theme: lightCodeTheme,
