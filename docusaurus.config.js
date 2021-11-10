@@ -97,7 +97,7 @@ const config = {
             ],
           },
           {
-            label: 'v4.0.3 适配到 Synthesizer V Studio 1.3.0',
+            label: 'v4.0.4 适配到 Synthesizer V Studio 1.3.0',
             position: 'right',
             items: [
               {
@@ -180,7 +180,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - 由 Docusaurus 驱动 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.3 前端 v0.2.8.3 后端 v3.3.4`,
+        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.4 前端 v0.2.8.4 后端 v3.3.5 更新于 21-11-10`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -193,4 +193,11 @@ const config = {
   },
 };
 
-module.exports = config;
+module.exports = {
+  title: 'Synthesizer V Studio Docs',
+  url: 'https://linyuansup.github.io/',
+  baseUrl: '/synthesizer-v-r2-docs/',
+  projectName: 'synthesizer-v-r2-docs',
+  organizationName: 'linyuansup',
+  deploymentBranch: 'gh-pages',
+}
