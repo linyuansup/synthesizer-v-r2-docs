@@ -193,11 +193,4 @@ const config = {
   },
 };
 
-module.exports = {
-  title: 'Synthesizer V Studio Docs',
-  url: 'https://linyuansup.github.io/',
-  baseUrl: '/synthesizer-v-r2-docs/',
-  projectName: 'synthesizer-v-r2-docs',
-  organizationName: 'linyuansup',
-  deploymentBranch: 'gh-pages',
-}
+module.exports = config;
