@@ -36,15 +36,23 @@ const sidebars = {
     {
       type: 'category',
       label: '参数',
-      items: ['main_docs/piano_roll/top', 'main_docs/piano_roll/roll', 'main_docs/piano_roll/play'],
+      items: ['main_docs/parameters/top', 'main_docs/parameters/pitch_deviation', 'main_docs/parameters/vibrato_envelope', 'main_docs/parameters/loudness', 'main_docs/parameters/tension', 'main_docs/parameters/breathiness', 'main_docs/parameters/voicing', 'main_docs/parameters/gender', 'main_docs/parameters/bottom'],
     },
   ],
   api_sidebar: [
+    'api/about',
     {
       type: 'category',
       label: '概览',
-      items: ['api/about'],
+      collapsed: false,
+      items: ['api/tutorials/a_minimal_example', 'api/tutorials/custom_dialogs', 'api/tutorials/localization', 'api/tutorials/memory_management'],
     },
+    {
+      type: 'category',
+      label: '类',
+      collapsed: false,
+      items: ['api/classes/arrangement_selection_state', 'api/classes/arrangement_view', 'api/classes/automation', 'api/classes/coordinate_system', 'api/classes/group_selection', 'api/classes/main_editor_view', 'api/classes/nested_object', 'api/classes/note', 'api/classes/note_group', 'api/classes/note_group_reference', 'api/classes/playback_control', 'api/classes/project', 'api/classes/selection_state_base', 'api/classes/sv', 'api/classes/time_axis', 'api/classes/track', 'api/classes/track_inner_selection_state'],
+    }
   ],
   download_sidebar: [
     'download/editor',

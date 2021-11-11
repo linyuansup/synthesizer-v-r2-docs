@@ -97,7 +97,7 @@ const config = {
             ],
           },
           {
-            label: 'v4.0.4 适配到 Synthesizer V Studio 1.3.0',
+            label: 'v4.1.0 适配到 Synthesizer V Studio 1.3.0',
             position: 'right',
             items: [
               {
@@ -180,7 +180,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.0.4 前端 v0.2.8.4 后端 v3.3.5 更新于 21-11-10`,
+        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.1.0 前端 v0.2.8.6 后端 v3.3.8 更新于 21-11-11`,
       },
       prism: {
         theme: lightCodeTheme,
