@@ -97,7 +97,7 @@ const config = {
             ],
           },
           {
-            label: 'v4.1.0 适配到 Synthesizer V Studio 1.3.0',
+            label: 'v4.1.3 适配到 Synthesizer V Studio 1.3.0',
             position: 'right',
             items: [
               {
@@ -180,17 +180,14 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.1.0 前端 v0.2.8.6 后端 v3.3.8 更新于 21-11-11`,
+        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.1.3 前端 v1.0.2 后端 v3.3.8 更新于 21-11-17`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['lua'],
       },
     }),
-  i18n: {
-    defaultLocale: 'zh-CN',
-    locales: ['zh-CN'],
-  },
 };
 
 module.exports = config;

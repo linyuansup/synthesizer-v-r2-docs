@@ -5,7 +5,7 @@ title: 关于 Synthesizer V Studio
 
 Synthesizer V 是由华侃如创立的 Dreamtonics 公司开发的歌声合成引擎。由于其极强大的歌声合成能力及真实度获得广泛好评。在国内，五维介质代理了 Synthesizer V 的有关事宜。Synthesizer V Studio 为目前最新的版本。
 
-## 编辑器
+1. 编辑器
 
    编辑器是你的基础操作环境。在前期，所有调教操作均是在编辑器内进行的。Synthesizer V Studio 的编辑器分为 Basic 和 Pro 两个版本（Web 版本暂不介绍）。Basic 版本是完全免费的，可以在官网上下载，但存在一些限制；而 Pro 版本则需要付费购买（国内可在淘宝店购买）。两者的具体区别如下表。
 
