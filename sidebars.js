@@ -16,7 +16,7 @@ const sidebars = {
     {
       type: 'category',
       label: '菜单栏',
-      items: ['main_docs/menu/about', 'main_docs/menu/file', 'main_docs/menu/edit', 'main_docs/menu/view', 'main_docs/menu/modify', 'main_docs/menu/project', 'main_docs/menu/transport', 'main_docs/menu/script', 'main_docs/menu/misc'],
+      items: ['main_docs/menu/about', 'main_docs/menu/file', 'main_docs/menu/edit', 'main_docs/menu/view', 'main_docs/menu/modify', 'main_docs/menu/auto_process', 'main_docs/menu/project', 'main_docs/menu/transport', 'main_docs/menu/script', 'main_docs/menu/misc'],
     },
     {
       type: 'category',
