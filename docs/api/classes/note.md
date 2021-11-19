@@ -1,3 +1,3 @@
 ---
-title: 音符
+title: Note | 音符
 ---

@@ -1,3 +1,3 @@
 ---
-title: 主编辑器视图
+title: MainEditorView | 主编辑器界面
 ---

@@ -1,3 +1,3 @@
 ---
-title: 自动化（参数）
+title: Automation | 自动化/控制参数
 ---

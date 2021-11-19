@@ -1,3 +1,3 @@
 ---
-title: 选择组
+title: GroupSelection | 音符组选择
 ---
