@@ -13,15 +13,17 @@ interface ProfileProps {
     name: string;
     children: ReactNode;
     githubUrl?: string;
-    twitterUrl?: string;
+    pic: string;
+    bilibiliurl?: string;
 }
 
 function TeamProfileCard({
     className,
     name,
+    pic,
     children,
     githubUrl,
-    twitterUrl,
+    bilibiliurl,
 }: ProfileProps) {
     return (
         <div className={className}>
@@ -30,7 +32,7 @@ function TeamProfileCard({
                     <div className="avatar avatar--vertical">
                         <img
                             className="avatar__photo avatar__photo--xl"
-                            src={`${githubUrl}.png`}
+                            src={pic}
                             alt={`${name}'s avatar`}
                         />
                         <br />
@@ -47,8 +49,8 @@ function TeamProfileCard({
                                 GitHub
                             </a>
                         )}
-                        {twitterUrl && (
-                            <a className="button button--secondary" href={twitterUrl}>
+                        {bilibiliurl && (
+                            <a className="button button--secondary" href={bilibiliurl}>
                                 哔哩哔哩
                             </a>
                         )}
@@ -69,21 +71,42 @@ export function ActiveTeamRow(): JSX.Element {
     return (
         <div className="row">
             <TeamProfileCardCol
+                pic="https://z3.ax1x.com/2021/11/19/IbzHiT.png"
                 name="磷元素P"
                 githubUrl="https://github.com/linyuansup"
-                twitterUrl="https://space.bilibili.com/273891297">
-                VOCALOID / Synthesizer V 调校、混音，也是这个仓库的管理。最近在进修 PV。
+                bilibiliurl="https://space.bilibili.com/273891297">
+                VOCALOID / Synthesizer V 调校、混音，也是这个仓库的管理
             </TeamProfileCardCol>
             <TeamProfileCardCol
                 name="LinR 隐卫"
+                pic="https://z3.ax1x.com/2021/11/19/IbzbJU.png"
                 githubUrl="https://github.com/zhdl889"
-                twitterUrl="https://space.bilibili.com/8109148">
-                圈内的巨佬，曾拥有中 V / SV 全员声库并维持了几个月。（其实磷元素是他的铁粉哦）
+                bilibiliurl="https://space.bilibili.com/8109148">
+                圈内的巨佬，曾拥有中 V / SV 全员声库并维持了几个月（其实磷元素是他的铁粉哦）
             </TeamProfileCardCol>
             <TeamProfileCardCol
+                pic="https://z3.ax1x.com/2021/11/19/IbzIZq.png"
                 name="Jobsecond"
                 githubUrl="https://github.com/Jobsecond">
-                向仓库提交了第一个 Pull Requests。（可以去他的 Github 看看，有鸽子的 PV 集合）
+                向仓库提交了第一个 Pull Requests（可以去他的 Github 看看，有鸽子的 PV 集合）
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="ObjectNotFound"
+                pic="https://z3.ax1x.com/2021/11/19/IqpG9O.jpg"
+                githubUrl="https://github.com/objectnf">
+                是一个翻译大佬，帮助翻译了部分 API 内容
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                pic="https://z3.ax1x.com/2021/11/19/IbzToV.png"
+                name="时忽Entropy"
+                bilibiliurl="https://space.bilibili.com/14721376">
+                下载服务器提供者，而且还在 CVSE 剪周刊（磷元素也在其实（x）
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="尊贵的阿昆达"
+                pic="https://z3.ax1x.com/2021/11/19/Ibzod0.png"
+                bilibiliurl="https://space.bilibili.com/12131593">
+                提供 Pro 版本内容编写支持。磷元素问自我介绍的时候表示懒得写（并不
             </TeamProfileCardCol>
         </div>
     );

@@ -1,6 +1,7 @@
 ---
 title: 视图
 ---
+
 视图菜单内容如下
 
 ![视图菜单](/docs/main_docs/menu/view/1.png)
