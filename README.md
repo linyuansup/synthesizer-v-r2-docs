@@ -82,11 +82,6 @@ Synthesizer V Studio Docs 是一个 Synthesizer V Studio 的综合站点，您�
 
 您的每一条 Issue 和 Pull Request 我们都会认真阅读，因此，如果您有任何的意见或者想要完善文档的地方，请直接提交 Issue 或者 Pull Request 即可！
 
-<!-- CONTACT -->
-
-## 联系我们
-
-磷元素 P : [哔哩哔哩](https://space.bilibili.com/273891297) [知乎](https://www.zhihu.com/people/li-tian-yang-7-66) [Github](https://github.com/linyuansup/)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 

@@ -6,6 +6,10 @@ title: 脚本
 本节不包括脚本编写的内容。有关脚本编写，请参考 [Synthesizer V Studio 官方文档](https://dreamtonics.com/synthv/scripting)，该文档的中翻工作正在进行中，参考 [了解脚本](../../api/about.md)。
 :::
 
+:::tip
+该功能仅存在于 Pro 版本。
+:::
+
 ## 重新扫描
 
 重新扫描插件文件夹下的所有插件。

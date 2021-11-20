@@ -15,9 +15,9 @@ Synthesizer V 是由华侃如创立的 Dreamtonics 公司开发的歌声合成�
    | 平台 | Windows MacOS Linux | Windows MacOS Linux |
    | 工程音轨数 | 最多 3 音轨 | 无限制 |
    | 渲染线程数 | 最多 2 线程 | 最多 12 线程 <br/>（官方说明为无限制，但实测为最多 12 线程） |
-   | ASIO 音频驱动（非官方说明） | 不支持 ASIO | 支持 ASIO |
+   | ASIO / Jack 音频驱动（非官方说明） | 不支持 | 支持 |
    | Pit 自动调校 | 单一的自动调校 | 支持自定义参数的自动调校 |
-   | 其他功能 | 无 | 替换音素  <br/> 气声分离 <br/> 脚本 ( Lua / JavaScript )<br/>VST3 / AU 插件 |
+   | 其他功能 | 无 | 替换音素  <br/> 气声分离 <br/> 脚本 ( Lua / JavaScript ) <br/> VST3 / AU 插件 <br/> 气声分离导出 <br/> 替换音素 <br/> 音区偏移 <br/> 音素力度 |
 
 :::danger
 Synthesizer V Studio 不支持 Windows 7

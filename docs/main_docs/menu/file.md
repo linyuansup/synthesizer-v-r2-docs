@@ -7,7 +7,7 @@ title: 文件
 
 ## 新建
 
-新建一个工程。与 After Effect 等软件相同的是，在你打开 Synthesizer V Studio 的同时就已经新建了一个工程。
+新建一个工程。与 After Effects 等软件相同的是，在你打开 Synthesizer V Studio 的同时就已经新建了一个工程。
 
 如果当前打开的工程有更改，那么则会出现窗口询问是否保存。
 
@@ -58,7 +58,7 @@ Synthesizer V Studio **不支持** 将当前文件保存为一个新文件并将
 * 放弃改动：不保存当前的文件并且打开一个工程。
 * 取消：取消新建工程并返回当前工程编辑。
 
-打开 mid/midi 格式的文件会弹出的对话框。
+打开 mid / midi 格式的文件会弹出的对话框。
 
 ![导入 midi](/docs/main_docs/menu/file/3.png)
 
@@ -67,7 +67,7 @@ Synthesizer V Studio **不支持** 将当前文件保存为一个新文件并将
 3. 导入音符的音域。
 
 :::warning
-Synthesizer V Studio 与 VOCALOID 的 MIDI 标准不同。VOCALOID 中的音高在 Synth V 中会被提高一个八度，如在 VOCALOID 中的 F3 相当于 Synthesizer V Studio 的 F4。
+Synthesizer V Studio 与 VOCALOID 的中央 C 标准不同。VOCALOID 中的音高在 Synthesizer V Studio 中会被提高一个八度，如在 VOCALOID 中的 F3 相当于 Synthesizer V Studio 的 F4。
 :::
 
 :::tip

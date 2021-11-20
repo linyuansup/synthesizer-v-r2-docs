@@ -9,7 +9,7 @@ const sidebars = {
     {
       type: 'category',
       label: '声库详细介绍',
-      items: ['speed_start/voice_data/about', 'speed_start/voice_data/chinese', 'speed_start/voice_data/japanese', 'speed_start/voice_data/english'],
+      items: ['speed_start/voice_data/chinese', 'speed_start/voice_data/japanese', 'speed_start/voice_data/english'],
     },
   ],
   main_doc_sidebar: [
