@@ -54,7 +54,7 @@ title: 修改
 
 ## 自动音高调教
 
-对当前音符组自动绘制 PIT（音高偏差）。此功能仅对 Pro 版本和部分声库有效。你可以在 [这里](../../speed_start/voice_data/about.md) 查看各个声库支持情况。
+对当前音符组自动绘制 PIT（音高偏差）。此功能仅对 Pro 版本和部分声库有效。你可以在 [这里](../../speed_start/voice_data/chinese.md) 查看各个声库支持情况。
 
 ## 吸附到网格
 
