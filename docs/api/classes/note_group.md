@@ -1,3 +1,3 @@
 ---
-title: 音符组
+title: NoteGroup | 音符组
 ---
