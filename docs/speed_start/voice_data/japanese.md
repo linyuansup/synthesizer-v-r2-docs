@@ -9,8 +9,8 @@ title: 日文声库
 | Saki Std |  | Dreamtonics | F3 - E5 | 80 - 150 | G#3 / C4 (Lite) / F4 / B4 | 第 1 代 | ver.100 |
 | Saki AI |  | Dreamtonics |  |  |  | 第 3 代 | ver.110 |
 | 琴叶 茜 · 葵 <br/> Kotonoha Akane & Aoi | 榊原由依 | AH-Software | E3 - D5 | 70 - 180 | G#3 / C#4 (Lite) / F#4 / C5 | 第 1 代 | ver.100 |
-| 小春六花 Std <br/> こはる りっか |  | AH-Software | F3 - E5 | 80 - 150 | G#3 / C4 (Lite) / F4 / B4 | 第 1 代 | ver.100 |
-| 小春六花 AI <br/> こはる りっか |  | AH-Software |  |  |  | 第 3 代 | ver.105 |
-| 弦卷真纪 Std <br/> ツルマキ マキ | 田中真奈美 | AH-Software | C4 - G5 |  | C#4 / F4 (Lite) / A#4 / C5 |  | ver.100 |
-| 弦卷真纪 AI <br/> ツルマキ マキ | 田中真奈美 | AH-Software | A#3 - D#5 |  |  | 第 3 代 | ver.104 |
-| 玄武 <br/> TalQu | GARO | Animen |  |  | C3 / G3 (Soft) / A3 (Lite) / F4 / F4 (假声音阶) |  | ver.100 |
+| 小春六花 Std <br/> Rikka |  | AH-Software | F3 - E5 | 80 - 150 | C4 / E4 (Lite) / G#4 / B4 | 第 1 代 | ver.100 |
+| 小春六花 AI <br/> Rikka |  | AH-Software |  |  |  | 第 3 代 | ver.105 |
+| 弦卷真纪 Std <br/> Maki | 田中真奈美 | AH-Software | C4 - G5 |  | C#4 / F4 (Lite) / A#4 / C5 |  | ver.100 |
+| 弦卷真纪 AI <br/> Maki | 田中真奈美 | AH-Software | A#3 - D#5 |  |  | 第 3 代 | ver.104 |
+| 玄武 <br/> Genbu | GARO | Animen |  |  | C3 / G3 (Soft) / A3 (Lite) / F4 / F4 (假声音阶) |  | ver.100 |
