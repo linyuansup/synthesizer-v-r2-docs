@@ -1,3 +1,3 @@
 ---
-title: 音符组参考
+title: NoteGroupReference | 音符组引用
 ---

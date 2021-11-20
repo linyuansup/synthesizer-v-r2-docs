@@ -1,3 +1,3 @@
 ---
-title: 视图
+title: ArrangementView | 编曲区界面
 ---

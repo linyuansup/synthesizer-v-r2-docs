@@ -1,3 +1,3 @@
 ---
-title: 轨道
+title: Track | 音轨
 ---
