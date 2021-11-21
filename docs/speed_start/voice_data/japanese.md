@@ -15,11 +15,12 @@ title: 日文声库
 | 弦卷真纪 AI <br/> Maki | Tanaka Manami | AH-Software | A#3 - D#5 |  |  | 第 3 代 | ver.104 |
 | 玄武 <br/> Genbu | GARO | Animen |  |  | C3 / G3 (Soft) / A3 (Lite) / F4 / F4 (假声音阶) |  | ver.100 |
 | 追傩酱 (Lite) <br/> Tsuina | Mai Kadowaki | AH-Software |  |  | | | ver.100 |
-| 追傩酱 AI (Lite) <br/> Tsuina | Mai Kadowaki | AH-Software |  | |  |  | ver.100 |
+| 追傩酱 AI (Lite) <br/> Tsuina | Mai Kadowaki | AH-Software |  | |  | 第 4 代 | ver.100 |
+| 暗音 Renri <br/> Yamine Renri | Yuzuri | Animen |  |  | N_D4 / N_A3 / C_D4 / W_D4 |  | ver.100 |
 | 夏色花梨 <br/> Natsuki Karin | Miyu Takagi | AH-Software |  |  |  |  | 预计 2022 / 04 发售 |
 | 花隈千冬 <br/> Hanakuma Chifuyu | Okuno Kaya | AH-Software |  |  |  |  | 预计 2022 发售 |
-| ロサ <br/> Rosa | Shirayuki | ZAN-SHIN |  |  |  |  | 未发售 |
-| 京町セイカ <br/> Kyomachi Seika | Rika Tachibana | AH-Software |  |  |  |  | 未发售 |
+| Rosa  | Shirayuki | ZAN-SHIN |  |  |  |  | 未发售 |
+| Kyomachi Seika | Rika Tachibana | AH-Software |  |  |  |  | 未发售 |
 
 ### 购买完整版
 

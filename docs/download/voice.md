@@ -16,11 +16,11 @@ title: 声库下载
 | 弦卷真纪 <br/> Maki | AH-Software | 英文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ETuk1B67-m9FglBWVWev7q4Bc4nZFT3ROBzr6w7pAn_29w?e=xhV3M4) |
 | 弦卷真纪 <br/> Maki | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EUMokwpvNCdFji4E9xOpZ3wB3QihLAs0tTLsFjKfMMmNJA?e=K6QYcK) |
 | 小春六花 <br/> Rikka | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EalXXRy2RalCtAWF4C1nUp4BwNZo2-MiFOCMR7zFL0cBsA?e=EmoS7b) |
-| 小春六花 AI <br/> Rikka | AH-Software | 日文 | ver.101 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EalXXRy2RalCtAWF4C1nUp4BwNZo2-MiFOCMR7zFL0cBsA?e=EmoS7b) |
+| 小春六花 AI <br/> Rikka | AH-Software | 日文 | ver.101 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EUjBaLbvjiJBrPb-6RsD9GABQnCbQwRIs_xtzR55BTUpdA?e=TCdeOj) |
 | Saki | Dreamtonics | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ER4u2x74NzFIqFG6zsVA_gUBwxAM88zbNwOZGvTraVe9qA?e=iR1jhH) |
 | Saki AI | Dreamtonics | 日文 | ver.101 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EfolgZEPnZNBk3QXIzXgJrgBDlGtX9MaQE7FhKgeop9gNA?e=pWHMQQ) |
-| 追傩酱 <br/> Tsuina | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ER4u2x74NzFIqFG6zsVA_gUBwxAM88zbNwOZGvTraVe9qA?e=iR1jhH) |
-| 追傩酱 AI <br/> Tsuina | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EZ0WhnkCSBRPijqehoUhk4cBLhUScYT49_HifE3HKH6d_Q?e=BviVBz) |
+| 追傩酱 <br/> Tsuina | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EZ0WhnkCSBRPijqehoUhk4cBLhUScYT49_HifE3HKH6d_Q?e=kCpJSk) |
+| 追傩酱 AI <br/> Tsuina | AH-Software | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ETT2F7p7nshHqMwwF7zn-TYBPs0rx6VYNjv1-QhMS6ls7g?e=tFypUl) |
 
 ### 购买完整版
 

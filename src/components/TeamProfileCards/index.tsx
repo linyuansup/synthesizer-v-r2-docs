@@ -108,6 +108,24 @@ export function ActiveTeamRow(): JSX.Element {
                 bilibiliurl="https://space.bilibili.com/12131593">
                 提供 Pro 版本内容编写支持。磷元素问自我介绍的时候表示懒得写（并不
             </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="幽灵子"
+                pic="https://z3.ax1x.com/2021/11/19/Ibzod0.png"
+                bilibiliurl="https://space.bilibili.com/664313">
+                V 家巨佬之一，可以去 B 站看看，调校超好听
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="电浆果茶"
+                pic="https://z3.ax1x.com/2021/11/21/IvtasP.png"
+                bilibiliurl="https://space.bilibili.com/272412094">
+                声库盘点类的内容做的很好，在 B 站有视频
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="君临德雷克"
+                pic="https://z3.ax1x.com/2021/11/21/IvtUMt.png"
+                bilibiliurl="https://space.bilibili.com/2963241">
+                超级大佬，一个曾经的加古厨，最近在做 VOICEROID 的汉化和自制
+            </TeamProfileCardCol>
         </div>
     );
 }
