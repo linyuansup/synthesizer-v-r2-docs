@@ -110,13 +110,13 @@ export function ActiveTeamRow(): JSX.Element {
             </TeamProfileCardCol>
             <TeamProfileCardCol
                 name="幽灵子"
-                pic="https://z3.ax1x.com/2021/11/19/Ibzod0.png"
+                pic="https://z3.ax1x.com/2021/11/21/IvtasP.png"
                 bilibiliurl="https://space.bilibili.com/664313">
                 V 家巨佬之一，可以去 B 站看看，调校超好听
             </TeamProfileCardCol>
             <TeamProfileCardCol
                 name="电浆果茶"
-                pic="https://z3.ax1x.com/2021/11/21/IvtasP.png"
+                pic="https://z3.ax1x.com/2021/11/19/Ibzod0.png"
                 bilibiliurl="https://space.bilibili.com/272412094">
                 声库盘点类的内容做的很好，在 B 站有视频
             </TeamProfileCardCol>
