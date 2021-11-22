@@ -24,7 +24,7 @@ title: 日文声库
 | 玄武 <br/> Genbu | S | GARO | Animen |  |  | C3 / G3 (Soft) / A3 / F4 / F4 (假声音阶) |  | ver.100 |
 | 追傩酱 <br/> Tsuina | S L | MA Kadowaki | AH-Software |  |  | | | ver.100 |
 | 追傩酱 <br/> Tsuina | A L | MA Kadowaki | AH-Software |  | |  | 第 4 代 | ver.100 |
-| 暗音 Renri * <br/> Yamine Renri * | S | Yuzuri | Animen |  |  | N_A3 / N_D4 / C_D4 / W_D4 |  | ver.100 |
+| 暗音 Renri <br/> Yamine Renri | S* | Yuzuri | Animen |  |  | N_A3 / N_D4 / C_D4 / W_D4 |  | ver.100 |
 | 夏色花梨 <br/> Natsuki Karin | S | Miyu Takagi | AH-Software |  |  |  |  | 预计 2022 / 04 发售 |
 | 花隈千冬 <br/> Hanakuma Chifuyu | S | Okuno Kaya | AH-Software |  |  |  |  | 预计 2022 发售 |
 | Rosa |  | Shirayuki | ZAN-SHIN |  |  |  |  | 未发售 |
