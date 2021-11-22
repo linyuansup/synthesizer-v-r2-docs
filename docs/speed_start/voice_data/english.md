@@ -7,8 +7,8 @@ title: 英文声库
 | 声库 | 类型* | 声源 | 所属组织 |  擅长音域 | 擅长节奏 | 表现力分组 | 自动音高调校 | 最新版本 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 爱莲娜 芙缇 <br/> Elenor Forte | S L | | Animen |  |  | master |  | ver.100 |
-| 弦卷真纪 <br/> Maki | S | Tanaka Manami | AH-Software |  |  | D#4 |  | ver.100 |
-| 弦卷真纪 <br/> Maki | A | Tanaka Manami | AH-Software |  |  |  | 第 3 代 | ver.101 |
+| 弦卷真纪 <br/> Maki | S L | Tanaka Manami | AH-Software |  |  | D#4 |  | ver.100 |
+| 弦卷真纪 <br/> Maki | A L | Tanaka Manami | AH-Software |  |  |  | 第 3 代 | ver.101 |
 | 弦卷真纪 <br/> Maki | S | Tanaka Manami | AH-Software | A#3 - F5 |  | C4 / D#4 / G#4 / C5 |  | ver.100 |
 | 弦卷真纪 <br/> Maki | A | Tanaka Manami | AH-Software |  |  |  | 第 3 代 | ver.101 |
 | 铃爱莉 <br/> ANRI | A | kurapichu | AUDIOLOGIE |  |  |  | 第 4 代 | ver.100 |
