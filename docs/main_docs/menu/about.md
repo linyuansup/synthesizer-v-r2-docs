@@ -20,7 +20,7 @@ Synthesizer V Studio 的菜单栏如下
 
 ## 菜单的可用性
 
-如果当前菜单不可用，Synthesizer V 会将其显示为灰色，如下图。
+如果当前菜单不可用，Synthesizer V Studio 会将其显示为灰色，如下图。
 
 ![灰色](/docs/main_docs/menu/about/6.png)
 

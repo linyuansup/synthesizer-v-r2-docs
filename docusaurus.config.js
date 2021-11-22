@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '现已针对不同版本的 Synthesizer V Studio 文档共存以及全文检索提供支持',
+  tagline: '编辑器信息适配到 Synthesizer V Studio 1.4.0，声库信息更新到追傩酱 Lite，更新于 2021 / 11 / 22',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -97,18 +97,9 @@ const config = {
             ],
           },
           {
-            label: 'v4.2.6 适配到 Synthesizer V Studio 1.4.0',
+            label: '制作人员',
             position: 'right',
-            items: [
-              {
-                label: '更新历史记录',
-                to: '/blog',
-              },
-              {
-                label: 'Docs 制作人员',
-                to: 'docs/other/author'
-              },
-            ],
+            to: 'docs/other/author',
           },
           {
             href: 'https://message.bilibili.com/#/whisper/mid273891297',
@@ -130,10 +121,6 @@ const config = {
               {
                 label: 'CVSE+ 制作组',
                 href: 'https://cvse.cc/',
-              },
-              {
-                label: 'LinR 隐卫 の 哔哩哔哩',
-                href: 'https://space.bilibili.com/8109148',
               },
               {
                 label: 'Dreamtonics - Synthesizer V Studio',
@@ -180,7 +167,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - 部分内容来自于 Dreamtonics - Synthesizer V Studio Docs v4.2.6 前端 v1.1.7 后端 v3.3.8 更新于 21-11-21`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2021 / 11 / 22 适配到 Synthesizer V Studio 1.4.0`,
       },
       prism: {
         theme: lightCodeTheme,

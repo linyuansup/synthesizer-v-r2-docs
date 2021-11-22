@@ -39,10 +39,6 @@ title: 文件
 
 保存当前文件。如果当前文件从未保存过，将执行 **另存为** 操作。
 
-:::warning
-目前 Synthesizer V Studio 不稳定，崩溃频率较高。同时由于没有自动保存功能，每次崩溃都会使未保存的操作全部丢失。因此请及时保存工程文件。
-:::
-
 ## 另存为
 
 将当前文件保存为一个新文件。此后的所有操作均会保存在新文件中。
@@ -67,7 +63,7 @@ Synthesizer V Studio **不支持** 将当前文件保存为一个新文件并将
 3. 导入音符的音域。
 
 :::warning
-Synthesizer V Studio 与 VOCALOID 的中央 C 标准不同。VOCALOID 中的音高在 Synthesizer V Studio 中会被提高一个八度，如在 VOCALOID 中的 F3 相当于 Synthesizer V Studio 的 F4。
+Synthesizer V Studio 与 VOCALOID 的中央 C 标准不同，这导致 VOCALOID 中的音高在 Synthesizer V Studio 中会被提高一个八度。如在 VOCALOID 中的 F3 相当于 Synthesizer V Studio 的 F4。
 :::
 
 :::tip

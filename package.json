@@ -1,6 +1,6 @@
 {
   "name": "synthesizer-v-r-2-docs",
-  "version": "4.2.6",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

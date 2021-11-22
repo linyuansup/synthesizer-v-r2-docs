@@ -2,25 +2,40 @@
 title: 日文声库
 ---
 
-目前，日文声库有 Saki（Std、AI）、琴叶 茜 · 葵、小春六花（Std、AI）、弦卷真纪（Std、AI）、玄武、追傩（Std、AI）、夏色花梨、花隈千冬、ロサ、京町セイカ，他们的详细信息如下：
+目前，日文声库有 Saki、琴叶 茜 · 葵、小春六花、弦卷真纪、玄武、追傩酱、夏色花梨、花隈千冬、Rosa、Kyomachi Seika，他们的详细信息如下：
 
-| 声库 | 声源 | 所属组织 |  擅长音域 | 擅长节奏 | 表现力分组 | 自动音高调校 | 最新版本 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Saki Std |  | Dreamtonics | F3 - E5 | 80 - 150 | G#3 / C4 (Lite) / F4 / B4 | 第 1 代 | ver.101 |
-| Saki AI |  | Dreamtonics |  |  |  | 第 3 代 | ver.110 |
-| 琴叶 茜 · 葵 <br/> Kotonoha Akane & Aoi | Sakakibara Yui | AH-Software | E3 - D5 | 70 - 180 | G#3 / C#4 (Lite) / F#4 / C5 | 第 1 代 | ver.100 |
-| 小春六花 Std <br/> Rikka | Aoyama Yoshino | AH-Software | F3 - E5 | 80 - 150 | C4 / E4 (Lite) / G#4 / B4 | 第 1 代 | ver.100 |
-| 小春六花 AI <br/> Rikka | Aoyama Yoshino | AH-Software |  |  |  | 第 3 代 | ver.105 |
-| 弦卷真纪 Std <br/> Maki | Tanaka Manami | AH-Software | C4 - G5 |  | C#4 / F4 (Lite) / A#4 / C5 |  | ver.100 |
-| 弦卷真纪 AI <br/> Maki | Tanaka Manami | AH-Software | A#3 - D#5 |  |  | 第 3 代 | ver.104 |
-| 玄武 <br/> Genbu | GARO | Animen |  |  | C3 / G3 (Soft) / A3 (Lite) / F4 / F4 (假声音阶) |  | ver.100 |
-| 追傩酱 (Lite) <br/> Tsuina | Mai Kadowaki | AH-Software |  |  | | | ver.100 |
-| 追傩酱 AI (Lite) <br/> Tsuina | Mai Kadowaki | AH-Software |  | |  | 第 4 代 | ver.100 |
-| 暗音 Renri <br/> Yamine Renri | Yuzuri | Animen |  |  | N_D4 / N_A3 / C_D4 / W_D4 |  | ver.100 |
-| 夏色花梨 <br/> Natsuki Karin | Miyu Takagi | AH-Software |  |  |  |  | 预计 2022 / 04 发售 |
-| 花隈千冬 <br/> Hanakuma Chifuyu | Okuno Kaya | AH-Software |  |  |  |  | 预计 2022 发售 |
-| Rosa  | Shirayuki | ZAN-SHIN |  |  |  |  | 未发售 |
-| Kyomachi Seika | Rika Tachibana | AH-Software |  |  |  |  | 未发售 |
+| 声库 | 类型* | 声源 | 所属组织 |  擅长音域 | 擅长节奏 | 表现力分组 | 自动音高调校 | 最新版本 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Saki | S L |  | Dreamtonics |  | 80 - 150 | C4 | 第 1 代 | ver.101 |
+| Saki | A L |  | Dreamtonics |  |  |  | 第 3 代 | ver.101 |
+| Saki | S |  | Dreamtonics | F3 - E5 | 80 - 150 | G#3 / C4 / F4 / B4 | 第 1 代 | ver.101 |
+| Saki | A |  | Dreamtonics |  |  |  | 第 3 代 | ver.115 |
+| 琴叶 茜 · 葵 <br/> Kotonoha Akane & Aoi | S L | Sakakibara Yui | AH-Software |  | 70 - 180 | C#4 | 第 1 代 | ver.100 |
+| 琴叶 茜 · 葵 <br/> Kotonoha Akane & Aoi | S | Sakakibara Yui | AH-Software | E3 - D5 | 70 - 180 | G#3 / C#4 / F#4 / C5 | 第 1 代 | ver.100 |
+| 小春六花 <br/> Rikka | S L | Aoyama Yoshino | AH-Software |  | 80 - 150 | E4 | 第 1 代 | ver.100 |
+| 小春六花 <br/> Rikka | A L | Aoyama Yoshino | AH-Software |  |  |  | 第 3 代 | ver.101 |
+| 小春六花 <br/> Rikka | S | Aoyama Yoshino | AH-Software | F3 - E5 | 80 - 150 | C4 / E4 / G#4 / B4 | 第 1 代 | ver.100 |
+| 小春六花 <br/> Rikka | A | Aoyama Yoshino | AH-Software |  |  |  | 第 3 代 | ver.105 |
+| 弦卷真纪 <br/> Maki | S L | Tanaka Manami | AH-Software |  |  | F4 |  | ver.100 |
+| 弦卷真纪 <br/> Maki | A L | Tanaka Manami | AH-Software |  |  |  | 第 3 代 | ver.101 |
+| 弦卷真纪 <br/> Maki | S | Tanaka Manami | AH-Software | C4 - G5 |  | C#4 / F4 / A#4 / C5 |  | ver.100 |
+| 弦卷真纪 <br/> Maki | A | Tanaka Manami | AH-Software | A#3 - D#5 |  |  | 第 3 代 | ver.104 |
+| 玄武 <br/> Genbu | S L | GARO | Animen |  |  | A3 |  | ver.100 |
+| 玄武 <br/> Genbu | S | GARO | Animen |  |  | C3 / G3 (Soft) / A3 / F4 / F4 (假声音阶) |  | ver.100 |
+| 追傩酱 <br/> Tsuina | S L | MA Kadowaki | AH-Software |  |  | | | ver.100 |
+| 追傩酱 <br/> Tsuina | A L | MA Kadowaki | AH-Software |  | |  | 第 4 代 | ver.100 |
+| 暗音 Renri <br/> Yamine Renri | S L | Yuzuri | Animen |  |  | N_D4 |  | ver.100 |
+| 暗音 Renri <br/> Yamine Renri | S | Yuzuri | Animen |  |  | N_A3 / N_D4 / C_D4 / W_D4 |  | ver.100 |
+| 夏色花梨 <br/> Natsuki Karin | S | Miyu Takagi | AH-Software |  |  |  |  | 预计 2022 / 04 发售 |
+| 花隈千冬 <br/> Hanakuma Chifuyu | S | Okuno Kaya | AH-Software |  |  |  |  | 预计 2022 发售 |
+| Rosa |  | Shirayuki | ZAN-SHIN |  |  |  |  | 未发售 |
+| Kyomachi Seika |  | Rika Tachibana | AH-Software |  |  |  |  | 未发售 |
+
+注：
+
+* 类型：S：标准声库 <br/> A：AI 声库 <br/> L：Lite 免费声库
+
+* AI 声库不存在表现力分组的概念
 
 ### 购买完整版
 
