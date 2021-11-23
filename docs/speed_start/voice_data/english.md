@@ -12,9 +12,9 @@ title: 英文声库
 | 弦卷真纪 <br/> Maki | S | Tanaka Manami | AH-Software | A#3 - F5 |  | C4 / D#4 / G#4 / C5 |  | ver.100 |
 | 弦卷真纪 <br/> Maki | A | Tanaka Manami | AH-Software |  |  |  | 第 3 代 | ver.101 |
 | 铃爱莉 <br/> ANRI | A | kurapichu | AUDIOLOGIE |  |  |  | 第 4 代 | ver.100 |
+| 爱莲娜 芙缇 <br/> Elenor Forte | A |  | Animen |  |  |  | 第 4 代 | ver.100 |
 | Solaris |  | Emma Rowley | Eclipsed Sounds |  |  |  |  | 预计 2022 / 01 发售 |
-| 爱莲娜 芙缇 <br/> Elenor Forte | S |  | Animen |  |  |  |  | 预售中 |
-| 爱莲娜 芙缇 <br/> Elenor Forte | A |  | Animen |  |  |  |  | 预售中 |
+
 
 注：
 
