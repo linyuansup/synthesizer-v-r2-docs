@@ -24,5 +24,5 @@ title: 英文声库
 
 请根据你所需声库的销售方选择相应购买方式。除特殊说明，所有销售商均支持支付宝、微信支付：
 
-  * Animen：[台湾代理](https://www.anicute.com/)
+  * Animen、AUDIOLOGIE：[台湾代理](https://www.anicute.com/)
   * AH-Software：[官方商城（日本）](https://www.ah-soft.com/product/series.html#synth-v)（不支持微信支付）
