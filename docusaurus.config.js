@@ -12,7 +12,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'linyuansup',
-  projectName: 'synthesizer-v-R2-Docs',
+  projectName: 'synthesizer-v-r2-Docs',
   presets: [
     [
       '@docusaurus/preset-classic',
