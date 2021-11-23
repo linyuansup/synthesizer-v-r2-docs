@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '编辑器信息适配到 Synthesizer V Studio 1.4.0，声库信息更新到追傩酱 SL / AL，更新于 2021 / 11 / 23',
+  tagline: '编辑器信息适配到 Synthesizer V Studio 1.4.0，声库信息更新到爱莲娜 芙缇 AI，更新于 2021 / 11 / 23',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
