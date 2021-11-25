@@ -12,7 +12,7 @@ title: 安装编辑器与声库
 
 ### Windows 系统
 
-:::danger
+:::warning
 Synthesizer V Studio 不支持 Windows 7
 :::
 

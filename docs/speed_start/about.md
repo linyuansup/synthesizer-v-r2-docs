@@ -19,7 +19,7 @@ Synthesizer V 是由华侃如创立的 Dreamtonics 公司开发的歌声合成�
    | Pit 自动调校 | 单一的自动调校 | 支持自定义参数的自动调校 |
    | 其他功能 | 无 | 替换音素  <br/> 脚本 ( Lua / JavaScript ) <br/> VST3 / AU 插件 <br/> 气声分离导出 <br/> 音区偏移 <br/> 音素力度 |
 
-:::danger
+:::warning
 Synthesizer V Studio 不支持 Windows 7
 :::
 

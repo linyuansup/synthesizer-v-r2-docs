@@ -47,7 +47,7 @@ title: 中文声库
  :::
 
  * 海伊：[浅滩](https://www.bilibili.com/video/BV17W411V7Ge) [涟漪](https://www.bilibili.com/video/BV18W411E7E7)
- * 苍穹：[D!slodge](https://www.bilibili.com/video/BV1yb411z7tu) [徒劳的爱之美少女](https://www.bilibili.com/video/BV17W411V7Ge)
+ * 苍穹：[D!slodge](https://www.bilibili.com/video/BV1yb411z7tu) 、[徒劳的爱之美少女](https://www.bilibili.com/video/BV17W411V7Ge)
  * 诗岸：[寓言预见遇见你的那刻](https://www.bilibili.com/video/BV1E7411v7Cd)
 
 ### 声库购买
