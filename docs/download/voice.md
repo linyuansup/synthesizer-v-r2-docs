@@ -7,6 +7,7 @@ title: 声库下载
 | 声库 | 销售方 | 语言 | 最新版本 | 下载点 1 |
 | --- | --- | --- | --- | --- |
 | 爱莲娜 芙缇 <br/> Elenor Forte | Animen | 英文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EdXBpPtKDB5KsaA9m-RLce0BAy5yvpBcpZXuuKoBAvSh-w?e=k4chW7) |
+| 爱莲娜 芙缇 AI <br/> Elenor Forte | Animen | 英文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EarVvzTj6rVLqn8Ak70C6kkBmCEErLUTCH8buZ5Q4wRtTw?e=1vmS4u) |
 | 艾可 <br/> Aiko | Animen | 中文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EYhd5lHG0ehIhwjoL3zh374BBMTiRdx9R7F6VFz1tOphQQ?e=H85YaL) |
 | 赤羽 <br/> Chiyu | 五维介质 | 中文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EYhd5lHG0ehIhwjoL3zh374BBMTiRdx9R7F6VFz1tOphQQ?e=kzeAmU) |
 | 玄武 <br/> Genbu | Animen | 日文 | ver.100 | [下载](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EQbLJlvpUuRKjV5ijB6z2JgBlkURRSnQcL0ZRpjl8JihuQ?e=SGulAD) |
