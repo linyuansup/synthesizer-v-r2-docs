@@ -10,7 +10,7 @@ title: 英文声库
 
 | 声库 | 声源 | 所属组织 | 擅长音域 | 表现力分组 | 最新版本 |
 | --- | --- | --- | --- | --- | --- |
-| 爱莲娜 芙缇 * <br/> Elenor Forte | | Animen |  | master | ver.100 |
+| 爱莲娜 芙缇 * <br/> Eleanor Forte | | Animen |  | master | ver.100 |
 | 弦卷真纪 * <br/> Maki | Tanaka Manami | AH-Software |  | D#4 | ver.100 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | A#3 - F5 | C4 / D#4 / G#4 / C5 | ver.100 |
 
@@ -21,8 +21,8 @@ title: 英文声库
 | 弦卷真纪 * <br/> Maki | Tanaka Manami | AH-Software | 第 3 代 | ver.101 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | 第 3 代 | ver.101 |
 | *铃爱莉 <br/> ANRI* | kurapichu | AUDIOLOGIE | 第 4 代 | ver.100 |
-| *爱莲娜 芙缇 <br/> Elenor Forte* |  | Animen | 第 4 代 | ver.100 |
-| *爱莲娜 芙缇 \* <br/> Elenor Forte* |  | Animen | 第 4 代 | ver.100 |
+| *爱莲娜 芙缇 <br/> Eleanor Forte* |  | Animen | 第 4 代 | ver.100 |
+| *爱莲娜 芙缇 \* <br/> Eleanor Forte* |  | Animen | 第 4 代 | ver.100 |
 
 :::warning
 * 爱莲娜 芙缇的 AI 模块目前存在问题，请不要填写任何随机数种子，否则可能会导致音高严重偏离
