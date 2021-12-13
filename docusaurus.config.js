@@ -1,11 +1,13 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '编辑器信息适配到 Synthesizer V Studio 1.4.0，声库信息更新到青溯，更新于 2021 / 12 / 06',
+  tagline: '编辑器信息适配到 Synthesizer V Studio 1.4.0，声库信息更新到青溯，更新于 2021 / 12 / 13',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -21,6 +23,8 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/linyuansup/synthesizer-v-r2-docs',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
@@ -33,7 +37,14 @@ const config = {
       }),
     ],
   ],
-
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css',
+      integrity:
+        'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
+      crossorigin: 'anonymous',
+    },
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -167,7 +178,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2021 / 12 / 06 适配到 Synthesizer V Studio 1.4.0`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2021 / 12 / 13 适配到 Synthesizer V Studio 1.4.0`,
       },
       prism: {
         theme: lightCodeTheme,
