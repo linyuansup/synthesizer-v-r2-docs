@@ -34,7 +34,7 @@ title: 日文声库
 | Saki * |  | Dreamtonics |  | 第 3 代 | ver.101 |
 | Saki |  | Dreamtonics |  | 第 3 代 | ver.115 |
 | 小春六花 <br/> Rikka * | Aoyama Yoshino | AH-Software |  | 第 3 代 | ver.101 |
-| 小春六花 <br/> Rikka | Aoyama Yoshino | AH-Software |  | 第 3 代 | ver.105 |
+| 小春六花 <br/> Rikka | Aoyama Yoshino | AH-Software |  | 第 3 代 | ver.113 |
 | 弦卷真纪 <br/> Maki * | Tanaka Manami | AH-Software |  | 第 3 代 | ver.101 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | A#3 - D#5 | 第 3 代 | ver.104 |
 | 追傩酱 <br/> Tsuina * | MA Kadowaki | AH-Software |  | 第 4 代 | ver.100 |
