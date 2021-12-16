@@ -127,7 +127,7 @@ export function ActiveTeamRow(): JSX.Element {
                 超级大佬，一个曾经的加古厨，最近在做 VOICEROID 的汉化和自制
             </TeamProfileCardCol>
             <TeamProfileCardCol
-                name="君临德雷克"
+                name="青鸠刻刻"
                 pic="https://z3.ax1x.com/2021/11/23/opHoOe.png"
                 bilibiliurl="https://space.bilibili.com/14159172">
                 以身试险（不是，自己有个企划但好像没开（x 催更！
