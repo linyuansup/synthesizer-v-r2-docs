@@ -22,7 +22,7 @@ title: 英文声库
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | 第 3 代 | ver.101 |
 | *铃爱莉 <br/> ANRI* | kurapichu | AUDIOLOGIE | 第 4 代 | ver.100 |
 | *爱莲娜 芙缇 <br/> Eleanor Forte* |  | Animen | 第 4 代 | ver.100 |
-| *爱莲娜 芙缇 <br/> Eleanor Forte* |  | Animen | 第 4 代 | ver.101 |
+| *爱莲娜 芙缇 <br/> Eleanor Forte* |  | Animen | 第 4 代 | ver.102 |
 
 :::caution
 * 铃爱莉声库只会更新至 ver.101 版本，在此之后不会有任何声库更新
