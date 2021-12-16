@@ -46,7 +46,7 @@ title: 文件
 Synthesizer V Studio **不支持** 将当前文件保存为一个新文件并将此后的所有操作均会保存在老文件中。
 
 :::warning
-在 1.4.0 版本中 Synthesizer V Studio 仍很不稳定。因此请及时保存你的工程文件。
+在 1.4.1 版本中 Synthesizer V Studio 仍很不稳定。因此请及时保存你的工程文件。
 :::
 
 ## 导入（为音轨）
