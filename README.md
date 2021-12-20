@@ -54,11 +54,11 @@
 
 ## 关于 Synthesizer V Studio Docs
 
-Synthesizer V Studio Docs 是一个 Synthesizer V Studio 的综合站点，您可以将其理解为 Wiki，但它有并不完全是 Wiki。在提供快速上手、详细文档说明的同时，我们还有脚本 API 的中文翻译以及软件下载。
+Synthesizer V Studio Docs 是一个 Synthesizer V Studio 的综合站点，您可以将其理解为 Wiki，但它并不完全是 Wiki。在提供快速上手、详细文档说明的同时，我们还有脚本 API 的中文翻译以及软件下载。
 
 ### 开发环境
 
-我们使用 [Docusaurus v2.0](https://docusaurus.io/) 构建该文档。
+我们使用 [Docusaurus v2](https://docusaurus.io/) 构建该文档。
 
 <!-- GETTING STARTED -->
 
