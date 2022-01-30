@@ -164,7 +164,7 @@ isBounced() → {boolean}
 isMemoryManaged() → {boolean}
 ```
 
-> 继承自：[嵌套对象 - `isMemoryManaged`](NestedObject.md)
+> 继承自：[嵌套对象 - `isMemoryManaged`](nested_object.md)
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
 
