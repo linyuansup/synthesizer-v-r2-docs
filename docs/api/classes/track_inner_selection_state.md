@@ -1,7 +1,6 @@
 ---
 title: TrackInnerSelectionState | 轨道内部选择状态
 ---
-
 ## 轨道内部选择状态
 
 钢琴卷帘区的选择状态。
@@ -70,7 +69,7 @@ getParent() → {嵌套对象| `undefined` }
 
 > 继承自[嵌套对象 - getParent](nested_object.md)
 
-获取父级 [`嵌套对象`](嵌套对象.html)。 如果当前对象未附加到父对象，则返回 `undefined` 。
+获取父级 [`嵌套对象`](nested_object.md)。 如果当前对象未附加到父对象，则返回 `undefined` 。
 
 #### 返回
 
@@ -105,7 +104,7 @@ getSelectedNotes() → {array}
 hasSelectedContent() → {boolean}
 ```
 
-> 继承自[选择状态 - hasSelectedContent](selection_state_base.md#hasSelectedContent)
+> 继承自[选择状态 - hasSelectedContent](selection_state_base.md -hasSelectedContent)
 
 检查是否有任何选择。
 
@@ -180,7 +179,7 @@ selectGroup(reference)
 
 #### selectNote(note)
 
-Select a [`音符`](note.md). The note must be inside the current [`音符组引用`](note_group_reference.md) opened in the piano roll (see [`MainEditorView#getCurrentGroup`](MainEditorView.html#getCurrentGroup)).
+选择一个 [`音符`](note.md)。 音符必须在钢琴卷中打开的当前 [`音符组引用`](note_group_reference.md) 内（请参阅 [`MainEditorView - getCurrentGroup`](main_editor_view.md）。
 
 #### 参数
 
@@ -216,7 +215,7 @@ unselectNote(note) → {boolean}
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-|`note`|[Note](Note.html)| |
+|`note`|[Note](note.md)| |
 
 #### 返回
 
