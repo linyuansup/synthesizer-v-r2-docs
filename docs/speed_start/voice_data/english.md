@@ -13,6 +13,7 @@ title: 英文声库
 | 爱莲娜 芙缇 * <br/> Eleanor Forte | | Animen |  | master | ver.100 |
 | 弦卷真纪 * <br/> Maki | Tanaka Manami | AH-Software |  | D#4 | ver.100 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | A#3 - F5 | C4 / D#4 / G#4 / C5 | ver.100 |
+| Solaris | Emma Rowley | Eclipsed Sounds |  |  | ver.100 |
 
 ### AI 声库
 
@@ -21,7 +22,7 @@ title: 英文声库
 | 弦卷真纪 * <br/> Maki | Tanaka Manami | AH-Software | 第 3 代 | ver.101 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | 第 3 代 | ver.101 |
 | *铃爱莉 <br/> ANRI* | kurapichu | AUDIOLOGIE | 第 4 代 | ver.100 |
-| 爱莲娜 芙缇 <br/> Eleanor Forte |  | Animen | 第 4 代 | ver.100 |
+| 爱莲娜 芙缇 * <br/> Eleanor Forte |  | Animen | 第 4 代 | ver.100 |
 | 爱莲娜 芙缇 <br/> Eleanor Forte |  | Animen | 第 4 代 | ver.103 |
 
 :::caution
@@ -31,12 +32,6 @@ title: 英文声库
 :::tip
 带 * 标记的为免费提供的 Lite 声库，你可以在 [这里](../../download/voice.md) 下载
 :::
-
-### 未发售声库
-
-| 声库  | 声源 | 所属组织 | 相关情报 |
-| --- | --- | --- | --- |
-| Solaris | Emma Rowley | Eclipsed Sounds | 预计 2022 / 01 发售 |
 
 ## 购买完整版
 

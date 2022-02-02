@@ -1,5 +1,5 @@
 ---
-title: TrackInnerSelectionState | 轨道内部选择状态
+title: TrackInnerSelectionState
 ---
 ## 轨道内部选择状态
 

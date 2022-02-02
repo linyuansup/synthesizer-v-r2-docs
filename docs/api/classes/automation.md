@@ -1,5 +1,5 @@
 ---
-title: Automation | 自动化（参数）
+title: Automation
 ---
 
 ## 自动化
@@ -10,7 +10,7 @@ title: Automation | 自动化（参数）
 
 ## 扩展
 
- * [NestedObject](nested_object.md)
+ * [嵌套对象](nested_object.md)
 
 ## 方法
 

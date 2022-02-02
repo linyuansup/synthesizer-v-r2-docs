@@ -1,9 +1,8 @@
 ---
-title: NoteGroup | 音符组
+title: NoteGroup
 ---
-# NoteGroup
 
-## NoteGroup
+## 音符组
 
 一组便于重复使用的成组的音符及其参数。
 
@@ -25,7 +24,7 @@ title: NoteGroup | 音符组
 | :----- | :----------------------------------------------------------- | :--- |
 | `note` | [Note](https://resource.dreamtonics.com/scripting/Note.html) |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -33,7 +32,7 @@ title: NoteGroup | 音符组
 
 对当前对象的一个深复制。
 
-##### 返回值：
+##### 返回：
 
 类型	[NoteGroup](https://resource.dreamtonics.com/scripting/NoteGroup.html)
 
@@ -43,7 +42,7 @@ title: NoteGroup | 音符组
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -51,7 +50,7 @@ title: NoteGroup | 音符组
 
 获取该 `NoteGroup（音符组）` 的用户指定名称。
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -65,7 +64,7 @@ title: NoteGroup | 音符组
 | :------ | :----- | :--- |
 | `index` | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	[Note](https://resource.dreamtonics.com/scripting/Note.html)
 
@@ -73,7 +72,7 @@ title: NoteGroup | 音符组
 
 获取该  `NoteGroup（音符组）` 内的音符数量。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -91,7 +90,7 @@ title: NoteGroup | 音符组
 | :----- | :----- | :--- |
 | `type` | string |      |
 
-##### 返回值：
+##### 返回：
 
 类型	[Automation](https://resource.dreamtonics.com/scripting/Automation.html)
 
@@ -101,7 +100,7 @@ title: NoteGroup | 音符组
 
 获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回值：
+##### 返回：
 
 类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
 
@@ -111,7 +110,7 @@ title: NoteGroup | 音符组
 
 一个 UUID 差不多长这样："ab85d637-d80b-4628-9c27-007ea74029af"。
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -121,7 +120,7 @@ title: NoteGroup | 音符组
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 

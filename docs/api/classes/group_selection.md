@@ -1,31 +1,30 @@
 ---
-title: GroupSelection | 音符组选择
+title: GroupSelection
 ---
-# GroupSelection
 
-## GroupSelection
+## 音符组选择
 
 音符组选择行为的一个集合。
 
-继承自 [`ArrangementSelectionState`](https://resource.dreamtonics.com/scripting/ArrangementSelectionState.html) 和 [`TrackInnerSelectionState`](https://resource.dreamtonics.com/scripting/TrackInnerSelectionState.html).
+继承自 [`ArrangementSelectionState`](arrangement_selection_state.md) 和 [`TrackInnerSelectionState`](track_inner_selection_state.md).
 
 ### 方法
 
 #### clearGroups() → {boolean}
 
-取消选作所有的 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html)。如果被选中集合改变了，则返回 True。
+取消选作所有的 [`NoteGroupReference`](note_group_reference.md)。如果被选中集合改变了，则返回 true。
 
-##### 返回值：
+##### 返回：
 
-类型	boolean
+类型：布尔
 
 #### getSelectedGroups() → {array}
 
-获取被选中的 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 数组，顺序为选择时的顺序。
+获取被选中的 [`NoteGroupReference`](note_group_reference.md) 数组，顺序为选择时的顺序。
 
-##### 返回值：
+##### 返回：
 
-一个 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 数组（array）
+一个 [`NoteGroupReference`](note_group_reference.md) 数组
 
 类型	array
 
@@ -33,7 +32,7 @@ title: GroupSelection | 音符组选择
 
 检查是否有至少一个 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 被选中了。
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 
@@ -57,7 +56,7 @@ title: GroupSelection | 音符组选择
 | :---------- | :----------------------------------------------------------- | :--- |
 | `reference` | [NoteGroupReference](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) |      |
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 

@@ -1,3 +1,5 @@
 ---
-title: NoteGroupReference | 音符组引用
+title: NoteGroupReference
 ---
+
+## 音符组引用

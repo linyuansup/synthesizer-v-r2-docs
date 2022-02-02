@@ -1,3 +1,5 @@
 ---
-title: PlaybackControl | 回放控制
+title: PlaybackControl
 ---
+
+## 回放控制
