@@ -1,5 +1,5 @@
 ---
-title: Track | 轨道
+title: Track
 ---
 
 ## 轨道
@@ -102,7 +102,7 @@ getGroupReference(index) → {NoteGroupReference}
 getIndexInParent() → {number}
 ```
 
-> 继承自：[嵌套对象 - `getIndexInParent`](nested_object.md)
+> 继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
 获取当前对象在其父对象中的索引。 在 Lua 中，这个索引从 1 开始。在 JavaScript 中，这个索引从 0 开始。
 #### 返回
@@ -139,7 +139,7 @@ getNumGroups() → {number}
 getParent() → {NestedObject|undefined}
 ```
 
-> 继承自：[嵌套对象 - `getParent`](nested_object.md)
+> 继承自：[嵌套对象 - getParent](nested_object.md)
 
 获取父 [嵌套对象](nested_object.md) 。如果当前对象未附加到父对象，则返回 `undefined` 。
 
@@ -164,7 +164,7 @@ isBounced() → {boolean}
 isMemoryManaged() → {boolean}
 ```
 
-> 继承自：[嵌套对象 - `isMemoryManaged`](nested_object.md)
+> 继承自：[嵌套对象 - isMemoryManaged](nested_object.md)
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
 

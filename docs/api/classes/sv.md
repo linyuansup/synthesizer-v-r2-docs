@@ -1,9 +1,8 @@
 ---
-title: SV | 宿主对象
+title: SV
 ---
-# SV
 
-## SV
+## 宿主对象
 
 宿主对象（host object）是一个可在脚本中任意位置被访问的全局对象，名为`SV`。
 
@@ -33,7 +32,7 @@ title: SV | 宿主对象
 | ---- | ------ | ---- |
 | `k`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 
@@ -51,7 +50,7 @@ title: SV | 宿主对象
 | ---- | ------ | ---- |
 | `b`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -70,7 +69,7 @@ title: SV | 宿主对象
 | `b`   | number |      |
 | `bpm` | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -87,7 +86,7 @@ title: SV | 宿主对象
 | `dividend` | number |      |
 | `divisor`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -106,7 +105,7 @@ title: SV | 宿主对象
 | `b`        | number |      |
 | `interval` | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -131,7 +130,7 @@ title: SV | 宿主对象
 | :----- | :----- | :------------------- |
 | `type` | string | 一个类型确认字符串。 |
 
-##### 返回值
+##### 返回
 
 类型	object
 
@@ -151,7 +150,7 @@ title: SV | 宿主对象
 | :--- | :----- | :--- |
 | `f`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -159,7 +158,7 @@ title: SV | 宿主对象
 
 获取布局视图的UI（用户界面）的状态对象。
 
-##### 返回值：
+##### 返回：
 
 类型	ArrangementView
 
@@ -167,7 +166,7 @@ title: SV | 宿主对象
 
 获取系统剪贴板中的文本。
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -182,7 +181,7 @@ title: SV | 宿主对象
 - `hostVersionNumber`: `number` 以数字形式返回版本号，各用两位十六进制数表示大版本、小版本和修订版本 (比如 0x010004 就是 "1.0.4" 的意思)
 - `languageCode`: `string` 用户界面的语言代码，如 "en-us", "ja-jp", "zh-cn"
 
-##### 返回值：
+##### 返回：
 
 类型	object
 
@@ -190,7 +189,7 @@ title: SV | 宿主对象
 
 获取钢琴卷帘的UI（用户界面）状态对象。
 
-##### 返回值：
+##### 返回：
 
 类型	MainEditorView
 
@@ -200,7 +199,7 @@ title: SV | 宿主对象
 
 注意， `getPhonemesForGroup`返回的是Synthesizer V Studio内部文本-音素转换器的*输出*结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`Note#getPhonemes`](https://resource.dreamtonics.com/scripting/Note.html#getPhonemes) 而则会返回空字符串。
 
-还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回值会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](https://resource.dreamtonics.com/scripting/SV.html#setTimeout)调用中。
+还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](https://resource.dreamtonics.com/scripting/SV.html#setTimeout)调用中。
 
 ##### 参数：
 
@@ -208,7 +207,7 @@ title: SV | 宿主对象
 | :------ | :----------------------------------------------------------- | :--- |
 | `group` | [NoteGroupReference](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) |      |
 
-##### 返回值：
+##### 返回：
 
 一个字符串数组
 
@@ -218,7 +217,7 @@ title: SV | 宿主对象
 
 获取控制回放的UI（用户界面）状态对象。
 
-##### 返回值：
+##### 返回：
 
 类型	PlayBackControl
 
@@ -226,7 +225,7 @@ title: SV | 宿主对象
 
 获取当前打开的项目。
 
-##### 返回值：
+##### 返回：
 
 类型	Project
 
@@ -242,7 +241,7 @@ title: SV | 宿主对象
 | :--- | :----- | :--- |
 | `p`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -260,7 +259,7 @@ title: SV | 宿主对象
 | ---- | ------ | ---- |
 | `q`  | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -279,7 +278,7 @@ title: SV | 宿主对象
 | `s`   | number |      |
 | `bpm` | number |      |
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -316,7 +315,7 @@ title: SV | 宿主对象
 | :----- | :----- | :--- |
 | `form` | object |      |
 
-##### 返回值：
+##### 返回：
 
 类型	object
 
@@ -347,7 +346,7 @@ title: SV | 宿主对象
 | `message`     | string |      |
 | `defaultText` | string |      |
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -402,7 +401,7 @@ title: SV | 宿主对象
 | `title`   | string |      |
 | `message` | string |      |
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 
@@ -431,7 +430,7 @@ title: SV | 宿主对象
 | `title`   | string |      |
 | `message` | string |      |
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -461,7 +460,7 @@ title: SV | 宿主对象
 | :----- | :----- | :--- |
 | `text` | string |      |
 
-##### 返回值：
+##### 返回：
 
 类型	string
 

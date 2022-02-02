@@ -1,5 +1,5 @@
 ---
-title: ArrangementView | 编曲区界面
+title: ArrangementView
 ---
 
 ## 编曲区界面

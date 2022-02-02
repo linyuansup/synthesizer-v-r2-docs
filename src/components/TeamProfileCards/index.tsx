@@ -132,6 +132,19 @@ export function ActiveTeamRow(): JSX.Element {
                 bilibiliurl="https://space.bilibili.com/14159172">
                 以身试险（不是，自己有个企划但好像没开（x 催更！
             </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="Keelo79"
+                pic="https://s4.ax1x.com/2022/01/30/HCI64x.png"
+                bilibiliurl="https://space.bilibili.com/441691453"
+                githubUrl="https://space.bilibili.com/14159172">
+                帮忙翻译了脚本 API 文档
+            </TeamProfileCardCol>
+            <TeamProfileCardCol
+                name="HeZeBang"
+                pic="https://s4.ax1x.com/2022/01/30/HCIyU1.png"
+                githubUrl="https://space.bilibili.com/14159172">
+                帮忙翻译了脚本 API 文档
+            </TeamProfileCardCol>
         </div>
     );
 }

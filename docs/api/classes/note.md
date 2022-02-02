@@ -1,9 +1,8 @@
 ---
-title: Note | 音符
+title: Note
 ---
-# Note
 
-## Note
+## 音符
 
 一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。其会被置于一个 [`NoteGroup`](https://resource.dreamtonics.com/scripting/NoteGroup.html) 中。
 
@@ -17,7 +16,7 @@ title: Note | 音符
 
 对当前对象进行深复制（deepcopy）。
 
-##### 返回值：
+##### 返回：
 
 类型	[Note](https://resource.dreamtonics.com/scripting/Note.html)
 
@@ -43,7 +42,7 @@ title: Note | 音符
 
 如果该音符使用的是该音符组引用（[`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) ）的默认值，则对应属性的取值为 NaN。
 
-##### 返回值：
+##### 返回：
 
 类型	object
 
@@ -51,7 +50,7 @@ title: Note | 音符
 
 获取音符的持续时间。单位为blicks。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -59,7 +58,7 @@ title: Note | 音符
 
 获取音符的结束位置（起始+持续时间）。单位为blicks。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -73,7 +72,7 @@ title: Note | 音符
 
 获取当前音符的歌词。
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -81,7 +80,7 @@ title: Note | 音符
 
 获取当前音符的起始位置。单位为blicks。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -91,7 +90,7 @@ title: Note | 音符
 
 获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回值：
+##### 返回：
 
 类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
 
@@ -101,7 +100,7 @@ title: Note | 音符
 
 如果没有指定音素，其会返回一个空字符串而非默认发音（见 [`SV#getPhonemesForGroup`](https://resource.dreamtonics.com/scripting/SV.html#getPhonemesForGroup) ）。
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
@@ -109,7 +108,7 @@ title: Note | 音符
 
 获取音高对应的MIDI编号，C4对应60。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -119,7 +118,7 @@ title: Note | 音符
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 
