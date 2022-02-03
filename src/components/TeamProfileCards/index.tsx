@@ -142,8 +142,7 @@ export function ActiveTeamRow(): JSX.Element {
                 name="HeZeBang"
                 pic="https://s4.ax1x.com/2022/01/30/HCIyU1.png"
                 githubUrl="https://github.com/HeZeBang"
-                bilibiliurl='https://space.bilibili.com/156494172'
-            >
+                bilibiliurl='https://space.bilibili.com/156494172'>
                 帮忙翻译了脚本 API 文档
             </TeamProfileCardCol>
         </div>
