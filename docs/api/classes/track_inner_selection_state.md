@@ -104,7 +104,7 @@ getSelectedNotes() → {array}
 hasSelectedContent() → {boolean}
 ```
 
-> 继承自[选择状态 - hasSelectedContent](selection_state_base.md -hasSelectedContent)
+> 继承自[选择状态 - hasSelectedContent](selection_state_base.md)
 
 检查是否有任何选择。
 
