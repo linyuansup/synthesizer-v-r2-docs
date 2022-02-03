@@ -135,14 +135,15 @@ export function ActiveTeamRow(): JSX.Element {
             <TeamProfileCardCol
                 name="Keelo79"
                 pic="https://s4.ax1x.com/2022/01/30/HCI64x.png"
-                bilibiliurl="https://space.bilibili.com/441691453"
-                githubUrl="https://space.bilibili.com/14159172">
+                githubUrl="https://github.com/Keelo79">
                 帮忙翻译了脚本 API 文档
             </TeamProfileCardCol>
             <TeamProfileCardCol
                 name="HeZeBang"
                 pic="https://s4.ax1x.com/2022/01/30/HCIyU1.png"
-                githubUrl="https://space.bilibili.com/14159172">
+                githubUrl="https://github.com/HeZeBang"
+                bilibiliurl='https://space.bilibili.com/156494172'
+            >
                 帮忙翻译了脚本 API 文档
             </TeamProfileCardCol>
         </div>
