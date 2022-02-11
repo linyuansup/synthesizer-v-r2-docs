@@ -6,7 +6,7 @@ title: SelectionStateBase | 选择状态基础接口
 
 选择状态的基本接口。
 
-由 [`ArrangementSelectionState(编曲区选择状态)`](arrangement_selection_state.md) 和 [`TrackInnerSelectionState(轨道内部选择状态)`](track_inner_selection_state.nd) 继承。
+由 [`ArrangementSelectionState(编曲区选择状态)`](arrangement_selection_state.md) 和 [`TrackInnerSelectionState(轨道内部选择状态)`](track_inner_selection_state.md) 继承。
 
 #### 方法
 
