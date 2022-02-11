@@ -141,7 +141,7 @@ title: Project
 
 ##### 返回值：
 
-类型	boolean
+类型	布尔
 
 #### newUndoRecord()
 

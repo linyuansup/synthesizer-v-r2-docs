@@ -12,9 +12,12 @@ title: ArrangementView
 
 ## 方法
 
+### getIndexInParent
+
 ```js
 getIndexInParent() → {number}
 ```
+
 >继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
 获取在父级对象中当前对象的索引。在 Lua 中索引从 1 开始，在 JavaScript 中索引从 0 开始。
@@ -24,6 +27,8 @@ getIndexInParent() → {number}
 类型：数字
 
 ---
+
+### getNavigation
 
 ```js
 getNavigation() → {CoordinateSystem}
@@ -36,6 +41,8 @@ getNavigation() → {CoordinateSystem}
 类型：[CoordinateSystem](coordinate_system.md)
 
 ---
+
+### getParent
 
 ```js
 getParent() → {NestedObject|undefined}
@@ -50,6 +57,8 @@ getParent() → {NestedObject|undefined}
 
 ---
 
+### getSelection
+
 ```js
 getSelection() → {ArrangementSelectionState}
 ```
@@ -61,6 +70,8 @@ getSelection() → {ArrangementSelectionState}
 类型：[ArrangementSelectionState](arrangement_selection_state.md)
 
 ---
+
+### isMemoryManaged
 
 ```js
 isMemoryManaged() → {boolean}

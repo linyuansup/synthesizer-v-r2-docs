@@ -122,7 +122,7 @@ title: NoteGroup
 
 ##### 返回：
 
-类型	boolean
+类型	布尔
 
 #### removeNote(index)
 

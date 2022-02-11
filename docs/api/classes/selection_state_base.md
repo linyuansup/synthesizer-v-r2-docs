@@ -6,12 +6,13 @@ title: SelectionStateBase
 
 选择状态的基本接口。
 
-由 [`ArrangementSelectionState(编曲区选择状态)`](arrangement_selection_state.md) 和 [`TrackInnerSelectionState(轨道内部选择状态)`](track_inner_selection_state.md) 继承。
+由 [编曲区选择状态](arrangement_selection_state.md) 和 [轨道内部选择状态](track_inner_selection_state.md) 继承。
 
-#### 方法
+## 方法
 
-----
-``` js
+### clearAll
+
+```js
 clearAll() → {boolean}
 ```
 
@@ -19,10 +20,13 @@ clearAll() → {boolean}
 
 #### 返回
 
-类型:boolean
+类型：布尔
 
-----
-``` js
+---
+
+### hasSelectedContent
+
+```js
 hasSelectedContent() → {boolean}
 ```
 
@@ -30,10 +34,13 @@ hasSelectedContent() → {boolean}
 
 #### 返回
 
-类型:boolean
+类型：布尔
 
-----
-``` js
+---
+
+### hasUnfinishedEdits
+
+```js
 hasUnfinishedEdits() → {boolean}
 ```
 
@@ -43,5 +50,5 @@ hasUnfinishedEdits() → {boolean}
 
 #### 返回
 
-类型:boolean
+类型：布尔
 

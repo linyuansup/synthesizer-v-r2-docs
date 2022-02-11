@@ -18,6 +18,8 @@ title: ArrangementSelectionState
 
 ## 方法
 
+### clearAll
+
 ```js
 clearAll() → {boolean}
 ```
@@ -30,6 +32,8 @@ clearAll() → {boolean}
 类型：布尔
 
 ---
+
+### clearGroups
 
 ```js
 clearGroups() → {boolean}
@@ -45,6 +49,8 @@ clearGroups() → {boolean}
 
 ---
 
+### getIndexInParent
+
 ```js
 getIndexInParent() → {number}
 ```
@@ -59,6 +65,8 @@ getIndexInParent() → {number}
 
 ---
 
+### getParent
+
 ```js
 getParent() → {NestedObject|undefined}
 ```
@@ -72,6 +80,8 @@ getParent() → {NestedObject|undefined}
 类型：[NestedObject](nested_object.md) | undefined
 
 ---
+
+### getSelectedGroups
 
 ```js
 getSelectedGroups() → {array}
@@ -89,6 +99,8 @@ getSelectedGroups() → {array}
 
 ---
 
+### hasSelectedContent
+
 ```js
 hasSelectedContent() → {boolean}
 ```
@@ -102,6 +114,8 @@ hasSelectedContent() → {boolean}
 类型：布尔
 
 ---
+
+### hasSelectedGroups
 
 ```js
 hasSelectedGroups() → {boolean}
@@ -117,6 +131,8 @@ hasSelectedGroups() → {boolean}
 
 ---
 
+### hasUnfinishedEdits
+
 ```js
 hasUnfinishedEdits() → {boolean}
 ```
@@ -131,6 +147,8 @@ hasUnfinishedEdits() → {boolean}
 
 ---
 
+### isMemoryManaged
+
 ```js
 isMemoryManaged() → {boolean}
 ```
@@ -144,6 +162,8 @@ isMemoryManaged() → {boolean}
 类型：布尔
 
 ---
+
+### SelectedGroup
 
 ```js
 selectGroup(reference)
@@ -162,6 +182,8 @@ selectGroup(reference)
 | `reference` | [NoteGroupReference](note_group_reference.md) |  |
 
 ---
+
+### unselectGroup
 
 ```js
 unselectGroup(reference) → {boolean}

@@ -14,6 +14,8 @@ title: CoordinateSystem
 
 ## 方法
 
+### getIndexInParent
+
 ```js
 getIndexInParent() → {number}
 ```
@@ -27,6 +29,8 @@ getIndexInParent() → {number}
 类型：数字
 
 ---
+
+### getParent
 
 ```js
 getParent() → {NestedObject|undefined}
@@ -42,6 +46,8 @@ getParent() → {NestedObject|undefined}
 
 ---
 
+### getTimePxPerUnit
+
 ```js
 getTimePxPerUnit() → {number}
 ```
@@ -55,6 +61,8 @@ getTimePxPerUnit() → {number}
 类型：数
 
 ---
+
+### getTimeViewRange
 
 ```js
 getTimeViewRange() → {array}
@@ -70,6 +78,8 @@ getTimeViewRange() → {array}
 
 ---
 
+### getValuePxPerUnit
+
 ```js
 getValuePxPerUnit() → {number}
 ```
@@ -83,6 +93,8 @@ getValuePxPerUnit() → {number}
 类型：数
 
 ---
+
+### getValueViewRange
 
 ```js
 getValueViewRange() → {array}
@@ -98,6 +110,8 @@ getValueViewRange() → {array}
 
 ---
 
+### isMemoryManaged
+
 ```js
 isMemoryManaged() → {boolean}
 ```
@@ -111,6 +125,8 @@ isMemoryManaged() → {boolean}
 类型：布尔
 
 ---
+
+### setTimeLeft
 
 ```js
 setTimeLeft(time)
@@ -126,6 +142,8 @@ setTimeLeft(time)
 
 ---
 
+### setTimeRight
+
 ```js
 setTimeRight(time)
 ```
@@ -139,6 +157,8 @@ setTimeRight(time)
 | `time` | number |  |
 
 ---
+
+### setTimeScale
 
 ```js
 setTimeScale(scale)
@@ -156,6 +176,8 @@ setTimeScale(scale)
 
 ---
 
+### setValueCenter
+
 ```js
 setValueCenter(v)
 ```
@@ -169,6 +191,8 @@ setValueCenter(v)
 | `v` | number |  |
 
 ---
+
+### snap
 
 ```js
 snap(b) → {number}
@@ -188,6 +212,8 @@ snap(b) → {number}
 
 ---
 
+### t2x
+
 ```js
 t2x(t) → {number}
 ```
@@ -205,6 +231,8 @@ t2x(t) → {number}
 类型：数
 
 ---
+
+### v2y
 
 ```js
 v2y(v) → {number}
@@ -224,6 +252,8 @@ v2y(v) → {number}
 
 ---
 
+### x2t
+
 ```js
 x2t(x) → {number}
 ```
@@ -241,6 +271,8 @@ x2t(x) → {number}
 类型：数
 
 ---
+
+### y2v
 
 ```js
 y2v(y) → {number}

@@ -34,7 +34,7 @@ title: SV
 
 ##### 返回：
 
-类型	boolean
+类型	布尔
 
 #### blick2Quarter(b) → {number}
 
@@ -403,7 +403,7 @@ title: SV
 
 ##### 返回：
 
-类型	boolean
+类型	布尔
 
 #### showOkCancelBoxAsync(title, message, callback)
 
