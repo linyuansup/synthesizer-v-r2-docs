@@ -178,7 +178,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 01 / 31 适配到 Synthesizer V Studio 1.5.0`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 11 适配到 Synthesizer V Studio 1.5.0`,
       },
       prism: {
         theme: lightCodeTheme,
