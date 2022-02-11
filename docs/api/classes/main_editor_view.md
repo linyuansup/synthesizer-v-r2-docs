@@ -1,9 +1,8 @@
 ---
-title: MainEditorView | 主编辑器界面
+title: MainEditorView
 ---
-# MainEditorView
 
-## MainEditorView
+## 主编辑器界面
 
 钢琴卷帘的 UI（用户界面）状态对象。
 
@@ -17,7 +16,7 @@ title: MainEditorView | 主编辑器界面
 
 获取用户当前正处于的 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 。如果用户还未进入一个 [`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 中，则返回当前音轨的主音符组（main group）。
 
-##### 返回值：
+##### 返回：
 
 类型	[NoteGroupReference](https://resource.dreamtonics.com/scripting/NoteGroupReference.html)
 
@@ -25,7 +24,7 @@ title: MainEditorView | 主编辑器界面
 
 获取当前在钢琴卷帘中打开的音轨（`Track`）。
 
-##### 返回值：
+##### 返回：
 
 类型	[Track](https://resource.dreamtonics.com/scripting/Track.html)
 
@@ -35,7 +34,7 @@ title: MainEditorView | 主编辑器界面
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -43,7 +42,7 @@ title: MainEditorView | 主编辑器界面
 
 获取钢琴卷帘的 [`CoordinateSystem`](https://resource.dreamtonics.com/scripting/CoordinateSystem.html) （坐标系统对象）。
 
-##### 返回值：
+##### 返回：
 
 类型	[CoordinateSystem](https://resource.dreamtonics.com/scripting/CoordinateSystem.html)
 
@@ -53,7 +52,7 @@ title: MainEditorView | 主编辑器界面
 
 获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回值：
+##### 返回：
 
 类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
 
@@ -61,7 +60,7 @@ title: MainEditorView | 主编辑器界面
 
 获取钢琴卷帘中选择状态的对象。
 
-##### 返回值：
+##### 返回：
 
 类型	[TrackInnerSelectionState](https://resource.dreamtonics.com/scripting/TrackInnerSelectionState.html)
 
@@ -71,7 +70,7 @@ title: MainEditorView | 主编辑器界面
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 

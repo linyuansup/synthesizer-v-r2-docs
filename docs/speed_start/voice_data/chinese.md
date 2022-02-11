@@ -4,7 +4,7 @@ title: 中文声库
 
 ## 声库详情
 
-目前，中文声库有赤羽、海伊、苍穹、诗岸、牧心、星尘 Minus、青溯、艾可、星尘 Infinity，他们的详细信息如下：
+目前，中文声库有赤羽、海伊、苍穹、诗岸、牧心、星尘 Minus、星尘 Infinity、青溯、艾可，他们的详细信息如下：
 
 ### 非 AI 声库
 
@@ -28,12 +28,12 @@ title: 中文声库
 
 | 声库 | 声源 | 所属组织 | 自动音高调校 | 最新版本 |
 | --- | --- | --- | --- | --- |
-| 青溯 <br/> Qingsu |  | Dreamtonics | 第 4 代 | ver.100 |
+| 青溯 <br/> Qingsu |  | Dreamtonics | 第 5 代 | ver.103 |
 
 ### 未发售声库
 | 声库  | 声源 | 所属组织 | 相关情报 |
 | --- | --- | --- | --- |
-| 星尘 Infinity <br/>  Infinity | 茶理理 | 五维介质 | 预计 2022 寒假发售 |
+| 星尘 Infinity <br/>  Infinity | 茶理理 | 五维介质 | 预售已开始 |
 
 ## 购买完整版
 
@@ -46,6 +46,7 @@ title: 中文声库
  * 牧心：[明日](https://www.bilibili.com/video/BV1R64y1F7yh)
  * 艾可：[与你的2次元旅行](https://www.bilibili.com/video/BV1mb41117LM)
  * 青溯：[一生所幸](https://www.bilibili.com/video/BV1eh411J74T)
+ * 星尘 Infinity：[零和Zero-Sum](https://www.bilibili.com/video/BV1f5411f7Cr) 、[淋雨一直走](https://www.bilibili.com/video/BV1pL4y1t7W6) 、[残响散歌](https://www.bilibili.com/video/BV1ET4y1y7ss) 、[7 rings](https://www.bilibili.com/video/BV1i34y117b5)
 
  :::tip
  以下为 R1 版本试听曲，不代表最终质量
@@ -61,4 +62,4 @@ title: 中文声库
 
   * Animen：[台湾代理](https://www.anicute.com/)
   * 五维介质：[官方淘宝商城](https://item.taobao.com/item.htm?id=622045467110)
-  * Dreamtonics：[官方淘宝商城](https://dreamtonics.taobao.com/shop/view_shop.htm?id=2212881578559)
+  * Dreamtonics：[官方淘宝商城](https://dreamtonics-cn.taobao.com/)

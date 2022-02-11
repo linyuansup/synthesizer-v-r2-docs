@@ -1,198 +1,259 @@
 ---
-title: CoordinateSystem | 坐标系
+title: CoordinateSystem
 ---
-# CoordinateSystem
 
-## CoordinateSystem
+## 坐标系
 
 用于浏览二维可滚动区域的一个 UI（用户界面）状态对象，该区域的x轴为时间，y轴为数值。
 
-其被应用于钢琴卷帘（[`MainEditorView`](https://resource.dreamtonics.com/scripting/MainEditorView.html)）和编辑区域（[`ArrangementView`](https://resource.dreamtonics.com/scripting/ArrangementView.html)）。以上两种情况中，x轴的单位均为blicks。但编辑区域仅使用 `CoordinateSystem` （坐标系）的x轴。
+其被应用于 [钢琴卷帘](main_editor_view.md) 和 [编辑区域](arrangement_view.md) 。以上两种情况中，x 轴的单位均为 blicks。但编辑区域仅使用 `坐标系` 的 x 轴。
 
-### 扩展
+## 扩展
 
-- [NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)
+ * [嵌套对象](nested_object.md)
 
-### 方法
+## 方法
 
-#### getIndexInParent() → {number}
+```js
+getIndexInParent() → {number}
+```
 
-> 继承自：[NestedObject#getIndexInParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getIndexInParent)
+> 继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
-获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
+获取当前对象在其父对象中的索引。对 Lua，该索引值从 1 开始。对 JavaScript，该索引值从 0 开始。
 
-##### 返回值：
+#### 返回：
 
-类型	number
+类型：数字
 
-#### getParent() → {[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)|undefined}
+---
 
-> 继承自：[NestedObject#getParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getParent)
+```js
+getParent() → {NestedObject|undefined}
+```
 
-获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+> 继承自：[嵌套对象 - getParent](nested_object.md)
 
-##### 返回值：
+获取父 [NestedObject](nested_object.md)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
+#### 返回：
 
-#### getTimePxPerUnit() → {number}
+类型：[NestedObject](nested_object.md) | undefined
+
+---
+
+```js
+getTimePxPerUnit() → {number}
+```
 
 获取水平方向上的比例系数。
 
-其单位为“像素/blick”，因此应该会是一个很小的数。
+其单位为像素 / blicks，因此应该会是一个很小的数。
 
-##### 返回值：
+#### 返回：
 
-类型	number
+类型：数
 
-#### getTimeViewRange() → {array}
+---
 
-获取当前可见的时间范围。其会返回一个包含两个 `number` 元素的数组，分别对应起始和结束时间。时间单位为blicks。
+```js
+getTimeViewRange() → {array}
+```
 
-##### 返回值：
+获取当前可见的时间范围。其会返回一个包含两个 `number` 元素的数组，分别对应起始和结束时间。时间单位为 blicks。
 
-一个 `number` 型`array（数组）`
+#### 返回：
 
-类型	array
+一个 `number` 型数组。
 
-#### getValuePxPerUnit() → {number}
+类型：数组
+
+---
+
+```js
+getValuePxPerUnit() → {number}
+```
 
 获取竖直方向上的比例系数。
 
-对于钢琴卷帘，其单位为“像素/半音”。
+对于钢琴卷帘，其单位为“像素 / 半音”。
 
-##### 返回值：
+#### 返回：
 
-类型	number
+类型：数
 
-#### getValueViewRange() → {array}
+---
 
-获取当前可见的数值范围。其会返回一个包含两个 `number` 元素的数组，分别对应最下端和最上端对应的值。对钢琴卷帘，其单位为MIDI数值（半音）；对编辑界面，其值没有意义。
+```js
+getValueViewRange() → {array}
+```
 
-##### 返回值：
+获取当前可见的数值范围。其会返回一个包含两个 `number` 元素的数组，分别对应最下端和最上端对应的值。对钢琴卷帘，其单位为 MIDI 数值（半音）；对编辑界面，其值没有意义。
 
-一个 `number` 型`array（数组）`
+#### 返回：
 
-类型	array
+一个 `number` 型数组
 
-#### isMemoryManaged() → {boolean}
+类型：数组
 
-> 继承自：[NestedObject#isMemoryManaged](https://resource.dreamtonics.com/scripting/NestedObject.html#isMemoryManaged)
+---
+
+```js
+isMemoryManaged() → {boolean}
+```
+
+> 继承自：[嵌套对象 - isMemoryManaged](nested_object.md)
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+#### 返回：
 
-类型	boolean
+类型：布尔
 
-#### setTimeLeft(time)
+---
+
+```js
+setTimeLeft(time)
+```
 
 将可见区域移动至其左端位于 `time` 。
 
-##### 参数：
+#### 参数：
 
-| 名称   | 类型   | 描述 |
-| :----- | :----- | :--- |
-| `time` | number |      |
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `time` | number |  |
 
-#### setTimeRight(time)
+---
+
+```js
+setTimeRight(time)
+```
 
 将可见区域移动至其右端位于 `time` 。
 
 ##### 参数：
 
-| 名称   | 类型   | 描述 |
-| :----- | :----- | :--- |
-| `time` | number |      |
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `time` | number |  |
 
-#### setTimeScale(scale)
+---
+
+```js
+setTimeScale(scale)
+```
 
 将水平比例系数设置为 `scale` 。
 
-其单位为“像素/blick”，因此应该会是一个很小的数。
+其单位为像素 / blick，因此应该会是一个很小的数。
 
-##### 参数：
+#### 参数：
 
-| 名称    | 类型   | 描述 |
-| :------ | :----- | :--- |
-| `scale` | number |      |
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `scale` | number |  |
 
-#### setValueCenter(v)
+---
+
+```js
+setValueCenter(v)
+```
 
 将当前可见区域移动至竖直方向中心在 `v` 处。
 
-##### 参数：
+#### 参数：
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `v`  | number |      |
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `v` | number |  |
 
-#### snap(b) → {number}
+---
+
+```js
+snap(b) → {number}
+```
 
 根据捕获的设定，对时间点 `b` 进行四舍五入。
 
-##### 参数：
+#### 参数：
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `b`  | number |      |
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `b`  | number |  |
 
-##### 返回值：
+#### 返回：
 
-类型	number
+类型：数
 
-#### t2x(t) → {number}
+---
 
-将一个时间点转换为一个x轴位置（单位为像素）。
+```js
+t2x(t) → {number}
+```
 
-##### 参数：
+将一个时间点转换为一个 x 轴位置（单位为像素）。
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `t`  | number |      |
+#### 参数：
 
-##### 返回值：
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `t` | number |  |
 
-类型	number
+#### 返回：
 
-#### v2y(v) → {number}
+类型：数
 
-将一个数值转换为一个y轴位置（单位为像素）。
+---
 
-##### 参数：
+```js
+v2y(v) → {number}
+```
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `v`  | number |      |
+将一个数值转换为一个 y 轴位置（单位为像素）。
 
-##### 返回值：
+#### 参数：
 
-类型	number
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `v` | number |  |
 
-#### x2t(x) → {number}
+#### 返回：
 
-将一个x轴位置（单位为像素）转换为一个时间点。
+类型：数
 
-##### 参数：
+---
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `x`  | number |      |
+```js
+x2t(x) → {number}
+```
 
-##### 返回值：
+将一个 x 轴位置（单位为像素）转换为一个时间点。
 
-类型	number
+#### 参数：
 
-#### y2v(y) → {number}
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `x` | number |  |
 
-将一个y轴位置（单位为像素）转换为一个数值。
+#### 返回：
 
-##### 参数：
+类型：数
 
-| 名称 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `y`  | number |      |
+---
 
-##### 返回值：
+```js
+y2v(y) → {number}
+```
 
-类型	number
+将一个 y 轴位置（单位为像素）转换为一个数值。
+
+#### 参数：
+
+| 名称 | 类型 | 描述 |
+| --- | --- | --- |
+| `y` | number |  |
+
+#### 返回：
+
+类型：数

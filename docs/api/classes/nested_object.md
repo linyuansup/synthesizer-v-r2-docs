@@ -1,9 +1,8 @@
 ---
-title: NestedObject | 嵌套对象
+title: NestedObject
 ---
-# NestedObject
 
-## NestedObject
+## 嵌套对象
 
 `NestedObject` 是所有可在宿主（Synthesizer V Studio）和客户端（脚本环境）之间传递的对象的基类。其实现了一个用于索引项目内任何内容的树状结构。此外，部分UI（用户界面）元素同样通过 `NestedObject` 接口对外连接。
 
@@ -13,7 +12,7 @@ title: NestedObject | 嵌套对象
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -21,7 +20,7 @@ title: NestedObject | 嵌套对象
 
 获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -29,7 +28,7 @@ title: NestedObject | 嵌套对象
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+##### 返回：
 
 类型	boolean
 

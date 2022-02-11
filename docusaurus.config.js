@@ -7,7 +7,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '编辑器信息适配到 Synthesizer V Studio 1.5.0，更新于 2021 / 12 / 26',
+  tagline: '新年快乐！脚本 API 文档即将完工！',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -178,7 +178,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2021 / 12 / 26 适配到 Synthesizer V Studio 1.5.0`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 01 / 31 适配到 Synthesizer V Studio 1.5.0`,
       },
       prism: {
         theme: lightCodeTheme,
