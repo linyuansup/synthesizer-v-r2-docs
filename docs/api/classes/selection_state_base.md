@@ -1,8 +1,8 @@
 ---
-title: SelectionStateBase | 选择状态基础接口
+title: SelectionStateBase
 ---
 
-## 选择状态基础接口 | SelectionStateBase
+## 选择状态基础接口
 
 选择状态的基本接口。
 
