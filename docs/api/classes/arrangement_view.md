@@ -26,8 +26,6 @@ getIndexInParent() → {number}
 
 类型：数字
 
----
-
 ### getNavigation
 
 ```js
@@ -39,8 +37,6 @@ getNavigation() → {CoordinateSystem}
 #### 返回：
 
 类型：[CoordinateSystem](coordinate_system.md)
-
----
 
 ### getParent
 
@@ -55,8 +51,6 @@ getParent() → {NestedObject|undefined}
 
 类型：[NestedObject](nested_object.md) | undefined
 
----
-
 ### getSelection
 
 ```js
@@ -68,8 +62,6 @@ getSelection() → {ArrangementSelectionState}
 #### 返回：
 
 类型：[ArrangementSelectionState](arrangement_selection_state.md)
-
----
 
 ### isMemoryManaged
 

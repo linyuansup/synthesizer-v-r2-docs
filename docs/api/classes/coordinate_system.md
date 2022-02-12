@@ -28,8 +28,6 @@ getIndexInParent() → {number}
 
 类型：数字
 
----
-
 ### getParent
 
 ```js
@@ -43,8 +41,6 @@ getParent() → {NestedObject|undefined}
 #### 返回：
 
 类型：[NestedObject](nested_object.md) | undefined
-
----
 
 ### getTimePxPerUnit
 
@@ -60,8 +56,6 @@ getTimePxPerUnit() → {number}
 
 类型：数
 
----
-
 ### getTimeViewRange
 
 ```js
@@ -75,8 +69,6 @@ getTimeViewRange() → {array}
 一个 `number` 型数组。
 
 类型：数组
-
----
 
 ### getValuePxPerUnit
 
@@ -92,8 +84,6 @@ getValuePxPerUnit() → {number}
 
 类型：数
 
----
-
 ### getValueViewRange
 
 ```js
@@ -107,8 +97,6 @@ getValueViewRange() → {array}
 一个 `number` 型数组
 
 类型：数组
-
----
 
 ### isMemoryManaged
 
@@ -124,8 +112,6 @@ isMemoryManaged() → {boolean}
 
 类型：布尔
 
----
-
 ### setTimeLeft
 
 ```js
@@ -136,11 +122,9 @@ setTimeLeft(time)
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `time` | number |  |
-
----
 
 ### setTimeRight
 
@@ -152,11 +136,9 @@ setTimeRight(time)
 
 ##### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `time` | number |  |
-
----
 
 ### setTimeScale
 
@@ -170,11 +152,9 @@ setTimeScale(scale)
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `scale` | number |  |
-
----
 
 ### setValueCenter
 
@@ -186,11 +166,9 @@ setValueCenter(v)
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `v` | number |  |
-
----
 
 ### snap
 
@@ -202,15 +180,13 @@ snap(b) → {number}
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `b`  | number |  |
 
 #### 返回：
 
 类型：数
-
----
 
 ### t2x
 
@@ -222,15 +198,13 @@ t2x(t) → {number}
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `t` | number |  |
 
 #### 返回：
 
 类型：数
-
----
 
 ### v2y
 
@@ -242,15 +216,13 @@ v2y(v) → {number}
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `v` | number |  |
 
 #### 返回：
 
 类型：数
-
----
 
 ### x2t
 
@@ -262,15 +234,13 @@ x2t(x) → {number}
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `x` | number |  |
 
 #### 返回：
 
 类型：数
-
----
 
 ### y2v
 
@@ -282,7 +252,7 @@ y2v(y) → {number}
 
 #### 参数：
 
-| 名称 | 类型 | 描述 |
+| 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | `y` | number |  |
 

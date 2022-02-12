@@ -70,7 +70,7 @@ title: PlaybackControl
 
 ##### 参数：
 
-| 名称     | 类型   | 描述 |
+| 参数名     | 类型   | 描述 |
 | :------- | :----- | :--- |
 | `tBegin` | number |      |
 | `tEnd`   | number |      |
@@ -91,7 +91,7 @@ title: PlaybackControl
 
 ##### 参数：
 
-| 名称 | 类型   | 描述 |
+| 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
 | `t`  | number |      |
 

@@ -152,7 +152,7 @@ title: NoteGroupReference
 
 ##### 参数：
 
-| 名称          | 类型   | 描述 |
+| 参数名          | 类型   | 描述 |
 | :------------ | :----- | :--- |
 | `pitchOffset` | number |      |
 
@@ -164,7 +164,7 @@ title: NoteGroupReference
 
 ##### 参数：
 
-| 名称    | 类型                                                         | 描述 |
+| 参数名    | 类型                                                         | 描述 |
 | :------ | :----------------------------------------------------------- | :--- |
 | `group` | [NoteGroup](https://resource.dreamtonics.com/scripting/NoteGroup.html) |      |
 
@@ -174,6 +174,6 @@ title: NoteGroupReference
 
 ##### 参数：
 
-| 名称         | 类型   | 描述 |
+| 参数名         | 类型   | 描述 |
 | :----------- | :----- | :--- |
 | `attributes` | object |      |

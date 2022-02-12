@@ -31,8 +31,6 @@ add(b, v) → {boolean}
 #### 返回：
 类型：布尔
 
----
-
 ```js
 clone() → {Automation}
 ```
@@ -41,8 +39,6 @@ clone() → {Automation}
 
 #### 返回：
 类型：[Automation](automation.md)
-
----
 
 ```js
 get(b) → {number}

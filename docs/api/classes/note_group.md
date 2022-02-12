@@ -20,7 +20,7 @@ title: NoteGroup
 
 ##### 参数：
 
-| 名称   | 类型                                                         | 描述 |
+| 参数名   | 类型                                                         | 描述 |
 | :----- | :----------------------------------------------------------- | :--- |
 | `note` | [Note](https://resource.dreamtonics.com/scripting/Note.html) |      |
 
@@ -48,7 +48,7 @@ title: NoteGroup
 
 #### getName() → {string}
 
-获取该 `NoteGroup（音符组）` 的用户指定名称。
+获取该 `NoteGroup（音符组）` 的用户指定参数名。
 
 ##### 返回：
 
@@ -60,7 +60,7 @@ title: NoteGroup
 
 ##### 参数：
 
-| 名称    | 类型   | 描述 |
+| 参数名    | 类型   | 描述 |
 | :------ | :----- | :--- |
 | `index` | number |      |
 
@@ -86,7 +86,7 @@ title: NoteGroup
 
 ##### Parameters:
 
-| 名称   | 类型   | 描述 |
+| 参数名   | 类型   | 描述 |
 | :----- | :----- | :--- |
 | `type` | string |      |
 
@@ -106,7 +106,7 @@ title: NoteGroup
 
 #### getUUID() → {string}
 
-获取UUID（Universally Unique Identifier，即通用唯一识别码）。与名称不同，一个UUID在整个项目中都是唯一的，而且可以用来将一个 [`NoteGroupReference（音符组引用）`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 和一个 `NoteGroup（音符组）` 关联起来。
+获取UUID（Universally Unique Identifier，即通用唯一识别码）。与参数名不同，一个UUID在整个项目中都是唯一的，而且可以用来将一个 [`NoteGroupReference（音符组引用）`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 和一个 `NoteGroup（音符组）` 关联起来。
 
 一个 UUID 差不多长这样："ab85d637-d80b-4628-9c27-007ea74029af"。
 
@@ -130,7 +130,7 @@ title: NoteGroup
 
 ##### 参数：
 
-| 名称    | 类型   | 描述 |
+| 参数名    | 类型   | 描述 |
 | :------ | :----- | :--- |
 | `index` | number |      |
 
@@ -140,7 +140,7 @@ title: NoteGroup
 
 ##### 参数：
 
-| 名称   | 类型   | 描述 |
+| 参数名   | 类型   | 描述 |
 | :----- | :----- | :--- |
 | `name` | string |      |
 

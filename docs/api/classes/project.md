@@ -18,7 +18,7 @@ title: Project
 
 ##### 参数：
 
-| 名称             | 类型                                                         | 描述     |
+| 参数名             | 类型                                                         | 描述     |
 | :--------------- | :----------------------------------------------------------- | :------- |
 | `group`          | [NoteGroup](https://resource.dreamtonics.com/scripting/NoteGroup.html) |          |
 | `suggestedIndex` | number                                                       | （可选） |
@@ -33,7 +33,7 @@ title: Project
 
 ##### 参数：
 
-| 名称    | 类型                                                         | 描述 |
+| 参数名    | 类型                                                         | 描述 |
 | :------ | :----------------------------------------------------------- | :--- |
 | `track` | [Track](https://resource.dreamtonics.com/scripting/Track.html) |      |
 
@@ -75,7 +75,7 @@ title: Project
 
 ##### 参数：
 
-| 名称 | 类型             | 描述 |
+| 参数名 | 类型             | 描述 |
 | :--- | :--------------- | :--- |
 | `id` | number \| string |      |
 
@@ -125,7 +125,7 @@ title: Project
 
 ##### 参数：
 
-| 名称    | 类型   | 描述 |
+| 参数名    | 类型   | 描述 |
 | :------ | :----- | :--- |
 | `index` | number |      |
 
@@ -155,7 +155,7 @@ title: Project
 
 ##### 参数：
 
-| 名称    | 类型   | 描述 |
+| 参数名    | 类型   | 描述 |
 | :------ | :----- | :--- |
 | `index` | number |      |
 
@@ -163,6 +163,6 @@ title: Project
 
 从该 `Project（项目）` 中移除第 `index` 个 [`Track（音轨）`](https://resource.dreamtonics.com/scripting/Track.html) 。
 
-| 名称    | 类型   | 描述 |
+| 参数名    | 类型   | 描述 |
 | :------ | :----- | :--- |
 | `index` | number |      |

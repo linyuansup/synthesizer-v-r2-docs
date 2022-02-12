@@ -148,7 +148,7 @@ const config = {
               },
               {
                 label: 'bpm 测速工具',
-                href: 'http://www.bq186.com/bpm/'
+                href: 'https://www.freejishu.com/tools/bpm.html'
               },
               {
                 label: '汉拼转换',
@@ -178,7 +178,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 11 适配到 Synthesizer V Studio 1.5.0`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 12 适配到 Synthesizer V Studio 1.5.0`,
       },
       prism: {
         theme: lightCodeTheme,

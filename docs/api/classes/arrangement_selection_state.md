@@ -31,8 +31,6 @@ clearAll() → {boolean}
 #### 返回：
 类型：布尔
 
----
-
 ### clearGroups
 
 ```js
@@ -46,8 +44,6 @@ clearGroups() → {boolean}
 #### 返回：
 
 类型：布尔
-
----
 
 ### getIndexInParent
 
@@ -63,8 +59,6 @@ getIndexInParent() → {number}
 
 类型：数字
 
----
-
 ### getParent
 
 ```js
@@ -73,13 +67,11 @@ getParent() → {NestedObject|undefined}
 
 >继承自：[嵌套对象 - getParent](nested_object.md)
 
-获取父级 [NestedObject](nested_object.md) 对象。如果不存在则返回 `undefined`。
+获取父级 [嵌套对象](nested_object.md) 。如果不存在则返回 `undefined`。
 
 #### 返回：
 
-类型：[NestedObject](nested_object.md) | undefined
-
----
+类型：[嵌套对象](nested_object.md) | undefined
 
 ### getSelectedGroups
 
@@ -89,15 +81,13 @@ getSelectedGroups() → {array}
 
 >继承自：[音符组选择 - getSelectedGroups](group_selection.md)
 
-按照选择顺序获取所选的 [NoteGroupReference](note_group_reference.md) 数组。
+按照选择顺序获取所选的 [音符组引用](note_group_reference.md) 数组。
 
 #### 返回：
 
-一个 [NoteGroupReference](note_group_reference.md) 数组。
+一个 [音符组引用](note_group_reference.md) 数组。
 
 类型：数组
-
----
 
 ### hasSelectedContent
 
@@ -113,8 +103,6 @@ hasSelectedContent() → {boolean}
 
 类型：布尔
 
----
-
 ### hasSelectedGroups
 
 ```js
@@ -128,8 +116,6 @@ hasSelectedGroups() → {boolean}
 #### 返回：
 
 类型：布尔
-
----
 
 ### hasUnfinishedEdits
 
@@ -145,8 +131,6 @@ hasUnfinishedEdits() → {boolean}
 
 类型：布尔
 
----
-
 ### isMemoryManaged
 
 ```js
@@ -161,8 +145,6 @@ isMemoryManaged() → {boolean}
 
 类型：布尔
 
----
-
 ### SelectedGroup
 
 ```js
@@ -171,7 +153,7 @@ selectGroup(reference)
 
 >继承自：[音符组选择 - selectGroup](group_selection.md)
 
-向选择的内容添加一个 [NoteGroupReference](note_group_reference.md) 对象。
+向选择的内容添加一个 [音符组引用](note_group_reference.md) 对象。
 
 该参数必须是当前打开的项目的一部分。
 
@@ -179,9 +161,7 @@ selectGroup(reference)
 
 | 参数名 | 类型 | 描述 |
 | --- | --- | --- |
-| `reference` | [NoteGroupReference](note_group_reference.md) |  |
-
----
+| `reference` | [音符组引用](note_group_reference.md) |  |
 
 ### unselectGroup
 
@@ -191,13 +171,13 @@ unselectGroup(reference) → {boolean}
 
 >继承自：[音符组选择 - unselectGroup](group_selection.md)
 
-取消选择一个 [NoteGroupReference](note_group_reference.md) 对象。如果选择改变则返回 true。
+取消选择一个 [音符组引用](note_group_reference.md) 对象。如果选择改变则返回 true。
 
 #### 参数：
 
 | 参数名 | 类型 | 描述 |
 | --- | --- | --- |
-| `reference` | [NoteGroupReference](note_group_reference.md) |  |
+| `reference` | [音符组引用](note_group_reference.md) |  |
 
 #### 返回：
 

@@ -136,7 +136,7 @@ note.setAttributes({
 
 ##### 参数：
 
-| 名称     | 类型       | 描述                                                         |
+| 参数名     | 类型       | 描述                                                         |
 | :------- | :--------- | :----------------------------------------------------------- |
 | `object` | attributes | 定义见 [`Note#getAttributes`](https://resource.dreamtonics.com/scripting/Note.html#getAttributes) |
 
@@ -146,7 +146,7 @@ note.setAttributes({
 
 ##### 参数：
 
-| 名称 | 类型   | 描述 |
+| 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
 | `t`  | number |      |
 
@@ -154,7 +154,7 @@ note.setAttributes({
 
 更改歌词。
 
-| 名称     | 类型   | 描述 |
+| 参数名     | 类型   | 描述 |
 | :------- | :----- | :--- |
 | `lyrics` | string |      |
 
@@ -164,7 +164,7 @@ note.setAttributes({
 
 ##### 参数：
 
-| 名称 | 类型   | 描述 |
+| 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
 | `t`  | number |      |
 
@@ -174,7 +174,7 @@ note.setAttributes({
 
 ##### 参数：
 
-| 名称          | 类型   | 描述 |
+| 参数名          | 类型   | 描述 |
 | :------------ | :----- | :--- |
 | `pitchNumber` | number |      |
 
@@ -184,7 +184,7 @@ note.setAttributes({
 
 ##### 参数：
 
-| 名称       | 类型   | 描述 |
+| 参数名       | 类型   | 描述 |
 | :--------- | :----- | :--- |
 | `onset`    | number |      |
 | `duration` | number |      |
