@@ -4,7 +4,7 @@ title: 编辑器下载
 
 由于 Pro 版本的编辑器需要付费购买，我们在这里只提供了 Basic 版本的编辑器下载。
 
-在国内购买 Pro 版本的编辑器，请访问 [五维介质官方淘宝商城](https://item.taobao.com/item.htm?id=622045467110)
+在国内购买 Pro 版本的编辑器，请访问 [五维介质官方淘宝商城](https://item.taobao.com/item.htm?id=622045467110) 以及 [Dreamtonics 官方淘宝商城](https://dreamtonics-cn.taobao.com/)
 
 | 版本号 | 下载点 1 |
 | --- | --- |
@@ -15,3 +15,7 @@ title: 编辑器下载
 | 1.2.4 | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ESt-RN-Eo1xLo2jk4AoXXc8BAicZCI2wMw-neE-e2SV0lw?e=BZ6XgZ) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EY0ViKwZtnpLsM_QP6ON1tABZI5KnkFEl3SjjvjTNlRcwg?e=5iJJmN) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EfqxH5dPvIRPjEL6xDzOE0gBcTi9CEw7WcW73ndH0oBWOw?e=EAoWoE) |
 
   * 下载点 1 为 OneDrive 地址（世纪互联），已经进行国内加速
+
+:::tip
+1.2.4 之前的版本由于一些安全问题，暂不提供下载
+:::
