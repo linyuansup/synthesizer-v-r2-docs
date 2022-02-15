@@ -41,6 +41,7 @@ const sidebars = {
   ],
   api_sidebar: [
     'api/about',
+    'api/usage_summary',
     {
       type: 'category',
       label: '概览',
