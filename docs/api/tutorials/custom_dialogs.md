@@ -14,3 +14,17 @@ title: 对话框
   * `widgets`：`array` 对话框主体中显示的一组小部件。
 
 欲了解更多信息，请参阅 [JavaScript 示例](https://github.com/Dreamtonics/svstudio-scripts/blob/master/Tests/TestCustomDialog.js) 和 [Lua 示例](https://github.com/Dreamtonics/svstudio-scripts/blob/master/Tests/TestCustomDialog.lua)。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

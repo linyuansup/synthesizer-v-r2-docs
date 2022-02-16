@@ -79,3 +79,17 @@ title: 日文声库
   * Animen：[台湾代理](https://www.anicute.com/)
   * AH-Software：[官方商城（日本）](https://www.ah-soft.com/product/series.html#synth-v)（不支持微信支付）
   * Dreamtonics：[官方淘宝商城](https://dreamtonics-cn.taobao.com/)
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

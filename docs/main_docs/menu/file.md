@@ -89,3 +89,17 @@ Synthesizer V Studio 与 VOCALOID 的中央 C 标准不同，这导致 VOCALOID 
 将当前 **音符组** 的内容导出为 UST 文件。
 
 如果你需要导出所有内容到 UST 文件，那么请解散所有音符组。有关音符组的内容，请参考 [音符组概述 音符组库](../sidebar/note_properties.md) 。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

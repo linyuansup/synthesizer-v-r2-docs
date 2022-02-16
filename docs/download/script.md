@@ -99,3 +99,17 @@ title: 脚本下载
 :::tip
 对于播放杆对应的音符，将会从播放杆处分割。对于非播放杆对应的音符，将会从中间分割
 :::
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';
