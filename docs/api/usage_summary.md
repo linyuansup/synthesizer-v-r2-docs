@@ -2,8 +2,6 @@
 title: 用法综述
 ---
 
-import Mermaid from '@theme/Mermaid';
-
 # 用法综述
 
 这个页面总结了一些类的用法和技巧。
@@ -196,3 +194,18 @@ myForm.widgets[2].choices.unshift("而这个选项则会被添加到开头，其
 ### {TimeAxis}.getMeasureMarkAtBlick(b) → {object}
 
 略
+
+import Mermaid from '@theme/Mermaid';
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>

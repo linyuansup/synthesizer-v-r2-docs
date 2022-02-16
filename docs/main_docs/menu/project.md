@@ -63,3 +63,17 @@ mp3 的原理导致无法使用采样级定位，这可能会导致你无论如�
 切换到当前轨道里的音符组，其中上一个组 / 下一个组与上一个音轨 / 下一个音轨类似。
 
 同时，你还可以根据音符组的名称选择要进入的音符组。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

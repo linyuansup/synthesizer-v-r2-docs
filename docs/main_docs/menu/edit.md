@@ -58,3 +58,17 @@ Synthesizer V Studio 的所有参数以控制点的形式存在，因此可能�
 将已复制的内容粘贴到设定的位置。
 
 您可以在设置中改变默认粘贴方式。详见 [设置](../sidebar/settings.md) 。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

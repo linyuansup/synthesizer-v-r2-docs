@@ -117,3 +117,17 @@ AU 和 VST3 插件仅存在于 Pro 版本。如果是 Basic 版本，则只包�
 声库安装完成后会自动弹出授权与激活对话框，在这里可以找到你安装的声库。
 
 ![安装结果](/docs/speed_start/install/17.png)
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

@@ -39,3 +39,17 @@ Synthesizer V Studio 的菜单栏如下
 同时，部分复选菜单之间是存在冲突的。也就是说，当你选择了其中一项之后，其他项会被自动取消选择，如下图。
 
 ![复选菜单冲突](/docs/main_docs/menu/about/4.png)
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';
