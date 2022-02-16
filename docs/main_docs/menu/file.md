@@ -96,7 +96,7 @@ Synthesizer V Studio 与 VOCALOID 的中央 C 标准不同，这导致 VOCALOID 
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
-    id: title,
+    id: decodeURI(location.pathname),
     }} />}
 </BrowserOnly>
 

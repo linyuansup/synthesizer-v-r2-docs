@@ -8,7 +8,7 @@ title: 音轨
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
-    id: title,
+    id: decodeURI(location.pathname),
     }} />}
 </BrowserOnly>
 

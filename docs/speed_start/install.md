@@ -124,7 +124,7 @@ AU 和 VST3 插件仅存在于 Pro 版本。如果是 Basic 版本，则只包�
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
-    id: title,
+    id: decodeURI(location.pathname),
     }} />}
 </BrowserOnly>
 
