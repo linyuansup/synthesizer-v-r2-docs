@@ -63,6 +63,7 @@ Lua API 基于元表，调用方式是 `Class:Method(...)` 。
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 

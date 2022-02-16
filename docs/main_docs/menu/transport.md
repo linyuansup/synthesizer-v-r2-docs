@@ -40,6 +40,7 @@ title: 播放控制
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 

@@ -70,6 +70,7 @@ mp3 的原理导致无法使用采样级定位，这可能会导致你无论如�
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 

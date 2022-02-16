@@ -86,6 +86,7 @@ title: 自动处理
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 

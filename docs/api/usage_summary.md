@@ -207,5 +207,6 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>

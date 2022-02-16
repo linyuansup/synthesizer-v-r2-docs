@@ -35,6 +35,7 @@ Synthesizer V Studio 的脚本系统使用了引用计数技术，以在宿主�
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 

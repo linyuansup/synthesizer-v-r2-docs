@@ -8,6 +8,8 @@ title: 气声
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
+    id: title,
     }} />}
 </BrowserOnly>
 

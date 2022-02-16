@@ -65,6 +65,7 @@ Synthesizer V Studio 的所有参数以控制点的形式存在，因此可能�
     repo: 'synthesizer-v-r2-docs',
     owner: 'linyuansup',
     admin: ['linyuansup'],
+    id: title,
     }} />}
 </BrowserOnly>
 
