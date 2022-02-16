@@ -4,11 +4,11 @@ title: Note
 
 ## 音符
 
-一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。其会被置于一个 [`NoteGroup`](https://resource.dreamtonics.com/scripting/NoteGroup.html) 中。
+一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。其会被置于一个 [`NoteGroup`](note_group.md) 中。
 
 ### 扩展
 
-- [NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)
+- [嵌套对象](nested_object.md)
 
 ### 方法
 
@@ -40,7 +40,7 @@ title: Note
 - `dur`: array of `number` 音素时长尺度
 - `alt`: array of `number` 可替换的音素发音
 
-如果该音符使用的是该音符组引用（[`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) ）的默认值，则对应属性的取值为 NaN。
+如果该音符使用的是该音符组引用（[`NoteGroupReference`](note_group_reference.md) ）的默认值，则对应属性的取值为 NaN。
 
 ##### 返回：
 
@@ -64,7 +64,7 @@ title: Note
 
 #### getIndexInParent() → {number}
 
-> 继承自：[NestedObject#getIndexInParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getIndexInParent)
+> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
@@ -84,15 +84,15 @@ title: Note
 
 类型	number
 
-#### getParent() → {[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)|undefined}
+#### getParent() → {[嵌套对象](nested_object.md)|undefined}
 
-> 继承自：[NestedObject#getParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getParent)
+> 继承自：[NestedObject#getParent](nested_object.md#getParent)
 
-获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
 ##### 返回：
 
-类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
+类型	[嵌套对象](nested_object.md) | undefined
 
 #### getPhonemes() → {string}
 
@@ -114,7 +114,7 @@ title: Note
 
 #### isMemoryManaged() → {boolean}
 
-> 继承自：[NestedObject#isMemoryManaged](https://resource.dreamtonics.com/scripting/NestedObject.html#isMemoryManaged)
+> 继承自：[NestedObject#isMemoryManaged](nested_object.md#isMemoryManaged)
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 

@@ -8,29 +8,29 @@ title: PlaybackControl
 
 ### 扩展
 
-- [NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)
+- [嵌套对象](nested_object.md)
 
 ### 方法
 
 #### getIndexInParent() → {number}
 
-> 继承自：[NestedObject#getIndexInParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getIndexInParent)
+> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
-#### getParent() → {[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)|undefined}
+#### getParent() → {[嵌套对象](nested_object.md)|undefined}
 
-> 继承自：[NestedObject#getParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getParent)
+> 继承自：[NestedObject#getParent](nested_object.md#getParent)
 
-获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回值：
+##### 返回：
 
-类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
+类型	[嵌套对象](nested_object.md) | undefined
 
 #### getPlayhead() → {number}
 
@@ -38,7 +38,7 @@ title: PlaybackControl
 
 想要以blicks的形式获取位置的话，就将其与当前项目的 [`TimeAxis（时间轴）`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 一起使用。
 
-##### 返回值：
+##### 返回：
 
 类型	number
 
@@ -50,17 +50,17 @@ title: PlaybackControl
 - "looping"（循环）
 - "stopped"（停止）
 
-##### 返回值：
+##### 返回：
 
 类型	string
 
 #### isMemoryManaged() → {boolean}
 
-> 继承自：[NestedObject#isMemoryManaged](https://resource.dreamtonics.com/scripting/NestedObject.html#isMemoryManaged)
+> 继承自：[NestedObject#isMemoryManaged](nested_object.md#isMemoryManaged)
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回值：
+##### 返回：
 
 类型	布尔
 

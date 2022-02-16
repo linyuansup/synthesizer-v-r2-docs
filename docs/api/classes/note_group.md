@@ -6,17 +6,17 @@ title: NoteGroup
 
 一组便于重复使用的成组的音符及其参数。
 
-要将 `NoteGroup（音符组）` 放入到一个 [`Track（轨道）`](https://resource.dreamtonics.com/scripting/Track.html) 中，其首先必须被封装到一个为其提供环境（如声音、语言、时间和音高偏移）的 [`NoteGroupReference（音符组引用）`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 中。
+要将 `音符组` 放入到一个 [`轨道`](track.md) 中，其首先必须被封装到一个为其提供环境（如声音、语言、时间和音高偏移）的 [`音符组引用`](note_group_reference.md) 中。
 
 ### 扩展
 
-- [NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)
+- [嵌套对象](nested_object.md)
 
 ### 方法
 
 #### addNote(note) → {number}
 
-将一个音符加入 `NoteGroup（音符组）` 内并返回被加入音符的索引。这些音符会按照起始位置升序排序。
+将一个音符加入 `音符组` 内并返回被加入音符的索引。这些音符会按照起始位置升序排序。
 
 ##### 参数：
 
@@ -28,17 +28,17 @@ title: NoteGroup
 
 类型	number
 
-#### clone() → {[NoteGroup](https://resource.dreamtonics.com/scripting/NoteGroup.html)}
+#### clone() → {[NoteGroup](note_group.md)}
 
 对当前对象的一个深复制。
 
 ##### 返回：
 
-类型	[NoteGroup](https://resource.dreamtonics.com/scripting/NoteGroup.html)
+类型	[NoteGroup](note_group.md)
 
 #### getIndexInParent() → {number}
 
-> 继承自：[NestedObject#getIndexInParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getIndexInParent)
+> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
@@ -48,7 +48,7 @@ title: NoteGroup
 
 #### getName() → {string}
 
-获取该 `NoteGroup（音符组）` 的用户指定参数名。
+获取该 `音符组` 的用户指定参数名。
 
 ##### 返回：
 
@@ -70,7 +70,7 @@ title: NoteGroup
 
 #### getNumNotes() → {number}
 
-获取该  `NoteGroup（音符组）` 内的音符数量。
+获取该  `音符组` 内的音符数量。
 
 ##### 返回：
 
@@ -94,19 +94,19 @@ title: NoteGroup
 
 类型	[Automation](https://resource.dreamtonics.com/scripting/Automation.html)
 
-#### getParent() → {[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html)|undefined}
+#### getParent() → {[嵌套对象](nested_object.md)|undefined}
 
-> 继承自：[NestedObject#getParent](https://resource.dreamtonics.com/scripting/NestedObject.html#getParent)
+> 继承自：[NestedObject#getParent](nested_object.md#getParent)
 
-获取父 [`NestedObject`](https://resource.dreamtonics.com/scripting/NestedObject.html) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
 ##### 返回：
 
-类型	[NestedObject](https://resource.dreamtonics.com/scripting/NestedObject.html) | undefined
+类型	[嵌套对象](nested_object.md) | undefined
 
 #### getUUID() → {string}
 
-获取UUID（Universally Unique Identifier，即通用唯一识别码）。与参数名不同，一个UUID在整个项目中都是唯一的，而且可以用来将一个 [`NoteGroupReference（音符组引用）`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) 和一个 `NoteGroup（音符组）` 关联起来。
+获取UUID（Universally Unique Identifier，即通用唯一识别码）。与参数名不同，一个UUID在整个项目中都是唯一的，而且可以用来将一个 [`音符组引用`](note_group_reference.md) 和一个 `音符组` 关联起来。
 
 一个 UUID 差不多长这样："ab85d637-d80b-4628-9c27-007ea74029af"。
 
@@ -116,7 +116,7 @@ title: NoteGroup
 
 #### isMemoryManaged() → {boolean}
 
-> 继承自：[NestedObject#isMemoryManaged](https://resource.dreamtonics.com/scripting/NestedObject.html#isMemoryManaged)
+> 继承自：[NestedObject#isMemoryManaged](nested_object.md#isMemoryManaged)
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 

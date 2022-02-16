@@ -8,7 +8,7 @@ title: TimeAxis
 
 ## 扩展
 
- * [NestedObject](nested_object.md)
+ * [嵌套对象](nested_object.md)
 
 ## 方法
 
@@ -113,7 +113,7 @@ getIndexInParent() → {number}
 
 #### 返回
 
-类型：number
+类型：数字
 
 ---
 
@@ -131,7 +131,7 @@ getMeasureAt(b) → {number}
 
 #### 返回
 
-类型：number
+类型：数字
 
 ---
 
@@ -207,7 +207,7 @@ getSecondsFromBlick(b) → {number}
 
 #### 返回
 
-类型：number
+类型：数字
 
 ---
 

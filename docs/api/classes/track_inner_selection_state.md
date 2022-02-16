@@ -175,7 +175,7 @@ selectGroup(reference)
 | --- | --- | --- |
 `reference`
 
-[NoteGroupReference](note_group_reference.md)
+[音符组引用](note_group_reference.md)
 
 #### selectNote(note)
 

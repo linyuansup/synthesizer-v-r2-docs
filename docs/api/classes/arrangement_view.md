@@ -36,7 +36,7 @@ getNavigation() → {CoordinateSystem}
 
 #### 返回：
 
-类型：[CoordinateSystem](coordinate_system.md)
+类型：[坐标系](coordinate_system.md)
 
 ### getParent
 
@@ -45,11 +45,11 @@ getParent() → {NestedObject|undefined}
 ```
 >继承自：[嵌套对象 - getParent](nested_object.md)
 
-获取父级 [NestedObject](nested_object.md) 对象。如果不存在则返回 `undefined`。
+获取父级 [嵌套对象](nested_object.md) 对象。如果不存在则返回 `undefined`。
 
 #### 返回：
 
-类型：[NestedObject](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | undefined
 
 ### getSelection
 

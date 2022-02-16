@@ -116,11 +116,11 @@ title: SV
 | `类型`                                                       | 描述                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | "[`Note`](https://resource.dreamtonics.com/scripting/Note.html)"（音符） | 一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。 |
-| "[`Automation`](https://resource.dreamtonics.com/scripting/Automation.html)"（自动化） | 音符组（[`NoteGroup`](https://resource.dreamtonics.com/scripting/NoteGroup.html)）中一组控制某个参数（比如音高偏移）的点。 |
-| "[`NoteGroup`](https://resource.dreamtonics.com/scripting/NoteGroup.html)"（音符组） | 一组便于重复使用的成组的音符及其参数。                       |
-| "[`NoteGroupReference`](https://resource.dreamtonics.com/scripting/NoteGroupReference.html)"（音符组引用） | 在某个时间、音高和声音/数据库属性下，对一个音符组进行的引用。 |
+| "[`Automation`](https://resource.dreamtonics.com/scripting/Automation.html)"（自动化） | 音符组（[`NoteGroup`](note_group.md)）中一组控制某个参数（比如音高偏移）的点。 |
+| "[`NoteGroup`](note_group.md)"（音符组） | 一组便于重复使用的成组的音符及其参数。                       |
+| "[`NoteGroupReference`](note_group_reference.md)"（音符组引用） | 在某个时间、音高和声音/数据库属性下，对一个音符组进行的引用。 |
 | "`TrackMixer`"（音轨混合器）                                 | 一组用于描述混合器状态的属性（如通道增益/音量、声像、静音、独奏）。 |
-| "[`Track`](https://resource.dreamtonics.com/scripting/Track.html)"（音轨） | 一个音符组的集合。                                           |
+| "[`Track`](track.md)"（音轨） | 一个音符组的集合。                                           |
 | "[`TimeAxis`](https://resource.dreamtonics.com/scripting/TimeAxis.html)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
 | "[`Project`](https://resource.dreamtonics.com/scripting/Project.html)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。             |
 
@@ -205,7 +205,7 @@ title: SV
 
 | 参数名    | 类型                                                         | 描述 |
 | :------ | :----------------------------------------------------------- | :--- |
-| `group` | [NoteGroupReference](https://resource.dreamtonics.com/scripting/NoteGroupReference.html) |      |
+| `group` | [音符组引用](note_group_reference.md) |      |
 
 ##### 返回：
 

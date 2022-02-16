@@ -36,11 +36,11 @@ getParent() → {NestedObject|undefined}
 
 > 继承自：[嵌套对象 - getParent](nested_object.md)
 
-获取父 [NestedObject](nested_object.md)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取父 [嵌套对象](nested_object.md)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
 #### 返回：
 
-类型：[NestedObject](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | undefined
 
 ### getTimePxPerUnit
 

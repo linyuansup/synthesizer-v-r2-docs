@@ -15,11 +15,11 @@ SV -- getMainEditor --> MEV[MainEditorView]
 SV -- getProject --> Prj[Project]
 SV -- getPlayback --> PBCtrl[PlayBackControl]
 ArrV -- getSelection --> ASSt[ArrangementSelectionState]
-ArrV -- getNavigation --> CSys[CoordinateSystem]
+ArrV -- getNavigation --> CSys[坐标系]
 MEV -- getNavigation --> CSys
-MEV -- getCurrentGroup --> NGrpR[NoteGroupReference]
+MEV -- getCurrentGroup --> NGrpR[音符组引用]
 MEV -- getSelection --> TISSt[TrackInnerSelectionState]
-MEV -- getCurrentTrack --> Trk[Track]
+MEV -- getCurrentTrack --> Trk[轨道]
 Prj -- getTrack --> Trk
 Prj -- getNoteGroup --> NGrp[NoteGroup]
 Prj -- getTimeAxis --> TAx[TimeAxis]
@@ -178,9 +178,9 @@ myForm.widgets[2].choices.unshift("而这个选项则会被添加到开头，其
 
 **返回的Object为Form Object的返回类型**
 
-自定义窗口的控件返回值通常为`{Object}.answers.{Widget Name}`
+自定义窗口的控件返回通常为`{Object}.answers.{Widget Name}`
 
-自定义窗口的按钮返回值通肠为`{Object}.status` → `"Yes" | "No"`
+自定义窗口的按钮返回通肠为`{Object}.status` → `"Yes" | "No"`
 
 > 参见 [Form（窗体）Object控件定义及返回](#Form（窗体）Object控件定义及返回)
 
