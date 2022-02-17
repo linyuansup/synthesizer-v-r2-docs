@@ -15,11 +15,11 @@ SV -- getMainEditor --> MEV[MainEditorView]
 SV -- getProject --> Prj[Project]
 SV -- getPlayback --> PBCtrl[PlayBackControl]
 ArrV -- getSelection --> ASSt[ArrangementSelectionState]
-ArrV -- getNavigation --> CSys[坐标系]
+ArrV -- getNavigation --> CSys[CoordinateSystem]
 MEV -- getNavigation --> CSys
-MEV -- getCurrentGroup --> NGrpR[音符组引用]
 MEV -- getSelection --> TISSt[TrackInnerSelectionState]
-MEV -- getCurrentTrack --> Trk[轨道]
+MEV -- getCurrentGroup --> NGrpR[NoteGroupReference]
+MEV -- getCurrentTrack --> Trk[Track]
 Prj -- getTrack --> Trk
 Prj -- getNoteGroup --> NGrp[NoteGroup]
 Prj -- getTimeAxis --> TAx[TimeAxis]
@@ -27,13 +27,15 @@ Trk -- getGroupReference --> NGrpR
 NGrpR -- getTarget --> NGrp
 NGrp -- getNote --> Nte[Note]
 NGrp -- getParameter --> Auto[Automation]
-ASSt --> GrpS{GroupSelection}
-TISSt --> GrpS{GroupSelection}
 ASSt --> SSB{SelectionStateBase}
-TISSt --> SSB{SelectionStateBase}
+ASSt --> GrpS{GroupSelection}
+TISSt ---> GrpS
+TISSt --> SSB
+GrpS -- getSelectedGroups --> NGrp
+TISSt -- getSelectedNotes --> Nte
 `}/>
 
-> Written with [StackEdit](https://stackedit.io/) by [ZAMBAR](https://space.bilibili.com/156494172).
+> 使用`getParent()`以获取父级，为排版方便，此图未列出。
 
 ### Form（窗体）Object控件定义及返回
 
