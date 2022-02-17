@@ -10,30 +10,60 @@ title: 用法综述
 
 <Mermaid chart={`
 graph LR
-SV[SV] -- getArrangement --> ArrV[ArrangementView]
-SV -- getMainEditor --> MEV[MainEditorView]
-SV -- getProject --> Prj[Project]
-SV -- getPlayback --> PBCtrl[PlayBackControl]
-ArrV -- getSelection --> ASSt[ArrangementSelectionState]
-ArrV -- getNavigation --> CSys[CoordinateSystem]
+SV[SV - 宿主对象] -- getArrangement --> ArrV[ArrangementView - 编曲区界面]
+SV -- getMainEditor --> MEV[MainEditorView - 主编辑器界面]
+SV -- getProject --> Prj[Project - 工程]
+SV -- getPlayback --> PBCtrl[PlayBackControl - 回放控制]
+ArrV -- getSelection --> ASSt[ArrangementSelectionState - 编曲区选择状态]
+ArrV -- getNavigation --> CSys[CoordinateSystem - 坐标系]
 MEV -- getNavigation --> CSys
-MEV -- getSelection --> TISSt[TrackInnerSelectionState]
-MEV -- getCurrentGroup --> NGrpR[NoteGroupReference]
-MEV -- getCurrentTrack --> Trk[Track]
+MEV -- getSelection --> TISSt[TrackInnerSelectionState - 轨道内部选择状态]
+MEV -- getCurrentGroup --> NGrpR[NoteGroupReference - 音符组引用]
+MEV -- getCurrentTrack --> Trk[Track - 轨道]
 Prj -- getTrack --> Trk
-Prj -- getNoteGroup --> NGrp[NoteGroup]
-Prj -- getTimeAxis --> TAx[TimeAxis]
+Prj -- getNoteGroup --> NGrp[NoteGroup - 音符组]
+Prj -- getTimeAxis --> TAx[TimeAxis - 时间轴]
 Trk -- getGroupReference --> NGrpR
 NGrpR -- getTarget --> NGrp
-NGrp -- getNote --> Nte[Note]
-NGrp -- getParameter --> Auto[Automation]
-ASSt --> SSB{SelectionStateBase}
-ASSt --> GrpS{GroupSelection}
+NGrp -- getNote --> Nte[Note - 音符]
+NGrp -- getParameter --> Auto[Automation - 自动化]
+ASSt --> SSB{SelectionStateBase - 选择状态基础接口}
+ASSt --> GrpS{GroupSelection - 音符组选择}
 TISSt ---> GrpS
 TISSt --> SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
 `}/>
+
+<details>
+  <summary>点这里查看竖屏版</summary>
+  <Mermaid chart={`
+  graph TD
+  SV[SV<br>宿主对象] -- getArrangement --> ArrV[ArrangementView<br>编曲区界面]
+  SV -- getMainEditor --> MEV[MainEditorView<br>主编辑器界面]
+  SV -- getProject --> Prj[Project<br>工程]
+  SV -- getPlayback --> PBCtrl[PlayBackControl<br>回放控制]
+  ArrV -- getSelection --> ASSt[ArrangementSelectionState<br>编曲区选择状态]
+  ArrV -- getNavigation --> CSys[CoordinateSystem<br>坐标系]
+  MEV -- getNavigation --> CSys
+  MEV -- getSelection --> TISSt[TrackInnerSelectionState<br>轨道内部选择状态]
+  MEV -- getCurrentGroup --> NGrpR[NoteGroupReference<br>音符组引用]
+  MEV -- getCurrentTrack --> Trk[Track<br>轨道]
+  Prj -- getTrack --> Trk
+  Prj -- getNoteGroup --> NGrp[NoteGroup<br>音符组]
+  Prj -- getTimeAxis --> TAx[TimeAxis<br>时间轴]
+  Trk -- getGroupReference --> NGrpR
+  NGrpR -- getTarget --> NGrp
+  NGrp -- getNote --> Nte[Note<br>音符]
+  NGrp -- getParameter --> Auto[Automation<br>自动化]
+  ASSt --> SSB{SelectionStateBase<br>选择状态基础接口}
+  ASSt --> GrpS{GroupSelection<br>音符组选择}
+  TISSt ---> GrpS
+  TISSt --> SSB
+  GrpS -- getSelectedGroups --> NGrp
+  TISSt -- getSelectedNotes --> Nte
+  `}/>
+</details>
 
 > 使用`getParent()`以获取父级，为排版方便，此图未列出。
 
