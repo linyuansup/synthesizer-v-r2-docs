@@ -8,8 +8,6 @@ title: 用法综述
 
 ## 类继承关系图
 
-> 点击可以跳转相应页面~
-
 <Mermaid chart={`
 flowchart LR
 
@@ -37,24 +35,6 @@ TISSt -.-> SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
 NObj{NestedObject} -. getParent .-> NObj
-
-	click SV href "./classes/sv" "SV"
-	click ArrV href "./classes/arrangement_view" "ArrangementView"
-	click MEV href "./classes/main_editor_view" "MainEditorView"
-	click Prj href "./classes/project" "Project"
-	click PBCtrl href "./classes/playback_control" "PlaybackControl"
-	click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
-	click CSys href "./classes/coordinate_system" "CoordinateSystem"
-	click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
-	click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
-	click Trk href "./classes/track" "Track"
-	click NGrp href "./classes/note_group" "NoteGroup"
-	click TAx href "./classes/time_axis" "TimeAxis"
-	click Nte href "./classes/note" "Note"
-	click Auto href "./classes/automation" "Automation"
-	click SSB href "./classes/selection_state_base" "SelectionStateBase"
-	click GrpS href "./classes/group_selection" "GroupSelection"
-
 
 classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
 `}/>
@@ -88,24 +68,6 @@ classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
     GrpS -- getSelectedGroups --> NGrp
     TISSt -- getSelectedNotes --> Nte
     NObj{NestedObject} -. getParent .-> NObj
-
-      click SV href "./classes/sv" "SV"
-      click ArrV href "./classes/arrangement_view" "ArrangementView"
-      click MEV href "./classes/main_editor_view" "MainEditorView"
-      click Prj href "./classes/project" "Project"
-      click PBCtrl href "./classes/playback_control" "PlaybackControl"
-      click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
-      click CSys href "./classes/coordinate_system" "CoordinateSystem"
-      click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
-      click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
-      click Trk href "./classes/track" "Track"
-      click NGrp href "./classes/note_group" "NoteGroup"
-      click TAx href "./classes/time_axis" "TimeAxis"
-      click Nte href "./classes/note" "Note"
-      click Auto href "./classes/automation" "Automation"
-      click SSB href "./classes/selection_state_base" "SelectionStateBase"
-      click GrpS href "./classes/group_selection" "GroupSelection"
-
 
     classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
   `}/>
