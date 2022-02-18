@@ -161,4 +161,83 @@ myForm.widgets[2].choices.unshift("而这个选项则会被添加到开头，其
 
 ### {NoteGroupReference}.getVoice() → {object}
 
-- `
+- `tF0Left`: `number` 音高变化 - 时长 - 左（秒）
+- `tF0Right`: `number` 音高变化 - 时长 - 右（秒）
+- `dF0Left`: `number` 音高变化 - 深度 - 左（半音）
+- `dF0Right`: `number` 音高变化 - 深度 - 右（半音）
+- `tF0VbrStart`: `number` 颤音 - 开始（秒）
+- `tF0VbrLeft`: `number` 颤音 - 左（秒）
+- `tF0VbrRight`: `number` 颤音 - 右（秒）
+- `dF0Vbr`: `number` 颤音 - 深度（半音）
+- `fF0Vbr`: `number` 颤音 - 频率（Hz）
+- `paramLoudness`: `number` 参数 - 响度（dB，分贝）
+- `paramTension`: `number` 参数 - 张力
+- `paramBreathiness`: `number` 参数 - 气声
+- `paramGender`: `number` 参数 - 性别
+
+### {Note}.getAttributes() → {object}
+
+- `tF0Offset`: `number` 音高转变 - 偏移（秒）
+- `tF0Left`: `number` 音高变化 - 时长 - 左（秒）
+- `tF0Right`: `number` 音高变化 - 时长 - 右（秒）
+- `dF0Left`: `number` 音高变化 - 深度 - 左（半音）
+- `dF0Right`: `number` 音高变化 - 深度 - 右（半音）
+- `tF0VbrStart`: `number` 颤音 - 开始（秒）
+- `tF0VbrLeft`: `number` 颤音 - 左（秒）
+- `tF0VbrRight`: `number` 颤音 - 右（秒）
+- `dF0Vbr`: `number` 颤音 - 深度（半音）
+- `pF0Vbr`: `number` 颤音 - 相位（弧度，-π ~ π）
+- `fF0Vbr`: `number` 颤音 - 频率（Hz）
+- `tNoteOffset`: `number` 时间和音素 - 音符偏移（秒）
+- `exprGroup` (optional): `string` 表现力分组
+- `dur`: array of `number` 音素时长尺度
+- `alt`: array of `number` 可替换的音素发音
+
+### SV.create(type) → {object}
+
+略
+
+### SV.getHostInfo() → {object}
+
+- `osType`: `string` 取值为"Windows"、"macOS"、"Linux"、"Unknown"之一。
+- `osName`: `string` 操作系统的全名。
+- `hostName`: `string` "Synthesizer V Studio Pro" 或"Synthesizer V Studio Basic"
+- `hostVersion`: `string` Synthesizer V Studio的版本字符串，如"1.0.4"
+- `hostVersionNumber`: `number` 以数字形式返回版本号，各用两位十六进制数表示大版本、小版本和修订版本 (比如 0x010004 就是 "1.0.4" 的意思)
+- `languageCode`: `string` 用户界面的语言代码，如 "en-us", "ja-jp", "zh-cn"
+
+### SV.showCustomDialog(form) → {object}
+
+**返回的Object为Form Object的返回类型**
+
+自定义窗口的控件返回通常为`{Object}.answers.{Widget Name}`
+
+自定义窗口的按钮返回通肠为`{Object}.status` → `"Yes" | "No"`
+
+> 参见 [Form（窗体）Object控件定义及返回](#Form（窗体）Object控件定义及返回)
+### {TimeAxis}.getMeasureMarkAt(measureNumber) → {object}
+
+ * `position`: `number` 标记放置处的小节数。
+ * `positionBlick`: `number` 标记位置 (以 blicks 为单位)
+ * `numerator`: `number` 分子（例如，如果是 3/4 时间标记，则为 3）
+ * `denominator`: `number` 分母（例如，如果它是 3/4 时间标记，则为 4）
+
+### {TimeAxis}.getMeasureMarkAtBlick(b) → {object}
+
+略
+
+import Mermaid from '@theme/Mermaid';
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
