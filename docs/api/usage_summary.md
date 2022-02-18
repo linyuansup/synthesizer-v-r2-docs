@@ -35,8 +35,6 @@ TISSt -.-> SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
 NObj{NestedObject} -. getParent .-> NObj
-
-classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
 `}/>
 
 <details>
@@ -68,8 +66,6 @@ classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
     GrpS -- getSelectedGroups --> NGrp
     TISSt -- getSelectedNotes --> Nte
     NObj{NestedObject} -. getParent .-> NObj
-
-    classDef default fill:#b6c6e5,stroke:#3578e5,stroke-width:1px;
   `}/>
 </details>
 
