@@ -9,8 +9,7 @@ title: 用法综述
 ## 类继承关系图
 
 <Mermaid chart={`
-graph LR
-
+graph TD
 SV[SV<br>宿主对象] -- getArrangement --> ArrV[ArrangementView<br>编曲区界面]
 SV -- getMainEditor --> MEV[MainEditorView<br>主编辑器界面]
 SV -- getProject --> Prj[Project<br>工程]
@@ -28,13 +27,12 @@ Trk -- getGroupReference --> NGrpR
 NGrpR -- getTarget --> NGrp
 NGrp -- getNote --> Nte[Note<br>音符]
 NGrp -- getParameter --> Auto[Automation<br>自动化]
-ASSt -.- SSB{SelectionStateBase<br>选择状态基础接口}
-ASSt -.- GrpS{GroupSelection<br>音符组选择}
-TISSt -.- GrpS
-TISSt -.- SSB
+ASSt --> SSB{SelectionStateBase<br>选择状态基础接口}
+ASSt --> GrpS{GroupSelection<br>音符组选择}
+TISSt ---> GrpS
+TISSt --> SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
-NObj{NestedObject} -. getParent .-> NObj
 
 click SV href "./classes/sv" "SV"
 click ArrV href "./classes/arrangement_view" "ArrangementView"
@@ -58,7 +56,6 @@ click GrpS href "./classes/group_selection" "GroupSelection"
   <summary>点这里查看竖屏版</summary>
   <Mermaid chart={`
   graph TD
-
   SV[SV<br>宿主对象] -- getArrangement --> ArrV[ArrangementView<br>编曲区界面]
   SV -- getMainEditor --> MEV[MainEditorView<br>主编辑器界面]
   SV -- getProject --> Prj[Project<br>工程]
@@ -76,30 +73,12 @@ click GrpS href "./classes/group_selection" "GroupSelection"
   NGrpR -- getTarget --> NGrp
   NGrp -- getNote --> Nte[Note<br>音符]
   NGrp -- getParameter --> Auto[Automation<br>自动化]
-  ASSt -.- SSB{SelectionStateBase<br>选择状态基础接口}
-  ASSt -.- GrpS{GroupSelection<br>音符组选择}
-  TISSt -.- GrpS
-  TISSt -.- SSB
+  ASSt --> SSB{SelectionStateBase<br>选择状态基础接口}
+  ASSt --> GrpS{GroupSelection<br>音符组选择}
+  TISSt ---> GrpS
+  TISSt --> SSB
   GrpS -- getSelectedGroups --> NGrp
   TISSt -- getSelectedNotes --> Nte
-  NObj{NestedObject} -. getParent .-> NObj
-
-  click SV href "./classes/sv" "SV"
-  click ArrV href "./classes/arrangement_view" "ArrangementView"
-  click MEV href "./classes/main_editor_view" "MainEditorView"
-  click Prj href "./classes/project" "Project"
-  click PBCtrl href "./classes/playback_control" "PlaybackControl"
-  click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
-  click CSys href "./classes/coordinate_system" "CoordinateSystem"
-  click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
-  click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
-  click Trk href "./classes/track" "Track"
-  click NGrp href "./classes/note_group" "NoteGroup"
-  click TAx href "./classes/time_axis" "TimeAxis"
-  click Nte href "./classes/note" "Note"
-  click Auto href "./classes/automation" "Automation"
-  click SSB href "./classes/selection_state_base" "SelectionStateBase"
-  click GrpS href "./classes/group_selection" "GroupSelection"
   `}/>
 </details>
 
