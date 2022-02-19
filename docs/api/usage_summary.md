@@ -8,7 +8,7 @@ title: 用法综述
 
 ## 类继承关系图
 
-``` mermaid
+``` Mermaid
 graph LR
 
 SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
@@ -56,7 +56,7 @@ click GrpS href "./classes/group_selection" "GroupSelection"
 
 <details>
   <summary>点这里查看竖屏版</summary>
-\``` mermaid
+\``` Mermaid
   graph TD
 
   SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
