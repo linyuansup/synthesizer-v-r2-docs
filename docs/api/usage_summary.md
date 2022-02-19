@@ -8,7 +8,7 @@ title: 用法综述
 
 ## 类继承关系图
 
-<Mermaid chart={`
+``` mermaid
 graph LR
 
 SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
@@ -52,7 +52,7 @@ click Nte href "./classes/note" "Note"
 click Auto href "./classes/automation" "Automation"
 click SSB href "./classes/selection_state_base" "SelectionStateBase"
 click GrpS href "./classes/group_selection" "GroupSelection"
-`}/>
+```
 
 <details>
   <summary>点这里查看竖屏版</summary>
