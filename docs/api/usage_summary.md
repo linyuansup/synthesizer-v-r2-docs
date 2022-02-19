@@ -11,8 +11,7 @@ title: 用法综述
 <div>
 <Mermaid chart={`
 graph LR
-
-SV[SV 宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
+SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
 SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
 SV -- getProject --> Prj[Project<br/>工程]
 SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
@@ -36,7 +35,6 @@ TISSt -.- SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
 NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
-
 click SV href "./classes/sv" "SV"
 click ArrV href "./classes/arrangement_view" "ArrangementView"
 click MEV href "./classes/main_editor_view" "MainEditorView"
@@ -60,7 +58,6 @@ click GrpS href "./classes/group_selection" "GroupSelection"
   <summary>点这里查看竖屏版</summary>
 \``` Mermaid
   graph TD
-
   SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
   SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
   SV -- getProject --> Prj[Project<br/>工程]
@@ -85,7 +82,6 @@ click GrpS href "./classes/group_selection" "GroupSelection"
   GrpS -- getSelectedGroups --> NGrp
   TISSt -- getSelectedNotes --> Nte
   NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
-
   click SV href "./classes/sv" "SV"
   click ArrV href "./classes/arrangement_view" "ArrangementView"
   click MEV href "./classes/main_editor_view" "MainEditorView"
