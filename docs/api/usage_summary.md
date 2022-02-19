@@ -12,7 +12,7 @@ title: 用法综述
 <Mermaid chart={`
 graph LR
 
-SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
+SV[SV 宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
 SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
 SV -- getProject --> Prj[Project<br/>工程]
 SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
