@@ -56,49 +56,49 @@ click GrpS href "./classes/group_selection" "GroupSelection"
 
 <details>
   <summary>点这里查看竖屏版</summary>
-\``` Mermaid
-  graph TD
-  SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
-  SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
-  SV -- getProject --> Prj[Project<br/>工程]
-  SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
-  ArrV -- getSelection --> ASSt[ArrangementSelectionState<br/>编曲区选择状态]
-  ArrV -- getNavigation --> CSys[CoordinateSystem<br/>坐标系]
-  MEV -- getNavigation --> CSys
-  MEV -- getSelection --> TISSt[TrackInnerSelectionState<br/>轨道内部选择状态]
-  MEV -- getCurrentGroup --> NGrpR[NoteGroupReference<br/>音符组引用]
-  MEV -- getCurrentTrack --> Trk[Track<br/>轨道]
-  Prj -- getTrack --> Trk
-  Prj -- getNoteGroup --> NGrp[NoteGroup<br/>音符组]
-  Prj -- getTimeAxis --> TAx[TimeAxis<br/>时间轴]
-  Trk -- getGroupReference --> NGrpR
-  NGrpR -- getTarget --> NGrp
-  NGrp -- getNote --> Nte[Note<br/>音符]
-  NGrp -- getParameter --> Auto[Automation<br/>自动化]
-  ASSt -.- SSB{SelectionStateBase<br/>选择状态基础接口}
-  ASSt -.- GrpS{GroupSelection<br/>音符组选择}
-  TISSt -.- GrpS
-  TISSt -.- SSB
-  GrpS -- getSelectedGroups --> NGrp
-  TISSt -- getSelectedNotes --> Nte
-  NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
-  click SV href "./classes/sv" "SV"
-  click ArrV href "./classes/arrangement_view" "ArrangementView"
-  click MEV href "./classes/main_editor_view" "MainEditorView"
-  click Prj href "./classes/project" "Project"
-  click PBCtrl href "./classes/playback_control" "PlaybackControl"
-  click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
-  click CSys href "./classes/coordinate_system" "CoordinateSystem"
-  click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
-  click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
-  click Trk href "./classes/track" "Track"
-  click NGrp href "./classes/note_group" "NoteGroup"
-  click TAx href "./classes/time_axis" "TimeAxis"
-  click Nte href "./classes/note" "Note"
-  click Auto href "./classes/automation" "Automation"
-  click SSB href "./classes/selection_state_base" "SelectionStateBase"
-  click GrpS href "./classes/group_selection" "GroupSelection"
-\```
+<Mermaid chart={`
+graph TD
+SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
+SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
+SV -- getProject --> Prj[Project<br/>工程]
+SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
+ArrV -- getSelection --> ASSt[ArrangementSelectionState<br/>编曲区选择状态]
+ArrV -- getNavigation --> CSys[CoordinateSystem<br/>坐标系]
+MEV -- getNavigation --> CSys
+MEV -- getSelection --> TISSt[TrackInnerSelectionState<br/>轨道内部选择状态]
+MEV -- getCurrentGroup --> NGrpR[NoteGroupReference<br/>音符组引用]
+MEV -- getCurrentTrack --> Trk[Track<br/>轨道]
+Prj -- getTrack --> Trk
+Prj -- getNoteGroup --> NGrp[NoteGroup<br/>音符组]
+Prj -- getTimeAxis --> TAx[TimeAxis<br/>时间轴]
+Trk -- getGroupReference --> NGrpR
+NGrpR -- getTarget --> NGrp
+NGrp -- getNote --> Nte[Note<br/>音符]
+NGrp -- getParameter --> Auto[Automation<br/>自动化]
+ASSt -.- SSB{SelectionStateBase<br/>选择状态基础接口}
+ASSt -.- GrpS{GroupSelection<br/>音符组选择}
+TISSt -.- GrpS
+TISSt -.- SSB
+GrpS -- getSelectedGroups --> NGrp
+TISSt -- getSelectedNotes --> Nte
+NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
+click SV href "./classes/sv" "SV"
+click ArrV href "./classes/arrangement_view" "ArrangementView"
+click MEV href "./classes/main_editor_view" "MainEditorView"
+click Prj href "./classes/project" "Project"
+click PBCtrl href "./classes/playback_control" "PlaybackControl"
+click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
+click CSys href "./classes/coordinate_system" "CoordinateSystem"
+click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
+click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
+click Trk href "./classes/track" "Track"
+click NGrp href "./classes/note_group" "NoteGroup"
+click TAx href "./classes/time_axis" "TimeAxis"
+click Nte href "./classes/note" "Note"
+click Auto href "./classes/automation" "Automation"
+click SSB href "./classes/selection_state_base" "SelectionStateBase"
+click GrpS href "./classes/group_selection" "GroupSelection"
+`}/>
 </details>
 
 ### Form（窗体）Object控件定义及返回
