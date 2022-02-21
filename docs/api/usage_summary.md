@@ -10,46 +10,47 @@ title: 用法综述
 
 <Mermaid chart={`
 graph LR
-SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
-SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
-SV -- getProject --> Prj[Project<br/>工程]
-SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
-ArrV -- getSelection --> ASSt[ArrangementSelectionState<br/>编曲区选择状态]
-ArrV -- getNavigation --> CSys[CoordinateSystem<br/>坐标系]
+SV[SV 宿主对象] -- getArrangement --> ArrV[ArrangementView 编曲区界面]
+SV -- getMainEditor --> MEV[MainEditorView 主编辑器界面]
+SV -- getProject --> Prj[Project 工程]
+SV -- getPlayback --> PBCtrl[PlayBackControl 回放控制]
+ArrV -- getSelection --> ASSt[ArrangementSelectionState 编曲区选择状态]
+ArrV -- getNavigation --> CSys[CoordinateSystem 坐标系]
 MEV -- getNavigation --> CSys
-MEV -- getSelection --> TISSt[TrackInnerSelectionState<br/>轨道内部选择状态]
-MEV -- getCurrentGroup --> NGrpR[NoteGroupReference<br/>音符组引用]
-MEV -- getCurrentTrack --> Trk[Track<br/>轨道]
+MEV -- getSelection --> TISSt[TrackInnerSelectionState 轨道内部选择状态]
+MEV -- getCurrentGroup --> NGrpR[NoteGroupReference 音符组引用]
+MEV -- getCurrentTrack --> Trk[Track 轨道]
 Prj -- getTrack --> Trk
-Prj -- getNoteGroup --> NGrp[NoteGroup<br/>音符组]
-Prj -- getTimeAxis --> TAx[TimeAxis<br/>时间轴]
+Prj -- getNoteGroup --> NGrp[NoteGroup 音符组]
+Prj -- getTimeAxis --> TAx[TimeAxis 时间轴]
 Trk -- getGroupReference --> NGrpR
 NGrpR -- getTarget --> NGrp
-NGrp -- getNote --> Nte[Note<br/>音符]
-NGrp -- getParameter --> Auto[Automation<br/>自动化]
-ASSt -.- SSB{SelectionStateBase<br/>选择状态基础接口}
-ASSt -.- GrpS{GroupSelection<br/>音符组选择}
+NGrp -- getNote --> Nte[Note 音符]
+NGrp -- getParameter --> Auto[Automation 自动化]
+ASSt -.- SSB{SelectionStateBase 选择状态基础接口}
+ASSt -.- GrpS{GroupSelection 音符组选择}
 TISSt -.- GrpS
 TISSt -.- SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
-NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
-click SV href "./classes/sv" "SV"
-click ArrV href "./classes/arrangement_view" "ArrangementView"
-click MEV href "./classes/main_editor_view" "MainEditorView"
-click Prj href "./classes/project" "Project"
-click PBCtrl href "./classes/playback_control" "PlaybackControl"
-click ASSt href "./classes/arrangement_selection_state" "ArrangementSelectionState"
-click CSys href "./classes/coordinate_system" "CoordinateSystem"
-click TISSt href "./classes/track_inner_selection_state" "TrackInnerSelectionState"
-click NGrpR href "./classes/note_group_reference" "NoteGroupReference"
-click Trk href "./classes/track" "Track"
-click NGrp href "./classes/note_group" "NoteGroup"
-click TAx href "./classes/time_axis" "TimeAxis"
-click Nte href "./classes/note" "Note"
-click Auto href "./classes/automation" "Automation"
-click SSB href "./classes/selection_state_base" "SelectionStateBase"
-click GrpS href "./classes/group_selection" "GroupSelection"
+NObj{NestedObject 嵌套对象} -. getParent .-> NObj
+click SV href "./classes/sv" "宿主对象"
+click ArrV href "./classes/arrangement_view" "编曲区界面"
+click MEV href "./classes/main_editor_view" "主编辑器界面"
+click Prj href "./classes/project" "工程"
+click PBCtrl href "./classes/playback_control" "回放控制"
+click ASSt href "./classes/arrangement_selection_state" "编曲区选择状态"
+click CSys href "./classes/coordinate_system" "坐标系"
+click TISSt href "./classes/track_inner_selection_state" "轨道内部选择状态"
+click NGrpR href "./classes/note_group_reference" "音符组引用"
+click Trk href "./classes/track" "轨道"
+click NGrp href "./classes/note_group" "音符组"
+click TAx href "./classes/time_axis" "时间轴"
+click Nte href "./classes/note" "音符"
+click Auto href "./classes/automation" "自动化"
+click SSB href "./classes/selection_state_base" "选择状态基础接口"
+click GrpS href "./classes/group_selection" "音符组选择"
+click NObj href "./classes/nested_object" "嵌套对象"
 `}/>
 
 ### Form（窗体）Object控件定义及返回
