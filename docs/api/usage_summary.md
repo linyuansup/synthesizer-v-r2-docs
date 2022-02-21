@@ -10,30 +10,30 @@ title: 用法综述
 
 <Mermaid chart={`
 graph LR
-SV[SV 宿主对象] -- getArrangement --> ArrV[ArrangementView 编曲区界面]
-SV -- getMainEditor --> MEV[MainEditorView 主编辑器界面]
-SV -- getProject --> Prj[Project 工程]
-SV -- getPlayback --> PBCtrl[PlayBackControl 回放控制]
-ArrV -- getSelection --> ASSt[ArrangementSelectionState 编曲区选择状态]
-ArrV -- getNavigation --> CSys[CoordinateSystem 坐标系]
+SV[SV<br/>宿主对象] -- getArrangement --> ArrV[ArrangementView<br/>编曲区界面]
+SV -- getMainEditor --> MEV[MainEditorView<br/>主编辑器界面]
+SV -- getProject --> Prj[Project<br/>工程]
+SV -- getPlayback --> PBCtrl[PlayBackControl<br/>回放控制]
+ArrV -- getSelection --> ASSt[ArrangementSelectionState<br/>编曲区选择状态]
+ArrV -- getNavigation --> CSys[CoordinateSystem<br/>坐标系]
 MEV -- getNavigation --> CSys
-MEV -- getSelection --> TISSt[TrackInnerSelectionState 轨道内部选择状态]
-MEV -- getCurrentGroup --> NGrpR[NoteGroupReference 音符组引用]
-MEV -- getCurrentTrack --> Trk[Track 轨道]
+MEV -- getSelection --> TISSt[TrackInnerSelectionState<br/>轨道内部选择状态]
+MEV -- getCurrentGroup --> NGrpR[NoteGroupReference<br/>音符组引用]
+MEV -- getCurrentTrack --> Trk[Track<br/>轨道]
 Prj -- getTrack --> Trk
-Prj -- getNoteGroup --> NGrp[NoteGroup 音符组]
-Prj -- getTimeAxis --> TAx[TimeAxis 时间轴]
+Prj -- getNoteGroup --> NGrp[NoteGroup<br/>音符组]
+Prj -- getTimeAxis --> TAx[TimeAxis<br/>时间轴]
 Trk -- getGroupReference --> NGrpR
 NGrpR -- getTarget --> NGrp
-NGrp -- getNote --> Nte[Note 音符]
-NGrp -- getParameter --> Auto[Automation 自动化]
-ASSt -.- SSB{SelectionStateBase 选择状态基础接口}
-ASSt -.- GrpS{GroupSelection 音符组选择}
+NGrp -- getNote --> Nte[Note<br/>音符]
+NGrp -- getParameter --> Auto[Automation<br/>自动化]
+ASSt -.- SSB{SelectionStateBase<br/>选择状态基础接口}
+ASSt -.- GrpS{GroupSelection<br/>音符组选择}
 TISSt -.- GrpS
 TISSt -.- SSB
 GrpS -- getSelectedGroups --> NGrp
 TISSt -- getSelectedNotes --> Nte
-NObj{NestedObject 嵌套对象} -. getParent .-> NObj
+NObj{NestedObject<br/>嵌套对象} -. getParent .-> NObj
 click SV href "./classes/sv" "宿主对象"
 click ArrV href "./classes/arrangement_view" "编曲区界面"
 click MEV href "./classes/main_editor_view" "主编辑器界面"
