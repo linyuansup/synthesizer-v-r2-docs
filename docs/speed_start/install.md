@@ -50,7 +50,7 @@ Synthesizer V Studio 不支持 Windows 7
 
 :::caution
 
-对于 1.5.0 及以下版本的 Synthesizer V Studio，在 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814) 上，则需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
+对于 1.5.0 及更早版本的 Synthesizer V Studio，在 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814) 上，则需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
 
 :::
 
