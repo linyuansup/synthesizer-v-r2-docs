@@ -4,85 +4,113 @@ title: Note
 
 ## 音符
 
-一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。其会被置于一个 [`NoteGroup`](note_group.md) 中。
+一个由音高 (pitch)、歌词 (lyrics)、起始时间 (onset)、时长 (duration) 等定义的音符。其会被置于一个 [`音符组`](note_group.md) 中。
 
-### 扩展
+## 扩展
 
-- [嵌套对象](nested_object.md)
+* [嵌套对象](nested_object.md)
 
-### 方法
+## 方法
 
-#### clone() → {[Note](https://resource.dreamtonics.com/scripting/Note.html)}
+### clone
 
-对当前对象进行深复制（deepcopy）。
+```js
+clone() → {Note}
+```
 
-##### 返回：
+对当前对象进行深复制。
 
-类型	[Note](https://resource.dreamtonics.com/scripting/Note.html)
+#### 返回：
 
-#### getAttributes() → {object}
+类型：[音符](note.md)
+
+### getAttributes
+
+```js
+getAttributes() → {object}
+```
 
 获取一个包含音符属性的对象。该对象拥有如下属性。
 
-- `tF0Offset`: `number` 音高转变 - 偏移（秒）
-- `tF0Left`: `number` 音高变化 - 时长 - 左（秒）
-- `tF0Right`: `number` 音高变化 - 时长 - 右（秒）
-- `dF0Left`: `number` 音高变化 - 深度 - 左（半音）
-- `dF0Right`: `number` 音高变化 - 深度 - 右（半音）
-- `tF0VbrStart`: `number` 颤音 - 开始（秒）
-- `tF0VbrLeft`: `number` 颤音 - 左（秒）
-- `tF0VbrRight`: `number` 颤音 - 右（秒）
-- `dF0Vbr`: `number` 颤音 - 深度（半音）
-- `pF0Vbr`: `number` 颤音 - 相位（弧度，-π ~ π）
-- `fF0Vbr`: `number` 颤音 - 频率（Hz）
-- `tNoteOffset`: `number` 时间和音素 - 音符偏移（秒）
-- `exprGroup` (optional): `string` 表现力分组
-- `dur`: array of `number` 音素时长尺度
-- `alt`: array of `number` 可替换的音素发音
+| 属性 | 类型 | 描述 |
+| --- | --- | --- |
+| `tF0Offset` | 数字 | 音高转变 - 偏移（秒）|
+| `tF0Left` | 数字 | 音高变化 - 时长 - 左（秒） |
+| `tF0Right` | 数字 | 音高变化 - 时长 - 右（秒） |
+| `dF0Left` | 数字 | 音高变化 - 深度 - 左（半音） |
+| `dF0Right` | 数字 | 音高变化 - 深度 - 右（半音） |
+| `tF0VbrStart` | 数字 | 颤音 - 开始（秒） |
+| `tF0VbrLeft` | 数字 | 颤音 - 左（秒） |
+| `tF0VbrRight` | 数字 | 颤音 - 右（秒） |
+| `dF0Vbr` | 数字 | 颤音 - 深度（半音） |
+| `pF0Vbr` | 数字 | 颤音 - 相位（弧度，-π ~ π） |
+| `fF0Vbr` | 数字 | 颤音 - 频率（Hz） |
+| `tNoteOffset` | 数字 | 时间和音素 - 音符偏移（秒） |
+| `exprGroup` | 字符串 | 表现力分组 |
+| `dur` | 数字字符串 | 音素时长尺度 |
+| `alt` | 数字字符串 | 可替换的音素发音 |
 
-如果该音符使用的是该音符组引用（[`NoteGroupReference`](note_group_reference.md) ）的默认值，则对应属性的取值为 NaN。
+如果该音符使用的是该[`音符组引用`](note_group_reference.md)的默认值，则对应属性的取值为 NaN。
 
-##### 返回：
+#### 返回：
 
-类型	object
+类型：object
 
-#### getDuration() → {number}
+### getDuration
 
-获取音符的持续时间。单位为blicks。
+```js
+getDuration() → {number}
+```
 
-##### 返回：
+获取音符的持续时间。单位为 blicks。
 
-类型	number
+#### 返回：
 
-#### getEnd() → {number}
+类型：数字
 
-获取音符的结束位置（起始+持续时间）。单位为blicks。
+### getEnd
 
-##### 返回：
+```js
+getEnd() → {number}
+```
 
-类型	number
+获取音符的结束位置（起始 + 持续时间）。单位为 blicks。
 
-#### getIndexInParent() → {number}
+#### 返回：
 
-> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
+类型：数字
 
-获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
+### getIndexInParent
+
+```js
+getIndexInParent() → {number}
+```
+
+>继承自：[嵌套对象 - getIndexInParent](nested_object.md)
+
+获取在父级对象中当前对象的索引。在 Lua 中索引从 1 开始，在 JavaScript 中索引从 0 开始。
+
+#### 返回：
+
+类型：数字
+
+<!--TODO-->
 
 #### getLyrics() → {string}
 
 获取当前音符的歌词。
 
-##### 返回：
+#### 返回：
 
-类型	string
+类型：string
 
 #### getOnset() → {number}
 
 获取当前音符的起始位置。单位为blicks。
 
-##### 返回：
+#### 返回：
 
-类型	number
+类型：number
 
 #### getParent() → {[嵌套对象](nested_object.md)|undefined}
 
@@ -90,9 +118,9 @@ title: Note
 
 获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回：
+#### 返回：
 
-类型	[嵌套对象](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | undefined
 
 #### getPhonemes() → {string}
 
@@ -100,17 +128,17 @@ title: Note
 
 如果没有指定音素，其会返回一个空字符串而非默认发音（见 [`SV#getPhonemesForGroup`](https://resource.dreamtonics.com/scripting/SV.html#getPhonemesForGroup) ）。
 
-##### 返回：
+#### 返回：
 
-类型	string
+类型：string
 
 #### getPitch() → {number}
 
 获取音高对应的MIDI编号，C4对应60。
 
-##### 返回：
+#### 返回：
 
-类型	number
+类型：number
 
 #### isMemoryManaged() → {boolean}
 
@@ -118,9 +146,9 @@ title: Note
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回：
+#### 返回：
 
-类型	布尔
+类型：布尔
 
 #### setAttributes(object)
 
@@ -134,17 +162,17 @@ note.setAttributes({
 });
 ```
 
-##### 参数：
+#### 参数：
 
 | 参数名     | 类型       | 描述                                                         |
 | :------- | :--------- | :----------------------------------------------------------- |
-| `object` | attributes | 定义见 [`Note#getAttributes`](https://resource.dreamtonics.com/scripting/Note.html#getAttributes) |
+| `object` | attributes | 定义见 [`Note#getAttributes`](note.md#getAttributes) |
 
 #### setDuration(t)
 
 将音符时长设置为 `t` 。单位为blicks。其同时也会变更结束位置，但不会更改起始位置。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
@@ -162,7 +190,7 @@ note.setAttributes({
 
 将音符更改至由 `t` 开始。单位为blicks。其不会变更时长。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
@@ -172,7 +200,7 @@ note.setAttributes({
 
 设置音符的音高为`pitchNumber` （MIDI编号）。
 
-##### 参数：
+#### 参数：
 
 | 参数名          | 类型   | 描述 |
 | :------------ | :----- | :--- |
@@ -182,7 +210,7 @@ note.setAttributes({
 
 同时设置起始位置和时长。这是一个对 `setOnset(onset)` 和 `setDuration(duration)` 的快捷调用。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型   | 描述 |
 | :--------- | :----- | :--- |

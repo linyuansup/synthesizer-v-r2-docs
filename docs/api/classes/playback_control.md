@@ -8,7 +8,7 @@ title: PlaybackControl
 
 ### 扩展
 
-- [嵌套对象](nested_object.md)
+* [嵌套对象](nested_object.md)
 
 ### 方法
 
@@ -18,7 +18,7 @@ title: PlaybackControl
 
 获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -28,7 +28,7 @@ title: PlaybackControl
 
 获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
-##### 返回：
+#### 返回：
 
 类型	[嵌套对象](nested_object.md) | undefined
 
@@ -38,7 +38,7 @@ title: PlaybackControl
 
 想要以blicks的形式获取位置的话，就将其与当前项目的 [`TimeAxis（时间轴）`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 一起使用。
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -50,7 +50,7 @@ title: PlaybackControl
 - "looping"（循环）
 - "stopped"（停止）
 
-##### 返回：
+#### 返回：
 
 类型	string
 
@@ -60,7 +60,7 @@ title: PlaybackControl
 
 检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
 
-##### 返回：
+#### 返回：
 
 类型	布尔
 
@@ -68,7 +68,7 @@ title: PlaybackControl
 
 在 `tBegin` 秒和 `tEnd` 秒之间开始循环。
 
-##### 参数：
+#### 参数：
 
 | 参数名     | 类型   | 描述 |
 | :------- | :----- | :--- |
@@ -89,7 +89,7 @@ title: PlaybackControl
 
 如果当前音频正在播放，其不会停止音频，而是会在新的位置继续播放。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |

@@ -26,13 +26,13 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | ---- | ------ | ---- |
 | `k`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	布尔
 
@@ -44,13 +44,13 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | ---- | ------ | ---- |
 | `b`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -62,14 +62,14 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名  | 类型   | 描述 |
 | :---- | :----- | :--- |
 | `b`   | number |      |
 | `bpm` | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -79,14 +79,14 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型   | 描述 |
 | :--------- | :----- | :--- |
 | `dividend` | number |      |
 | `divisor`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -98,14 +98,14 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型   | 描述 |
 | :--------- | :----- | :--- |
 | `b`        | number |      |
 | `interval` | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -115,8 +115,8 @@ title: SV
 
 | `类型`                                                       | 描述                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| "[`Note`](https://resource.dreamtonics.com/scripting/Note.html)"（音符） | 一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。 |
-| "[`Automation`](https://resource.dreamtonics.com/scripting/Automation.html)"（自动化） | 音符组（[`NoteGroup`](note_group.md)）中一组控制某个参数（比如音高偏移）的点。 |
+| "[`Note`](note.md)"（音符） | 一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。 |
+| "[`Automation`](automation.md)"（自动化） | 音符组（[`NoteGroup`](note_group.md)）中一组控制某个参数（比如音高偏移）的点。 |
 | "[`NoteGroup`](note_group.md)"（音符组） | 一组便于重复使用的成组的音符及其参数。                       |
 | "[`NoteGroupReference`](note_group_reference.md)"（音符组引用） | 在某个时间、音高和声音/数据库属性下，对一个音符组进行的引用。 |
 | "`TrackMixer`"（音轨混合器）                                 | 一组用于描述混合器状态的属性（如通道增益/音量、声像、静音、独奏）。 |
@@ -124,13 +124,13 @@ title: SV
 | "[`TimeAxis`](https://resource.dreamtonics.com/scripting/TimeAxis.html)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
 | "[`Project`](https://resource.dreamtonics.com/scripting/Project.html)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。             |
 
-##### 参数：
+#### 参数：
 
 | 参数名   | 类型   | 描述                 |
 | :----- | :----- | :------------------- |
 | `type` | string | 一个类型确认字符串。 |
 
-##### 返回
+#### 返回
 
 类型	object
 
@@ -144,13 +144,13 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
 | `f`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -158,7 +158,7 @@ title: SV
 
 获取布局视图的UI（用户界面）的状态对象。
 
-##### 返回：
+#### 返回：
 
 类型	ArrangementView
 
@@ -166,7 +166,7 @@ title: SV
 
 获取系统剪贴板中的文本。
 
-##### 返回：
+#### 返回：
 
 类型	string
 
@@ -181,7 +181,7 @@ title: SV
 - `hostVersionNumber`: `number` 以数字形式返回版本号，各用两位十六进制数表示大版本、小版本和修订版本 (比如 0x010004 就是 "1.0.4" 的意思)
 - `languageCode`: `string` 用户界面的语言代码，如 "en-us", "ja-jp", "zh-cn"
 
-##### 返回：
+#### 返回：
 
 类型	object
 
@@ -189,7 +189,7 @@ title: SV
 
 获取钢琴卷帘的UI（用户界面）状态对象。
 
-##### 返回：
+#### 返回：
 
 类型	MainEditorView
 
@@ -197,17 +197,17 @@ title: SV
 
 获取一个音符组中所有音符的音素（以音符组引用的形式传入）。该音符组必须是当前打开项目的一部分。
 
-注意， `getPhonemesForGroup`返回的是Synthesizer V Studio内部文本-音素转换器的*输出*结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`Note#getPhonemes`](https://resource.dreamtonics.com/scripting/Note.html#getPhonemes) 而则会返回空字符串。
+注意， `getPhonemesForGroup`返回的是Synthesizer V Studio内部文本-音素转换器的*输出*结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`Note#getPhonemes`](note.md#getPhonemes) 而则会返回空字符串。
 
 还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](https://resource.dreamtonics.com/scripting/SV.html#setTimeout)调用中。
 
-##### 参数：
+#### 参数：
 
 | 参数名    | 类型                                                         | 描述 |
 | :------ | :----------------------------------------------------------- | :--- |
 | `group` | [音符组引用](note_group_reference.md) |      |
 
-##### 返回：
+#### 返回：
 
 一个字符串数组
 
@@ -217,7 +217,7 @@ title: SV
 
 获取控制回放的UI（用户界面）状态对象。
 
-##### 返回：
+#### 返回：
 
 类型	PlayBackControl
 
@@ -225,7 +225,7 @@ title: SV
 
 获取当前打开的项目。
 
-##### 返回：
+#### 返回：
 
 类型	Project
 
@@ -235,13 +235,13 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | :--- | :----- | :--- |
 | `p`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -253,13 +253,13 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型   | 描述 |
 | ---- | ------ | ---- |
 | `q`  | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -271,14 +271,14 @@ title: SV
 
 由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
-##### 参数：
+#### 参数：
 
 | 参数名  | 类型   | 描述 |
 | :---- | :----- | :--- |
 | `s`   | number |      |
 | `bpm` | number |      |
 
-##### 返回：
+#### 返回：
 
 类型	number
 
@@ -286,7 +286,7 @@ title: SV
 
 设置系统剪贴板。
 
-##### 参数：
+#### 参数：
 
 | 参数名   | 类型   | 描述 |
 | :----- | :----- | :--- |
@@ -298,7 +298,7 @@ title: SV
 
 调用 `setTimeout`后，脚本会继续运行而并非立刻执行`callback`。回调函数会被置入队列并开始延迟。这并非一个抢占式的回调，即，`callback` 的执行并不会中断当前运行的任务。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型             | 描述 |
 | :--------- | :--------------- | :--- |
@@ -309,13 +309,13 @@ title: SV
 
 同步版的 [`SV#showCustomDialogAsync`](https://resource.dreamtonics.com/scripting/SV.html#showCustomDialogAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户（完成后的）输入。
 
-##### 参数：
+#### 参数：
 
 | 参数名   | 类型   | 描述 |
 | :----- | :----- | :--- |
 | `form` | object |      |
 
-##### 返回：
+#### 返回：
 
 类型	object
 
@@ -327,7 +327,7 @@ title: SV
 
 更多信息请查看 [Custom Dialogs](https://resource.dreamtonics.com/scripting/tutorial-Custom Dialogs.html)。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型     | 描述 |
 | :--------- | :------- | :--- |
@@ -338,7 +338,7 @@ title: SV
 
 同步版的 [`SV#showInputBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showInputBoxAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户输入的文本。
 
-##### 参数：
+#### 参数：
 
 | 参数名          | 类型   | 描述 |
 | :------------ | :----- | :--- |
@@ -346,7 +346,7 @@ title: SV
 | `message`     | string |      |
 | `defaultText` | string |      |
 
-##### 返回：
+#### 返回：
 
 类型	string
 
@@ -356,7 +356,7 @@ title: SV
 
 `callback` 会在会话关闭后马上被唤醒。回调函数接收一个包含文本输入框中内容的 `string` 参数。
 
-##### 参数：
+#### 参数：
 
 | 参数名          | 类型     | 描述 |
 | :------------ | :------- | :--- |
@@ -369,7 +369,7 @@ title: SV
 
 同步版的[`SV#showMessageBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showMessageBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。
 
-##### 参数：
+#### 参数：
 
 | 参数名      | 类型   | 描述 |
 | :-------- | :----- | :--- |
@@ -382,7 +382,7 @@ title: SV
 
 如果 `callback` 给出，其将会在消息框关闭后被唤醒。该函数不包含任何参数。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型     | 描述     |
 | :--------- | :------- | :------- |
@@ -394,14 +394,14 @@ title: SV
 
 同步版的 [`SV#showOkCancelBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showOkCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。如果点击了“OK”按钮，其返回True。
 
-##### 参数：
+#### 参数：
 
 | 参数名      | 类型   | 描述 |
 | :-------- | :----- | :--- |
 | `title`   | string |      |
 | `message` | string |      |
 
-##### 返回：
+#### 返回：
 
 类型	布尔
 
@@ -411,7 +411,7 @@ title: SV
 
 `callback` 会在会话关闭后马上被唤醒。如果点击了“OK”按钮，则回调函数接收True作为一个参数。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型     | 描述 |
 | :--------- | :------- | :--- |
@@ -423,14 +423,14 @@ title: SV
 
 同步版的 [`SV#showYesNoCancelBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showYesNoCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。其返回 "yes"、"no" 或 "cancel"。
 
-##### 参数：
+#### 参数：
 
 | 参数名      | 类型   | 描述 |
 | :-------- | :----- | :--- |
 | `title`   | string |      |
 | `message` | string |      |
 
-##### 返回：
+#### 返回：
 
 类型	string
 
@@ -440,7 +440,7 @@ title: SV
 
 `callback` 会在会话关闭后马上被唤醒。回调函数接收一个字符类型参数，该参数可以是以下之一："yes"、"no"、"cancel"。
 
-##### 参数：
+#### 参数：
 
 | 参数名       | 类型     | 描述 |
 | :--------- | :------- | :--- |
@@ -454,13 +454,13 @@ title: SV
 
 更多信息详见 [Localization](https://resource.dreamtonics.com/scripting/tutorial-Localization.html) 。
 
-##### 参数：
+#### 参数：
 
 | 参数名   | 类型   | 描述 |
 | :----- | :----- | :--- |
 | `text` | string |      |
 
-##### 返回：
+#### 返回：
 
 类型	string
 
