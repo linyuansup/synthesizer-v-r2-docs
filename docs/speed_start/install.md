@@ -42,9 +42,15 @@ Synthesizer V Studio 不支持 Windows 7
 
 双击下载的安装包，出现欢迎界面。点击继续。
 
+:::tip
+从 1.5.1 版本开始，Synthesizer V Studio 原生支持 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814)（Apple Silicon M1 芯片）
+
+详见 Dreamtonics 针对 M1 芯片适配的说明：[点击查看](https://t.bilibili.com/629995007175032864)
+:::
+
 :::caution
 
-如果你使用的是 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814)，目前需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
+对于 1.5.0 及以下版本的 Synthesizer V Studio，在 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814) 上，则需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
 
 :::
 
