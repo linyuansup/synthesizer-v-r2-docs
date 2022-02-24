@@ -66,13 +66,15 @@ Synthesizer V Studio Docs 是一个 Synthesizer V Studio 的综合站点，您�
 
 ### 依赖
 
-[Node.js](https://nodejs.org/en/download/)
+[Node.js **14**](https://nodejs.org/download/release/v14.19.0/)
 
 ### 本地测试
 
 1. 运行 `yarn install` 安装程序包；
 2. 运行 `yarn start`；
 3. 浏览器打开 `http://localhost:3000`
+
+ > 在使用时，你可能会发现搜索功能无法正常使用。这是正常情况，请直接忽视这个问题。
 
 <!-- CONTRIBUTING -->
 
