@@ -132,7 +132,7 @@ getParent() → {NestedObject|undefined}
 
 #### 返回：
 
-类型：[嵌套对象](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | **undefined**
 
 ### getUUID
 
@@ -170,7 +170,7 @@ removeNote(index)
 
 移除索引位于 `index` 的音符。
 
-### 参数：
+#### 参数：
 
 | 参数名 | 类型 | 描述 |
 | --- | --- | --- |

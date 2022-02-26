@@ -6,43 +6,59 @@ title: PlaybackControl
 
 用于控制音频播放 UI（用户界面）的状态对象。
 
-### 扩展
+## 扩展
 
 * [嵌套对象](nested_object.md)
 
-### 方法
+## 方法
 
-#### getIndexInParent() → {number}
+### getIndexInParent
 
-> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
+```js
+getIndexInParent() → {number}
+```
 
-获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
+>继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
-#### 返回：
-
-类型	number
-
-#### getParent() → {[嵌套对象](nested_object.md)|undefined}
-
-> 继承自：[NestedObject#getParent](nested_object.md#getParent)
-
-获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取在父级对象中当前对象的索引。在 Lua 中索引从 1 开始，在 JavaScript 中索引从 0 开始。
 
 #### 返回：
 
-类型	[嵌套对象](nested_object.md) | undefined
+类型：数字
 
-#### getPlayhead() → {number}
+### getParent
+
+```js
+getParent() → {NestedObject|undefined}
+```
+
+>继承自：[嵌套对象 - getParent](nested_object.md)
+
+获取父级 [嵌套对象](nested_object.md) 。如果不存在则返回 `undefined`。
+
+#### 返回：
+
+类型：[嵌套对象](nested_object.md) | **undefined**
+
+### getPlayhead
+
+```js
+getPlayhead() → {number}
+```
 
 获取当前播放头（译者注：应该就是指播放进度条上的光标）的位置（以秒的形式）。
 
-想要以blicks的形式获取位置的话，就将其与当前项目的 [`TimeAxis（时间轴）`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 一起使用。
+想要以 blicks 的形式获取位置的话，就将其与当前项目的 [`时间轴`](time_axis.md) 一起使用。
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getStatus() → {string}
+### getStatus
+
+```js
+getStatus() → {string}
+```
 
 获取当前的播放状态。其可能是以下三种之一。
 
@@ -52,38 +68,58 @@ title: PlaybackControl
 
 #### 返回：
 
-类型	string
+类型：字符串
 
-#### isMemoryManaged() → {boolean}
+### isMemoryManaged
 
-> 继承自：[NestedObject#isMemoryManaged](nested_object.md#isMemoryManaged)
+```js
+isMemoryManaged() → {boolean}
+```
 
-检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
+>继承自：[嵌套对象 - isMemoryManaged](nested_object.md)
+
+检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
 
 #### 返回：
 
-类型	布尔
+类型：布尔
 
-#### loop(tBegin, tEnd)
+### loop
+
+```js
+loop(tBegin, tEnd)
+```
 
 在 `tBegin` 秒和 `tEnd` 秒之间开始循环。
 
 #### 参数：
 
-| 参数名     | 类型   | 描述 |
-| :------- | :----- | :--- |
-| `tBegin` | number |      |
-| `tEnd`   | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `tBegin` | 数字 |  |
+| `tEnd` | 数字 |  |
 
-#### pause()
+### pause
+
+```js
+pause()
+```
 
 停止播放，播放头保持在当前位置。
 
-#### play()
+### play
+
+```js
+play()
+```
 
 开始播放音频。
 
-#### play()
+### seek
+
+```js
+seek(t)
+```
 
 将播放头的位置置为 `t` 秒处。
 
@@ -91,11 +127,15 @@ title: PlaybackControl
 
 #### 参数：
 
-| 参数名 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `t`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `t` | 数字 |  |
 
-#### stop()
+### stop
+
+```js
+stop()
+```
 
 停止播放，并且将播放头设置到起始处。
 

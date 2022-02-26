@@ -4,86 +4,110 @@ title: Project
 
 ## 工程
 
-可用的最大的对象，包含了 [`Track（音轨）`](track.md) 、 [`TimeAxis（时间轴）`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 、[`音符组`](note_group.md) 等。
+可用的最大的对象，包含了 [`音轨`](track.md) 、 [`时间轴`](time_axis.md) 、[`音符组`](note_group.md) 等。
 
-### 扩展
+## 扩展
 
-* [嵌套对象](nested_object.md)
+ * [嵌套对象](nested_object.md)
 
-### 方法
+## 方法
 
-#### addNoteGroup(group, suggestedIndex) → {number}
+### addNoteGroup
+
+```js
+addNoteGroup(group, suggestedIndex) → {number}
+```
 
 在 `suggestedIndex` 处插入一个[`音符组`](note_group.md) 。如果 `suggestedIndex` 没有给出，则该 [`音符组`](note_group.md) 将会被添加到末尾。其返回新增 [`音符组`](note_group.md) 的索引。
 
 #### 参数：
 
-| 参数名             | 类型                                                         | 描述     |
-| :--------------- | :----------------------------------------------------------- | :------- |
-| `group`          | [NoteGroup](note_group.md) |          |
-| `suggestedIndex` | number                                                       | （可选） |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `group` | [音符组](note_group.md) |  |
+| `suggestedIndex` | 数字 | 可选 |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### addTrack(track) → {number}
+### addTrack
 
-将一个 [`Track（音轨）`](track.md) 添加到 `Project（项目）` 中。返回新增 [`Track（音轨）`](track.md) 的索引。
+```js
+addTrack(track) → {number}
+```
+
+将一个 [`音轨`](track.md) 添加到 `项目` 中。返回新增 [`音轨`](track.md) 的索引。
 
 #### 参数：
 
-| 参数名    | 类型                                                         | 描述 |
-| :------ | :----------------------------------------------------------- | :--- |
-| `track` | [轨道](track.md) |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `track` | [轨道](track.md) |   |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getDuration() → {number}
+### getDuration
 
-获取该 `Project（项目）` 的持续时间（blicks），其由最长 [`Track（音轨）`](track.md) 的持续时间所决定。
+```js
+getDuration() → {number}
+```
+
+获取该 `项目` 的持续时间（blicks），其由最长 [音轨`](track.md) 的持续时间所决定。
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getFileName() → {string}
+### getFileName
+
+```js
+getFileName() → {string}
+```
 
 获取该工程在文件系统中的绝对路径
 
 #### 返回：
 
-类型	string
+类型：字符串
 
-#### getIndexInParent() → {number}
+### getIndexInParent
 
-> 继承自：[NestedObject#getIndexInParent](nested_object.md#getIndexInParent)
+```js
+getIndexInParent() → {number}
+```
 
-获取当前对象在其父对象中的索引。对 Lua，该索引值从1开始。对JavaScript，该索引值从0开始。
+>继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
-#### 返回：
+获取在父级对象中当前对象的索引。在 Lua 中索引从 1 开始，在 JavaScript 中索引从 0 开始。
 
-类型	number
+### getNoteGroup
 
-#### getNoteGroup(id) → {[NoteGroup](note_group.md)|undefined}
+```js
+getNoteGroup(id) → {NoteGroup|undefined}
+```
 
 如果 `id` 为一个数字，则获取该项目库中的第 `id` 个 [`音符组`](note_group.md) 。
 
-如果 `id` 为一个字符串，则在该项目库中寻找 UUID 为 `id` 的[`音符组`](note_group.md) ；如果这样的 [`音符组`](note_group.md) 不存在，则返回 `undefined` 。
+如果 `id` 为一个字符串，则在该项目库中寻找 UUID 为 `id` 的 [`音符组`](note_group.md) ；如果这样的 [`音符组`](note_group.md) 不存在，则返回 `undefined` 。
 
 #### 参数：
 
 | 参数名 | 类型             | 描述 |
 | :--- | :--------------- | :--- |
-| `id` | number \| string |      |
+| `id` | 数字 \| 字符串 |      |
 
 #### 返回：
 
-类型	[NoteGroup](note_group.md) | undefined
+类型：[音符组](note_group.md) | **undefined**
 
-#### getNumNoteGroupsInLibrary() → {number}
+### getNumNoteGroupsInLibrary
+
+```js
+getNumNoteGroupsInLibrary() → {number}
+```
 
 获取该 [`音符组`](note_group.md) 在项目的音符组库中的编号。
 
@@ -91,81 +115,113 @@ title: Project
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getNumTracks() → {number}
+### getNumTracks
+
+```js
+getNumTracks() → {number}
+```
 
 获取音轨数量。
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getParent() → {[嵌套对象](nested_object.md)|undefined}
+### getParent
 
-> 继承自：[NestedObject#getParent](nested_object.md#getParent)
+```js
+getParent() → {NestedObject|undefined}
+```
 
-获取父 [`NestedObject`](nested_object.md) 。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+>继承自：[嵌套对象 - getParent](nested_object.md)
 
-#### 返回：
-
-类型	[嵌套对象](nested_object.md) | undefined
-
-#### getTimeAxis() → {[TimeAxis](https://resource.dreamtonics.com/scripting/TimeAxis.html)}
-
-获取当前 `Project（项目）` 的 [`TimeAxis（时间轴）`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 对象。
+获取父级 [嵌套对象](nested_object.md) 。如果不存在则返回 `undefined`。
 
 #### 返回：
 
-类型	 [`TimeAxis`](https://resource.dreamtonics.com/scripting/TimeAxis.html) 
+类型：[嵌套对象](nested_object.md) | **undefined**
 
-#### getTrack(index) → {[轨道](track.md)}
+### getTimeAxis
 
-获取第 `index` 个 [`Track（音轨）`](track.md) 。索引（index）是基于存储顺序而非显示顺序。
+```js
+getTimeAxis() → {TimeAxis}
+```
+
+获取当前 `项目` 的 [`时间轴`](time_axis.md) 对象。
+
+#### 返回：
+
+类型： [`时间轴`](time_axis.md)
+
+### getTrack
+
+```js
+getTrack(index) → {Track}
+```
+
+获取第 `index` 个 [`音轨`](track.md) 。索引（index）是基于存储顺序而非显示顺序。
 
 #### 参数：
 
-| 参数名    | 类型   | 描述 |
-| :------ | :----- | :--- |
-| `index` | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `index` | 数字 |  |
 
 #### 返回：
 
-类型	[轨道](track.md)
+类型：[轨道](track.md)
 
-#### isMemoryManaged() → {boolean}
+### isMemoryManaged
 
-> 继承自：[NestedObject#isMemoryManaged](nested_object.md#isMemoryManaged)
+```js
+isMemoryManaged() → {boolean}
+```
 
-检查当前对象是否被内存管理（即垃圾是否被脚本环境所收集）。
+>继承自：[嵌套对象 - isMemoryManaged](nested_object.md)
+
+检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
 
 #### 返回：
 
-类型	布尔
+类型：布尔
 
-#### newUndoRecord()
+### newUndoRecord
 
-为当前 `Project（项目）` 新增一个撤销记录。也就是说，当用户按下 `Ctrl + Z` 或 `Ctrl + Y` 时，在最后一条撤销记录之后的所有编辑都会一起被撤销/重做。
+```js
+newUndoRecord()
+```
+
+为当前 `项目` 新增一个撤销记录。也就是说，当用户按下 `Ctrl + Z` 或 `Ctrl + Y` 时，在最后一条撤销记录之后的所有编辑都会一起被撤销 / 重做。
 
 在脚本开始执行时，新的撤销记录会自动添加到当前打开的项目中。
 
-#### removeNoteGroup(index)
+### removeNoteGroup
+
+```js
+removeNoteGroup(index)
+```
 
 从项目音符组库中移除第 `index` 个 [`音符组`](note_group.md) 。其也会移除所有引用了该 [`音符组`](note_group.md) 的 [`音符组引用`](note_group_reference.md) 。
 
 #### 参数：
 
-| 参数名    | 类型   | 描述 |
-| :------ | :----- | :--- |
-| `index` | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `index` | 数字 |  |
 
-#### removeTrack(index)
+### removeTrack
 
-从该 `Project（项目）` 中移除第 `index` 个 [`Track（音轨）`](track.md) 。
+```js
+removeTrack(index)
+```
 
-| 参数名    | 类型   | 描述 |
-| :------ | :----- | :--- |
-| `index` | number |      |
+从该 `项目` 中移除第 `index` 个 [`音轨`](track.md) 。
+
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `index` | 数字 |  |
 
 <BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
     clientID: '2537efeef8962e53223d',

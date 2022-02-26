@@ -49,7 +49,7 @@ getParent() → {NestedObject|undefined}
 
 #### 返回：
 
-类型：[嵌套对象](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | **undefined**
 
 ### getSelection
 

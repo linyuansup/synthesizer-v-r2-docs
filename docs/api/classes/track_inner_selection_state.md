@@ -26,7 +26,7 @@ clearAll() → {boolean}
 
 取消选择此选择状态下的所有对象类型。 如果选择项已更改，则返回 `true` 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -38,7 +38,7 @@ clearGroups() → {boolean}
 
 取消选择所有 [`音符组引用`](note_group_reference.md)。如果选择项已更改，则返回 `true` 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -48,7 +48,7 @@ clearNotes() → {boolean}
 
 取消选择所有音符。 如果选择已更改，则返回 `true`。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -59,7 +59,7 @@ getIndexInParent() → {number}
 > 继承自[嵌套对象 - getIndexInParent](nested_object.md)
 
 获取当前对象在其父对象中的索引。 在 Lua 中，这个索引从 1 开始。在 JavaScript 中，这个索引从 0 开始。
-#### 返回
+#### 返回：
 
 类型：数
 
@@ -71,7 +71,7 @@ getParent() → {嵌套对象| `undefined` }
 
 获取父级 [`嵌套对象`](nested_object.md)。 如果当前对象未附加到父对象，则返回 `undefined` 。
 
-#### 返回
+#### 返回：
 
 类型：[嵌套对象](nested_object.md) | `undefined`
 
@@ -83,7 +83,7 @@ getSelectedGroups() → {array}
 
 按照选择的顺序获取一组选定的 [`音符组引用`](note_group_reference.md)。
 
-#### 返回
+#### 返回：
 
 一 `组` (array) [`音符组引用`](note_group_reference.md)
 
@@ -94,7 +94,7 @@ getSelectedNotes() → {array}
 ```
 
 按照选择的顺序获取一组选定的 [`音符`](note.md)。
-#### 返回
+#### 返回：
 
 一组[`音符`](note.md)
 
@@ -108,7 +108,7 @@ hasSelectedContent() → {boolean}
 
 检查是否有任何选择。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -120,7 +120,7 @@ hasSelectedGroups() → {boolean}
 
 检查是否选择了至少一个 [`音符组引用`](note_group_reference.md) 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -130,7 +130,7 @@ hasSelectedNotes() → {boolean}
 
 检查是否选择了至少一个 [`音符`](note.md) .
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -144,7 +144,7 @@ hasUnfinishedEdits() → {boolean}
 
 例如，如果用户在几个音符/控制点周围拖动但尚未释放鼠标，这将返回 true。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -155,7 +155,7 @@ isMemoryManaged() → {boolean}
 > 继承自[嵌套对象 - isMemoryManaged](nested_object.md)
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -201,7 +201,7 @@ unselectGroup(reference) → {boolean}
 | --- | --- | --- |
 |`reference` | [音符组引用](note_group_reference.md) |  |
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
@@ -217,7 +217,7 @@ unselectNote(note) → {boolean}
 | --- | --- | --- |
 |`note`|[Note](note.md)| |
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
