@@ -12,8 +12,6 @@ title: TimeAxis
 
 ## 方法
 
----
-
 ```js
 addMeasureMark(measure, nomin, denom)
 ```
@@ -28,8 +26,6 @@ addMeasureMark(measure, nomin, denom)
 | `nomin` | number | *译者注：此处意思为 numerator (分子)，但似乎没有nomin表示分子的表达，可能此处原文有疏漏* |
 | `denom` | number | *译者注：即 denominator ，分母* |
 
----
-
 ```js
 addTempoMark(b, bpm)
 ```
@@ -43,19 +39,15 @@ addTempoMark(b, bpm)
 | `b` | number |  |
 | `bpm` | number |  |
 
----
-
 ```js
 clone() → {TimeAxis}
 ```
 
 深复制当前对象。
 
-#### 返回
+#### 返回：
 
 类型：[TimeAxis|时间轴](time_axis.md)
-
----
 
 ```js
 getAllMeasureMarks() → {array}
@@ -63,13 +55,11 @@ getAllMeasureMarks() → {array}
 
 获得所有该 `时间轴` 内的小节标记。请参阅[`时间轴 - getMeasureMarkAt`](time_axis.md).
 
-#### 返回
+#### 返回：
 
 一个 `对象` 组
 
 类型：array
-
----
 
 ```js
 getAllTempoMarks() → {array}
@@ -77,13 +67,11 @@ getAllTempoMarks() → {array}
 
 获得所有该 `时间轴` 内的速度标记。请参阅[`时间轴 - getTempoMarkAt`](time_axis.md).
 
-#### 返回
+#### 返回：
 
 一个 `对象` 组
 
 类型：array
-
----
 
 ```js
 getBlickFromSeconds(t) → {number}
@@ -97,11 +85,9 @@ getBlickFromSeconds(t) → {number}
 | --- | --- | --- |
 |`t`|number| |
 
-#### 返回
+#### 返回：
 
 类型:number
-
----
 
 ```js
 getIndexInParent() → {number}
@@ -111,11 +97,9 @@ getIndexInParent() → {number}
 
 获取其父级中当前对象的索引。在 Lua 中，此索引从 1 开始。在 JavaScript 中，此索引从 0 开始。
 
-#### 返回
+#### 返回：
 
 类型：数字
-
----
 
 ```js
 getMeasureAt(b) → {number}
@@ -129,11 +113,9 @@ getMeasureAt(b) → {number}
 | --- | --- | --- |
 |`b`|number| |
 
-#### 返回
+#### 返回：
 
 类型：数字
-
----
 
 ```js
 getMeasureMarkAt(measureNumber) → {object}
@@ -155,11 +137,9 @@ getMeasureMarkAt(measureNumber) → {object}
 | --- | --- | --- |
 | `measureNumber` | number |
 
-#### 返回
+#### 返回：
 
 类型：object
-
----
 
 ```js
 getMeasureMarkAtBlick(b) → {object}
@@ -173,11 +153,9 @@ getMeasureMarkAtBlick(b) → {object}
 | --- | --- | --- |
 |`b`|number| |
 
-#### 返回
+#### 返回：
 
 类型：object
-
----
 
 ```js
 getParent() → {NestedObject|undefined}
@@ -187,11 +165,9 @@ getParent() → {NestedObject|undefined}
 
 获取父项 [`NestedObject`](nested_object.md) 。如果当前对象未附加到父对象，则返回 `undefined` 。
 
-#### 返回
+#### 返回：
 
 类型：[NestedObject|嵌套对象](nested_object.md) | `undefined`
-
----
 
 ```js
 getSecondsFromBlick(b) → {number}
@@ -205,11 +181,9 @@ getSecondsFromBlick(b) → {number}
 | --- | --- | --- |
 |`b`|number| |
 
-#### 返回
+#### 返回：
 
 类型：数字
-
----
 
 ```js
 getTempoMarkAt(b) → {TempoMark}
@@ -229,11 +203,9 @@ getTempoMarkAt(b) → {TempoMark}
 | --- | --- | --- |
 |`b`|number| |
 
-#### 返回
+#### 返回：
 
 类型：TempoMark
-
----
 
 ```js
 isMemoryManaged() → {boolean}
@@ -243,11 +215,9 @@ isMemoryManaged() → {boolean}
 
 检查当前对象是否开启了内存管理（即脚本环境收集的垃圾）。
 
-#### 返回
+#### 返回：
 
 类型：布尔
-
----
 
 ```js
 removeMeasureMark(measure) → {boolean}
@@ -261,11 +231,9 @@ removeMeasureMark(measure) → {boolean}
 | --- | --- | --- |
 | `measure` | number |
 
-#### 返回
+#### 返回：
 
 类型：布尔
-
----
 
 ```js
 removeTempoMark(b) → {boolean}
@@ -279,7 +247,7 @@ removeTempoMark(b) → {boolean}
 | --- | --- | --- |
 |`b`|number| |
 
-#### 返回
+#### 返回：
 
 类型：布尔
 

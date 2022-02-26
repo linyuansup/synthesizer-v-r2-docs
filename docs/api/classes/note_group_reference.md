@@ -92,7 +92,7 @@ getParent() → {NestedObject|undefined}
 
 #### 返回：
 
-类型：[嵌套对象](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | **undefined**
 
 ### getPitchOffset
 
@@ -140,19 +140,19 @@ getVoice() → {object}
 
 该对象含有以下属性。
 
-- `tF0Left`: `number` 音高变化 - 时长 - 左（秒）
-- `tF0Right`: `number` 音高变化 - 时长 - 右（秒）
-- `dF0Left`: `number` 音高变化 - 深度 - 左（半音）
-- `dF0Right`: `number` 音高变化 - 深度 - 右（半音）
-- `tF0VbrStart`: `number` 颤音 - 开始（秒）
-- `tF0VbrLeft`: `number` 颤音 - 左（秒）
-- `tF0VbrRight`: `number` 颤音 - 右（秒）
-- `dF0Vbr`: `number` 颤音 - 深度（半音）
-- `fF0Vbr`: `number` 颤音 - 频率（Hz）
-- `paramLoudness`: `number` 参数 - 响度（dB，分贝）
-- `paramTension`: `number` 参数 - 张力
-- `paramBreathiness`: `number` 参数 - 气声
-- `paramGender`: `number` 参数 - 性别
+- `tF0Left`: `数字` 音高变化 - 时长 - 左（秒）
+- `tF0Right`: `数字` 音高变化 - 时长 - 右（秒）
+- `dF0Left`: `数字` 音高变化 - 深度 - 左（半音）
+- `dF0Right`: `数字` 音高变化 - 深度 - 右（半音）
+- `tF0VbrStart`: `数字` 颤音 - 开始（秒）
+- `tF0VbrLeft`: `数字` 颤音 - 左（秒）
+- `tF0VbrRight`: `数字` 颤音 - 右（秒）
+- `dF0Vbr`: `数字` 颤音 - 深度（半音）
+- `fF0Vbr`: `数字` 颤音 - 频率（Hz）
+- `paramLoudness`: `数字` 参数 - 响度（dB，分贝）
+- `paramTension`: `数字` 参数 - 张力
+- `paramBreathiness`: `数字` 参数 - 气声
+- `paramGender`: `数字` 参数 - 性别
 
 #### 返回：
 

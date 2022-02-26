@@ -121,7 +121,7 @@ title: SV
 | "[`NoteGroupReference`](note_group_reference.md)"（音符组引用） | 在某个时间、音高和声音/数据库属性下，对一个音符组进行的引用。 |
 | "`TrackMixer`"（音轨混合器）                                 | 一组用于描述混合器状态的属性（如通道增益/音量、声像、静音、独奏）。 |
 | "[`Track`](track.md)"（音轨） | 一个音符组的集合。                                           |
-| "[`TimeAxis`](https://resource.dreamtonics.com/scripting/TimeAxis.html)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
+| "[`TimeAxis`](time_axis.md)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
 | "[`Project`](https://resource.dreamtonics.com/scripting/Project.html)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。             |
 
 #### 参数：
@@ -130,7 +130,7 @@ title: SV
 | :----- | :----- | :------------------- |
 | `type` | string | 一个类型确认字符串。 |
 
-#### 返回
+#### 返回：
 
 类型	object
 
@@ -199,7 +199,7 @@ title: SV
 
 注意， `getPhonemesForGroup`返回的是Synthesizer V Studio内部文本-音素转换器的*输出*结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`Note#getPhonemes`](note.md#getPhonemes) 而则会返回空字符串。
 
-还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](https://resource.dreamtonics.com/scripting/SV.html#setTimeout)调用中。
+还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](sv.md#setTimeout)调用中。
 
 #### 参数：
 
@@ -307,7 +307,7 @@ title: SV
 
 #### showCustomDialog(form) → {object}
 
-同步版的 [`SV#showCustomDialogAsync`](https://resource.dreamtonics.com/scripting/SV.html#showCustomDialogAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户（完成后的）输入。
+同步版的 [`SV#showCustomDialogAsync`](sv.md#showCustomDialogAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户（完成后的）输入。
 
 #### 参数：
 
@@ -336,7 +336,7 @@ title: SV
 
 #### showInputBox(title, message, defaultText) → {string}
 
-同步版的 [`SV#showInputBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showInputBoxAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户输入的文本。
+同步版的 [`SV#showInputBoxAsync`](sv.md#showInputBoxAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户输入的文本。
 
 #### 参数：
 
@@ -367,7 +367,7 @@ title: SV
 
 #### showMessageBox(title, message)
 
-同步版的[`SV#showMessageBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showMessageBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。
+同步版的[`SV#showMessageBoxAsync`](sv.md#showMessageBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。
 
 #### 参数：
 
@@ -392,7 +392,7 @@ title: SV
 
 #### showOkCancelBox(title, message) → {boolean}
 
-同步版的 [`SV#showOkCancelBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showOkCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。如果点击了“OK”按钮，其返回True。
+同步版的 [`SV#showOkCancelBoxAsync`](sv.md#showOkCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。如果点击了“OK”按钮，其返回True。
 
 #### 参数：
 
@@ -421,7 +421,7 @@ title: SV
 
 #### showYesNoCancelBox(title, message) → {string}
 
-同步版的 [`SV#showYesNoCancelBoxAsync`](https://resource.dreamtonics.com/scripting/SV.html#showYesNoCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。其返回 "yes"、"no" 或 "cancel"。
+同步版的 [`SV#showYesNoCancelBoxAsync`](sv.md#showYesNoCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。其返回 "yes"、"no" 或 "cancel"。
 
 #### 参数：
 
