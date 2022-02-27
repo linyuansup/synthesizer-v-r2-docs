@@ -253,7 +253,7 @@ getPhonemesForGroup(group) → {array}
 
 获取一个音符组中所有音符的音素（以音符组引用的形式传入）。该音符组必须是当前打开项目的一部分。
 
-注意，`getPhonemesForGroup` 返回的是 Synthesizer V Studio 内部文本 - 音素转换器的 **输出** 结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`音符 - getPhonemes`](note.mds) 则会返回空字符串。
+注意，`getPhonemesForGroup` 返回的是 Synthesizer V Studio 内部文本 - 音素转换器的 **输出** 结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`音符 - getPhonemes`](note.md) 则会返回空字符串。
 
 还需要注意的是，文本 - 音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本 - 音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV - setTimeout`](sv.md#setTimeout)调用中。
 
