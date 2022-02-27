@@ -59,7 +59,7 @@ click NObj href "./classes/nested_object" "嵌套对象"
 
 #### 定义
 
-``` js
+```js
 var myForm = {
     "title": "Form Title",
     "message": "This is just some dummy text.",
@@ -113,13 +113,13 @@ var myForm = {
 
 #### 调用
 
-``` js
+```js
 SV.showCustomDialog(myForm);
 ```
 
 #### 调用 + 返回
 
-``` js
+```js
 var result = SV.showCustomDialog(myForm);
 
 if (result.status == "Yes") {

@@ -6,351 +6,451 @@ title: SV
 
 宿主对象（host object）是一个可在脚本中任意位置被访问的全局对象，名为`SV`。
 
-### 成员
+## 成员
 
-#### QUARTER：number
+### QUARTER
+
+```js
+QUARTER：number
+```
 
 一个四分音符长度（quarter）对应的“blick”数量，该值为705600000。
 
-此处指的时长（如一个四分音符长度——quarter，或一拍——beat）与物理时长（如一秒）有所不同。一个“blick”是GUI（图形用户界面）内部工作的最小时间单元。它被用来在音乐软件中，并且可满足大部分整除需求。该参数名来源于[Flicks](https://github.com/facebookarchive/Flicks)（即Frame-tick）。
+此处指的时长（如一个四分音符长度—— quarter，或一拍—— beat）与物理时长（如一秒）有所不同。一个 “blick” 是 GUI（图形用户界面）内部工作的最小时间单元。它被用来在音乐软件中，并且可满足大部分整除需求。该参数名来源于 [Flicks](https://github.com/facebookarchive/Flicks)（即 Frame-tick）。
 
 类型：
 
-* number
+* 数字
 
-### 方法
+## 方法
 
-#### blackKey(k) → {boolean}
+### blackKey
 
-检查传入的键（参数以MIDI编号被传入）是否是一个钢琴上的黑键。
+```js
+blackKey(k) → {boolean}
+```
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+检查传入的键（参数以 MIDI 编号被传入）是否是一个钢琴上的黑键。
 
-#### 参数：
-
-| 参数名 | 类型   | 描述 |
-| ---- | ------ | ---- |
-| `k`  | number |      |
-
-#### 返回：
-
-类型	布尔
-
-#### blick2Quarter(b) → {number}
-
-把`b`由blick数转换成对应的quarter数量。
-
-等价于`b`/`SV.QUARTER`。
-
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名 | 类型   | 描述 |
-| ---- | ------ | ---- |
-| `b`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `k` | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：布尔
 
-#### blick2Seconds(b, bpm) → {number}
+### blick2Quarter
 
-把`b`由blick数转换成特定bpm（每分钟节拍数）下的秒数。
+```js
+blick2Quarter(b) → {number}
+```
 
-相当于`b` / `SV.QUARTER` * 60 / `bpm`。
+把 `b` 由 blick 数转换成对应的 quarter 数量。
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+等价于 `b` / `SV.QUARTER`。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名  | 类型   | 描述 |
-| :---- | :----- | :--- |
-| `b`   | number |      |
-| `bpm` | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `b`  | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### blickRoundDiv(dividend, divisor) → {number}
+### blick2Seconds
 
-作`dividend`(blicks)除以`divisor`(blicks)的除法（就近取整）。
+```js
+blick2Seconds(b, bpm) → {number}
+```
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+把 `b` 由 blick 数转换成特定 bpm 下的秒数。
+
+相当于 `b` / `SV.QUARTER` * 60 / `bpm`。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名       | 类型   | 描述 |
-| :--------- | :----- | :--- |
-| `dividend` | number |      |
-| `divisor`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `b` | 数字 |  |
+| `bpm` | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### blickRoundTo(b, interval) → {number}
+### blickRoundDiv
 
-返回`interval`的所有整数倍中，最接近`b`(blick)的数。
+```js
+blickRoundDiv(dividend, divisor) → {number}
+```
 
-等价于`blickRoundDiv(b, interval) * interval`。
+作 `dividend` (blicks) 除以 `divisor` (blicks) 的除法（就近取整）。
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名       | 类型   | 描述 |
-| :--------- | :----- | :--- |
-| `b`        | number |      |
-| `interval` | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `dividend` | 数字 |  |
+| `divisor`  | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### create(type) → {object}
+### blickRoundTo
 
-创建一个新的对象。`type`为如下的类型确认字符串之一。
+```js
+blickRoundTo(b, interval) → {number}
+```
 
-| `类型`                                                       | 描述                                                         |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
-| "[`Note`](note.md)"（音符） | 一个由音高（ pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。 |
-| "[`Automation`](automation.md)"（自动化） | 音符组（[`NoteGroup`](note_group.md)）中一组控制某个参数（比如音高偏移）的点。 |
-| "[`NoteGroup`](note_group.md)"（音符组） | 一组便于重复使用的成组的音符及其参数。                       |
+返回 `interval` 的所有整数倍中，最接近 `b` (blick) 的数。
+
+等价于 `blickRoundDiv(b, interval) * interval`。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+
+#### 参数：
+
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `b` | 数字 |  |
+| `interval` | 数字 |  |
+
+#### 返回：
+
+类型：数字
+
+### create
+
+```js
+create(type) → {object}
+```
+
+创建一个新的对象。`type` 为如下的类型确认字符串之一。
+
+| 类型 | 描述 |
+| --- | --- |
+| "[`Note`](note.md)"（音符） | 一个由音高（pitch）、歌词（lyrics）、起始时间（onset）、时长（duration）等定义的音符。 |
+| "[`Automation`](automation.md)"（自动化） | [`音符组`](note_group.md)中一组控制某个参数（比如音高偏移）的点。 |
+| "[`NoteGroup`](note_group.md)"（音符组） | 一组便于重复使用的成组的音符及其参数。 |
 | "[`NoteGroupReference`](note_group_reference.md)"（音符组引用） | 在某个时间、音高和声音/数据库属性下，对一个音符组进行的引用。 |
-| "`TrackMixer`"（音轨混合器）                                 | 一组用于描述混合器状态的属性（如通道增益/音量、声像、静音、独奏）。 |
-| "[`Track`](track.md)"（音轨） | 一个音符组的集合。                                           |
+| "`TrackMixer`"（音轨混合器 | 一组用于描述混合器状态的属性（如通道增益 / 音量、声像、静音、独奏）。 |
+| "[`Track`](track.md)"（音轨） | 一个音符组的集合。 |
 | "[`TimeAxis`](time_axis.md)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
-| "[`Project`](https://resource.dreamtonics.com/scripting/Project.html)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。             |
+| "[`Project`](project.md)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。 |
 
 #### 参数：
 
-| 参数名   | 类型   | 描述                 |
-| :----- | :----- | :------------------- |
-| `type` | string | 一个类型确认字符串。 |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `type` | 字符串 | 一个类型确认字符串。 |
 
 #### 返回：
 
-类型	object
+类型：object
 
-#### finish()
+### finish
+
+```js
+finish()
+```
 
 标识脚本的结束。此后的所有异步回调都不再会被执行。注意，这并不会让当前脚本立刻退出。
 
-#### freq2Pitch(f) → {number}
+### freq2Pitch
 
-将频率（单位为Hz）转换为MIDI编号（半音程，C4对应60）。
+```js
+freq2Pitch(f) → {number}
+```
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+将频率（单位为 Hz）转换为 MIDI 编号（半音程，C4 对应 60）。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `f`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `f` | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### getArrangement() → {[ArrangementView](https://resource.dreamtonics.com/scripting/ArrangementView.html)}
+### getArrangement
+
+```js
+getArrangement() → {ArrangementView}
+```
 
 获取布局视图的UI（用户界面）的状态对象。
 
 #### 返回：
 
-类型	ArrangementView
+类型：[编曲区界面](arrangement_view.md)
 
-#### getHostClipboard() → {string}
+### getHostClipboard
+
+```js
+getHostClipboard() → {string}
+```
 
 获取系统剪贴板中的文本。
 
 #### 返回：
 
-类型	string
+类型：字符串
 
-#### getHostInfo() → {object}
+### getHostInfo
+
+```js
+getHostInfo() → {object}
+```
 
 获取一个包含以下属性的对象。
 
-- `osType`: `string` 取值为"Windows"、"macOS"、"Linux"、"Unknown"之一。
-- `osName`: `string` 操作系统的全名。
-- `hostName`: `string` "Synthesizer V Studio Pro" 或"Synthesizer V Studio Basic"
-- `hostVersion`: `string` Synthesizer V Studio的版本字符串，如"1.0.4"
-- `hostVersionNumber`: `number` 以数字形式返回版本号，各用两位十六进制数表示大版本、小版本和修订版本 (比如 0x010004 就是 "1.0.4" 的意思)
-- `languageCode`: `string` 用户界面的语言代码，如 "en-us", "ja-jp", "zh-cn"
+- `osType`: `字符串` 取值为 "Windows"、"macOS"、"Linux"、"Unknown" 之一。
+- `osName`: `字符串` 操作系统的全名。
+- `hostName`: `字符串` "Synthesizer V Studio Pro" 或 "Synthesizer V Studio Basic"
+- `hostVersion`: `字符串` Synthesizer V Studio 的版本字符串，如 "1.0.4"
+- `hostVersionNumber`: `数字` 以数字形式返回版本号，各用两位十六进制数表示大版本、小版本和修订版本 (比如 0x010004 就是 "1.0.4" 的意思)
+- `languageCode`: `字符串` 用户界面的语言代码，如 "en-us", "ja-jp", "zh-cn"
 
 #### 返回：
 
-类型	object
+类型：object
 
-#### getMainEditor() → {[MainEditorView](https://resource.dreamtonics.com/scripting/MainEditorView.html)}
+### getMainEditor
 
-获取钢琴卷帘的UI（用户界面）状态对象。
+```js
+getMainEditor() → {MainEditorView}
+```
+
+获取钢琴卷帘的 UI（用户界面）状态对象。
 
 #### 返回：
 
-类型	MainEditorView
+类型：[主编辑器界面](main_editor_view.md)
 
-#### getPhonemesForGroup(group) → {array}
+### getPhonemesForGroup
+
+```js
+getPhonemesForGroup(group) → {array}
+```
 
 获取一个音符组中所有音符的音素（以音符组引用的形式传入）。该音符组必须是当前打开项目的一部分。
 
-注意， `getPhonemesForGroup`返回的是Synthesizer V Studio内部文本-音素转换器的*输出*结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`Note#getPhonemes`](note.md#getPhonemes) 而则会返回空字符串。
+注意，`getPhonemesForGroup` 返回的是 Synthesizer V Studio 内部文本 - 音素转换器的 **输出** 结果。这意味着即使是那些未经用户指定音素的音符，`getPhonemesForGroup` 仍会返回默认音素， [`音符 - getPhonemes`](note.mds) 则会返回空字符串。
 
-还需要注意的是，文本-音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本-音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV#setTimeout`](sv.md#setTimeout)调用中。
+还需要注意的是，文本 - 音素转换器运行在另一个线程上。`getPhonemesForGroup` 不会阻塞当前线程。如果文本 - 音素转换器还未完成对某一音符组的运行，有极小可能返回会是一个空数组。我们建议脚本作者们在这种情况下将 `getPhonemesForGroup` 封装到一个[`SV - setTimeout`](sv.md#setTimeout)调用中。
 
 #### 参数：
 
-| 参数名    | 类型                                                         | 描述 |
-| :------ | :----------------------------------------------------------- | :--- |
-| `group` | [音符组引用](note_group_reference.md) |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `group` | [音符组引用](note_group_reference.md) |    |
 
 #### 返回：
 
 一个字符串数组
 
-类型	数组
+类型：组
 
-#### getPlayback() → {PlayBackControl}
+### getPlayback
+
+```js
+getPlayback() → {PlayBackControl}
+```
 
 获取控制回放的UI（用户界面）状态对象。
 
 #### 返回：
 
-类型	PlayBackControl
+类型：[回放控制](playback_control.md)
 
-#### getProject() → {[Project](https://resource.dreamtonics.com/scripting/Project.html)}
+### getProject
+
+```js
+getProject() → {Project}
+```
 
 获取当前打开的项目。
 
 #### 返回：
 
-类型	Project
+类型：[工程](project.md)
 
-#### pitch2freq(p) → {number}
+### pitch2freq
 
-将MIDI编号（半音程，C4对应60）转换为频率（单位为Hz）。
+```js
+pitch2freq(p) → {number}
+```
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+将 MIDI 编号（半音程，C4 对应 60）转换为频率（单位为 Hz）。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名 | 类型   | 描述 |
-| :--- | :----- | :--- |
-| `p`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `p`  | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### quarter2Blick(q) → {number}
+### quarter2Blick
 
-把`q`由quarter数转换成对应的blick数。
+```js
+quarter2Blick(q) → {number}
+```
+
+把 `q` 由 quarter 数转换成对应的 blick 数。
 
 等价于 `q` * `SV.QUARTER`。
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名 | 类型   | 描述 |
-| ---- | ------ | ---- |
-| `q`  | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `q`  | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### seconds2Blick(s, bpm) → {number}
+### seconds2Blick
 
-把`s`由秒数转换成特定bpm（每分钟节拍数）下的blick数。
+```js
+seconds2Blick(s, bpm) → {number}
+```
 
-相当于`s` / 60 * `bpm` * `SV.QUARTER`。
+把 `s` 由秒数转换成特定bpm（每分钟节拍数）下的 blick 数。
 
-由时间轴（TimeAxis）来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
+相当于 `s` / 60 \* `bpm` \* `SV.QUARTER`。
+
+由时间轴来根据项目上下文，转换音乐意义上的时间和物理意义上时间。
 
 #### 参数：
 
-| 参数名  | 类型   | 描述 |
-| :---- | :----- | :--- |
-| `s`   | number |      |
-| `bpm` | number |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `s`   | 数字 |  |
+| `bpm` | 数字 |  |
 
 #### 返回：
 
-类型	number
+类型：数字
 
-#### setHostClipboard(text)
+### setHostClipboard
+
+```js
+setHostClipboard(text)
+```
 
 设置系统剪贴板。
 
 #### 参数：
 
-| 参数名   | 类型   | 描述 |
-| :----- | :----- | :--- |
-| `text` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `text` | 字符串 |  |
 
-#### setTimeout(timeOut, callback)
+### setTimeout
+
+```js
+setTimeout(timeOut, callback)
+```
 
 在 `timeOut` 毫秒的延迟后进行 `callback` 的调用。
 
-调用 `setTimeout`后，脚本会继续运行而并非立刻执行`callback`。回调函数会被置入队列并开始延迟。这并非一个抢占式的回调，即，`callback` 的执行并不会中断当前运行的任务。
+调用 `setTimeout` 后，脚本会继续运行而并非立刻执行 `callback`。回调函数会被置入队列并开始延迟。这并非一个抢占式的回调，即，`callback` 的执行并不会中断当前运行的任务。
 
 #### 参数：
 
-| 参数名       | 类型             | 描述 |
-| :--------- | :--------------- | :--- |
-| `timeOut`  | number           |      |
-| `callback` | function（函数） |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `timeOut`  | 数字 |  |
+| `callback` | 函数（函数） |  |
 
-#### showCustomDialog(form) → {object}
+### showCustomDialog
 
-同步版的 [`SV#showCustomDialogAsync`](sv.md#showCustomDialogAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户（完成后的）输入。
+```js
+showCustomDialog(form) → {object}
+```
+
+同 [`SV - showCustomDialogAsync`](sv.md#showCustomDialogAsync) ，但其会阻塞脚本的运行，直到用户关闭会话。其返回用户（完成后的）输入。
 
 #### 参数：
 
-| 参数名   | 类型   | 描述 |
-| :----- | :----- | :--- |
-| `form` | object |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `form` | object |  |
 
 #### 返回：
 
-类型	object
+类型：object
 
-#### showCustomDialogAsync(form, callback)
+### showCustomDialogAsync
+
+```js
+showCustomDialogAsync(form, callback)
+```
 
 展示一个由 `form` 所定义的会话，且不会阻塞脚本的执行。
 
 `callback` 会在会话关闭后马上被唤醒。回调函数接收一个包含结果的参数。
 
-更多信息请查看 [Custom Dialogs](https://resource.dreamtonics.com/scripting/tutorial-Custom Dialogs.html)。
+更多信息请查看 [对话框](../tutorials/custom_dialogs.md)。
 
 #### 参数：
 
-| 参数名       | 类型     | 描述 |
-| :--------- | :------- | :--- |
-| `form`     | object   |      |
-| `callback` | function |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `form` | object |  |
+| `callback` | 函数 |  |
 
-#### showInputBox(title, message, defaultText) → {string}
+### showInputBox
 
-同步版的 [`SV#showInputBoxAsync`](sv.md#showInputBoxAsync) ，会阻塞脚本的运行，直到用户关闭会话。其返回用户输入的文本。
+```js
+showInputBox(title, message, defaultText) → {string}
+```
+
+同 [`SV#showInputBoxAsync`](sv.md#showInputBoxAsync) ，但会阻塞脚本的运行，直到用户关闭会话。其返回用户输入的文本。
 
 #### 参数：
 
-| 参数名          | 类型   | 描述 |
-| :------------ | :----- | :--- |
-| `title`       | string |      |
-| `message`     | string |      |
-| `defaultText` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
+| `defaultText` | 字符串 | |
 
 #### 返回：
 
-类型	string
+类型：字符串
 
-#### showInputBoxAsync(title, message, defaultText, callback)
+### showInputBoxAsync
+
+```js
+showInputBoxAsync(title, message, defaultText, callback)
+```
 
 展示一个对话框，其包含一个文本输入框和一个“OK”按钮，且不会阻塞脚本执行。
 
@@ -358,25 +458,33 @@ title: SV
 
 #### 参数：
 
-| 参数名          | 类型     | 描述 |
-| :------------ | :------- | :--- |
-| `title`       | string   |      |
-| `message`     | string   |      |
-| `defaultText` | string   |      |
-| `callback`    | function |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
+| `defaultText` | 字符串 |  |
+| `callback` | 函数 |  |
 
-#### showMessageBox(title, message)
+#### showMessageBox
 
-同步版的[`SV#showMessageBoxAsync`](sv.md#showMessageBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。
+```js
+showMessageBox(title, message)
+```
+
+同步版的[`SV - showMessageBoxAsync`](sv.md#showMessageBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。
 
 #### 参数：
 
-| 参数名      | 类型   | 描述 |
-| :-------- | :----- | :--- |
-| `title`   | string |      |
-| `message` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
 
-#### showMessageBoxAsync(title, message, callback)
+### showMessageBoxAsync
+
+```js
+showMessageBoxAsync(title, message, callback)
+```
 
 弹出一个消息框，且不会组织脚本的执行。
 
@@ -384,89 +492,105 @@ title: SV
 
 #### 参数：
 
-| 参数名       | 类型     | 描述     |
-| :--------- | :------- | :------- |
-| `title`    | string   |          |
-| `message`  | string   |          |
-| `callback` | function | （可选） |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
+| `callback` | 函数 | 可选 |
 
-#### showOkCancelBox(title, message) → {boolean}
+### showOkCancelBox
 
-同步版的 [`SV#showOkCancelBoxAsync`](sv.md#showOkCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。如果点击了“OK”按钮，其返回True。
+```js
+showOkCancelBox(title, message) → {boolean}
+```
+
+同步版的 [`SV - showOkCancelBoxAsync`](sv.md#showOkCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。如果点击了 “OK” 按钮，其返回 True。
 
 #### 参数：
 
-| 参数名      | 类型   | 描述 |
-| :-------- | :----- | :--- |
-| `title`   | string |      |
-| `message` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
 
 #### 返回：
 
-类型	布尔
+类型：布尔
 
-#### showOkCancelBoxAsync(title, message, callback)
+### showOkCancelBoxAsync
 
-显示一个包含“OK”按钮和“Cancel”按钮的消息框，且不会阻塞脚本的执行。
+```js
+showOkCancelBoxAsync(title, message, callback)
+```
 
-`callback` 会在会话关闭后马上被唤醒。如果点击了“OK”按钮，则回调函数接收True作为一个参数。
+显示一个包含 “OK” 按钮和 “Cancel” 按钮的消息框，且不会阻塞脚本的执行。
 
-#### 参数：
-
-| 参数名       | 类型     | 描述 |
-| :--------- | :------- | :--- |
-| `title`    | string   |      |
-| `message`  | string   |      |
-| `callback` | function |      |
-
-#### showYesNoCancelBox(title, message) → {string}
-
-同步版的 [`SV#showYesNoCancelBoxAsync`](sv.md#showYesNoCancelBoxAsync) ，会阻塞脚本的运行，直到用户关闭信息提示框。其返回 "yes"、"no" 或 "cancel"。
+`callback` 会在会话关闭后马上被唤醒。如果点击了 “OK” 按钮，则回调函数接收 True 作为一个参数。
 
 #### 参数：
 
-| 参数名      | 类型   | 描述 |
-| :-------- | :----- | :--- |
-| `title`   | string |      |
-| `message` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
+| `callback` | 函数 |  |
+
+### showYesNoCancelBox
+
+```js
+showYesNoCancelBox(title, message) → {string}
+```
+
+同 [`SV - showYesNoCancelBoxAsync`](sv.md#showYesNoCancelBoxAsync) ，但会阻塞脚本的运行，直到用户关闭信息提示框。其返回 "yes"、"no" 或 "cancel"。
+
+#### 参数：
+
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
 
 #### 返回：
 
-类型	string
+类型：字符串
 
-#### showYesNoCancelBoxAsync(title, message, callback)
+### showYesNoCancelBoxAsync
 
-显示一个包含“Yes”按钮、“No”按钮和“Cancel”按钮的消息框，且不会阻塞脚本的执行。
+```js
+showYesNoCancelBoxAsync(title, message, callback)
+```
+
+显示一个包含 “Yes” 按钮、“No” 按钮和 “Cancel” 按钮的消息框，且不会阻塞脚本的执行。
 
 `callback` 会在会话关闭后马上被唤醒。回调函数接收一个字符类型参数，该参数可以是以下之一："yes"、"no"、"cancel"。
 
 #### 参数：
 
-| 参数名       | 类型     | 描述 |
-| :--------- | :------- | :--- |
-| `title`    | string   |      |
-| `message`  | string   |      |
-| `callback` | function |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `title` | 字符串 |  |
+| `message` | 字符串 |  |
+| `callback` | 函数 |  |
 
-#### T(text) → {string}
+### T
+
+```js
+T(text) → {string}
+```
 
 依据当前用户界面的语言设定，获取本地化版本（当前语言）的 `text` 。
 
-更多信息详见 [Localization](https://resource.dreamtonics.com/scripting/tutorial-Localization.html) 。
+更多信息详见 [本地化](../tutorials/localization.md) 。
 
 #### 参数：
 
-| 参数名   | 类型   | 描述 |
-| :----- | :----- | :--- |
-| `text` | string |      |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| `text` | 字符串 |  |
 
 #### 返回：
 
-类型	string
-
-*Documentation generated by* [JSDoc 3.6.4](https://github.com/jsdoc3/jsdoc) *on Thu Jul 23 2020 13:51:59 GMT+0900 (Japan Standard Time) using the* [docdash](https://github.com/clenemt/docdash) *theme.*
-
-*Copyright 2020 Dreamtonics Co., Ltd.*
+类型：字符串
 
 <BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
     clientID: '2537efeef8962e53223d',

@@ -87,7 +87,7 @@ getSelectedGroups() → {array}
 
 一个 [音符组引用](note_group_reference.md) 数组。
 
-类型：数组
+类型：组
 
 ### hasSelectedContent
 

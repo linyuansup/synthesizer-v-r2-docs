@@ -14,6 +14,8 @@ title: Track
 
 ## 方法
 
+### addGroupReference
+
 ```js
 addGroupReference(group) → {number}
 ```
@@ -30,6 +32,8 @@ addGroupReference(group) → {number}
 
 类型：数
 
+### clone
+
 ```js
 clone() → {Track}
 ```
@@ -39,6 +43,8 @@ clone() → {Track}
 #### 返回：
 
 类型：[轨道](track.md)
+
+### getDisplayColor
 
 ```js
 getDisplayColor() → {string}
@@ -50,6 +56,8 @@ getDisplayColor() → {string}
 
 类型：字符串
 
+### getDisplayOrder
+
 ```js
 getDisplayOrder() → {number}
 ```
@@ -58,6 +66,8 @@ getDisplayOrder() → {number}
 #### 返回：
 
 类型：数
+
+### getDuration
 
 ```js
 getDuration() → {number}
@@ -69,6 +79,8 @@ getDuration() → {number}
 
 类型：数
 
+### getGroupReference
+
 ```js
 getGroupReference(index) → {NoteGroupReference}
 ```
@@ -79,12 +91,14 @@ getGroupReference(index) → {NoteGroupReference}
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `index` | number | |
+| `index` | 数字 |  |
 
 
 #### 返回：
 
 类型：[音符组引用](note_group_reference.md)
+
+### getIndexInParent
 
 ```js
 getIndexInParent() → {number}
@@ -97,6 +111,8 @@ getIndexInParent() → {number}
 
 类型：数
 
+### getName
+
 ```js
 getName() → {string}
 ```
@@ -107,6 +123,8 @@ getName() → {string}
 
 类型：字符串
 
+### getNumGroups
+
 ```js
 getNumGroups() → {number}
 ```
@@ -116,6 +134,8 @@ getNumGroups() → {number}
 #### 返回：
 
 类型：数
+
+### getParent
 
 ```js
 getParent() → {NestedObject|undefined}
@@ -129,7 +149,8 @@ getParent() → {NestedObject|undefined}
 
 类型：[嵌套对象](nested_object.md) | `undefined`
 
----
+### getParent
+
 ```js
 isBounced() → {boolean}
 ```
@@ -139,6 +160,8 @@ isBounced() → {boolean}
 #### 返回：
 
 类型：布尔
+
+### isMemoryManaged
 
 ```js
 isMemoryManaged() → {boolean}
@@ -152,6 +175,8 @@ isMemoryManaged() → {boolean}
 
 类型：布尔
 
+### removeGroupReference
+
 ```js
 removeGroupReference(index)
 ```
@@ -162,9 +187,10 @@ removeGroupReference(index)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `index` | number |  |
+| `index` | 数字 |  |
 
----
+### setBounced
+
 ```js
 setBounced(enabled)
 ```
@@ -175,7 +201,9 @@ setBounced(enabled)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `enabled` | boolean | |
+| `enabled` | 布尔 |  |
+
+### setDisplayColor
 
 ```js
 setDisplayColor(colorStr)
@@ -187,8 +215,10 @@ setDisplayColor(colorStr)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `colorStr` | string |  |
----
+| `colorStr` | 字符串 |  |
+
+### setName
+
 ```js
 setName(name)
 ```
@@ -199,7 +229,7 @@ setName(name)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `name` | string |  |
+| `name` | 字符串 |  |
 
 <BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
     clientID: '2537efeef8962e53223d',

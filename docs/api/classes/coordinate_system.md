@@ -68,7 +68,7 @@ getTimeViewRange() → {array}
 
 一个 `number` 型数组。
 
-类型：数组
+类型：组
 
 ### getValuePxPerUnit
 
@@ -96,7 +96,7 @@ getValueViewRange() → {array}
 
 一个 `number` 型数组
 
-类型：数组
+类型：组
 
 ### isMemoryManaged
 

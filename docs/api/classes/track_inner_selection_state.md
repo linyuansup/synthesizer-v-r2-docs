@@ -7,18 +7,20 @@ title: TrackInnerSelectionState
 
 访问 `轨道内部选择状态` (TrackInnerSelectionState) 对象的方法
 
--   JavaScript： `SV.getMainEditor().getSelection()`
--   Lua： `SV:getMainEditor():getSelection()`
+ * JavaScript： `SV.getMainEditor().getSelection()`
+ * Lua： `SV:getMainEditor():getSelection()`
 
 ## 扩展
 
--   [嵌套对象](nested_object.md)
--   [选择状态](selection_state_base.md)
--   [音符组选择](group_selection.md)
+ * [嵌套对象](nested_object.md)
+ * [选择状态](selection_state_base.md)
+ * [音符组选择](group_selection.md)
 
 ## 方法
 
-``` js
+### clearAll
+
+```js
 clearAll() → {boolean}
 ```
 
@@ -30,7 +32,9 @@ clearAll() → {boolean}
 
 类型：布尔
 
-``` js
+### clearGroups
+
+```js
 clearGroups() → {boolean}
 ```
 
@@ -42,7 +46,9 @@ clearGroups() → {boolean}
 
 类型：布尔
 
-``` js
+### clearNotes
+
+```js
 clearNotes() → {boolean}
 ```
 
@@ -52,7 +58,9 @@ clearNotes() → {boolean}
 
 类型：布尔
 
-``` js
+### getIndexInParent
+
+```js
 getIndexInParent() → {number}
 ```
 
@@ -63,11 +71,13 @@ getIndexInParent() → {number}
 
 类型：数
 
-``` js
-getParent() → {嵌套对象| `undefined` }
+### getParent
+
+```js
+getParent() → {NeastedObject|undefined}
 ```
 
-> 继承自[嵌套对象 - getParent](nested_object.md)
+> 继承自 [嵌套对象 - getParent](nested_object.md)
 
 获取父级 [`嵌套对象`](nested_object.md)。 如果当前对象未附加到父对象，则返回 `undefined` 。
 
@@ -75,7 +85,9 @@ getParent() → {嵌套对象| `undefined` }
 
 类型：[嵌套对象](nested_object.md) | `undefined`
 
-``` js
+### getSelectedGroups
+
+```js
 getSelectedGroups() → {array}
 ```
 
@@ -89,7 +101,9 @@ getSelectedGroups() → {array}
 
 类型：组
 
-``` js
+### getSelectedNotes
+
+```js
 getSelectedNotes() → {array}
 ```
 
@@ -100,7 +114,9 @@ getSelectedNotes() → {array}
 
 类型：组
 
-``` js
+### hasSelectedContent
+
+```js
 hasSelectedContent() → {boolean}
 ```
 
@@ -112,7 +128,9 @@ hasSelectedContent() → {boolean}
 
 类型：布尔
 
-``` js
+### hasSelectedGroups
+
+```js
 hasSelectedGroups() → {boolean}
 ```
 
@@ -124,7 +142,9 @@ hasSelectedGroups() → {boolean}
 
 类型：布尔
 
-``` js
+### hasSelectedNotes
+
+```js
 hasSelectedNotes() → {boolean}
 ```
 
@@ -134,7 +154,9 @@ hasSelectedNotes() → {boolean}
 
 类型：布尔
 
-``` js
+### hasUnfinishedEdits
+
+```js
 hasUnfinishedEdits() → {boolean}
 ```
 
@@ -148,18 +170,23 @@ hasUnfinishedEdits() → {boolean}
 
 类型：布尔
 
-``` js
+### isMemoryManaged
+
+```js
 isMemoryManaged() → {boolean}
 ```
 
 > 继承自[嵌套对象 - isMemoryManaged](nested_object.md)
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
+
 #### 返回：
 
 类型：布尔
 
-``` js
+### selectGroup
+
+```js
 selectGroup(reference)
 ```
 
@@ -177,7 +204,7 @@ selectGroup(reference)
 
 [音符组引用](note_group_reference.md)
 
-#### selectNote(note)
+### selectNote(note)
 
 选择一个 [`音符`](note.md)。 音符必须在钢琴卷中打开的当前 [`音符组引用`](note_group_reference.md) 内（请参阅 [`MainEditorView - getCurrentGroup`](main_editor_view.md）。
 
@@ -185,9 +212,11 @@ selectGroup(reference)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `note` | [音符](note.md)) |  |
+| `note` | [音符](note.md)|  |
 
-``` js
+### unselectGroup
+
+```js
 unselectGroup(reference) → {boolean}
 ```
 
@@ -205,7 +234,9 @@ unselectGroup(reference) → {boolean}
 
 类型：布尔
 
-``` js
+### unselectNote
+
+```js
 unselectNote(note) → {boolean}
 ```
 
@@ -215,7 +246,7 @@ unselectNote(note) → {boolean}
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-|`note`|[Note](note.md)| |
+|`note`|[Note](note.md)|  |
 
 #### 返回：
 
