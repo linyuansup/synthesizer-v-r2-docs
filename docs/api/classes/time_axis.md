@@ -18,7 +18,7 @@ title: TimeAxis
 addMeasureMark(measure, nomin, denom)
 ```
 
-在 `measure` 处 (一个小节序号) 插入一个 `nomin` / `denom` 小节标记。如果在 `measure` 处小节标记已经存在，则将更新信息。
+在 `measure` 处 (一个小节序号) 插入一个 `nomin` / `denom` 拍子标记。如果在 `measure` 处拍子标记已经存在，则将更新信息。
 
 #### 参数
 
@@ -61,7 +61,7 @@ clone() → {TimeAxis}
 getAllMeasureMarks() → {array}
 ```
 
-获得所有该 `时间轴` 内的小节标记。请参阅[`时间轴 - getMeasureMarkAt`](time_axis.md).
+获得所有该 `时间轴` 内的拍子标记。请参阅[`时间轴 - getMeasureMarkAt`](time_axis.md).
 
 #### 返回：
 
@@ -121,7 +121,7 @@ getIndexInParent() → {number}
 getMeasureAt(b) → {number}
 ```
 
-获得 `b` (blicks) 处的节拍标记。
+获得 `b` (blicks) 处的拍子标记。
 
 #### 参数
 
@@ -139,7 +139,7 @@ getMeasureAt(b) → {number}
 getMeasureMarkAt(measureNumber) → {object}
 ```
 
-在 `measureNumber` 小节处获取小节标记。
+在 `measureNumber` 小节处获取拍子标记。
 
 返回的对象包含以下属性。
 
@@ -165,7 +165,7 @@ getMeasureMarkAt(measureNumber) → {object}
 getMeasureMarkAtBlick(b) → {object}
 ```
 
-获取在位置 `b` (blicks) 处有效的小节标记。有关返回的对象，请参见 [`时间轴 - getMeasureMarkAt`](time_axis.md).
+获取在位置 `b` (blicks) 处有效的拍子标记。有关返回的对象，请参见 [`时间轴 - getMeasureMarkAt`](time_axis.md).
 
 #### 参数
 
@@ -253,7 +253,7 @@ isMemoryManaged() → {boolean}
 removeMeasureMark(measure) → {boolean}
 ```
 
-删除小节数为 `measure` 处的小节标记。如果在此处小节标记存在，则返回 `true` 。
+删除小节数为 `measure` 处的拍子标记。如果在此处拍子标记存在，则返回 `true` 。
 
 #### 参数
 
