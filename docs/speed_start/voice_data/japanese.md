@@ -70,7 +70,7 @@ title: 日文声库
  * 弦卷真纪：[来自平凡的我](https://www.bilibili.com/video/BV1qh411h7SL)
  * 追傩酱：[琥珀の扉](https://www.bilibili.com/video/BV1s44y1e7N5) 、 [naN de ya neN！](https://www.bilibili.com/video/BV1s44y1e7N5)
  * 京町精华：[翼](https://www.bilibili.com/video/BV1Zr4y1U74M)
- * Ryo：[翼](https://www.bilibili.com/video/BV1RF411J7ho)
+ * Ryo：[翼](https://www.bilibili.com/video/BV1RF411J7ho) 、[アレカコニア](https://www.bilibili.com/video/BV1Qu411q74h)
 
 ### 声库购买
 
