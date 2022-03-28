@@ -25,7 +25,7 @@ title: 英文声库
 | 爱莲娜 芙缇 * <br/> Eleanor Forte |  | Animen | 第 4 代 | ver.100 |
 | 爱莲娜 芙缇 <br/> Eleanor Forte |  | Animen | 第 5 代 | ver.103 |
 | SOLARIA | Emma Rowley | Eclipsed Sounds | 第 5 代 | ver.101 |
-| Kevin |  | Dreamtonics | 第 5 代 | ver.100 |
+| Kevin |  | Dreamtonics | 第 5 代 | ver.102 |
 
 :::tip
 带 * 标记的为免费提供的 Lite 声库，你可以在 [这里](../../download/voice.md) 下载

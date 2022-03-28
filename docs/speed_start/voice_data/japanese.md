@@ -35,7 +35,7 @@ title: 日文声库
 | 声库 | 声源 | 所属组织 | 擅长音域 | 自动音高调校 | 最新版本 |
 | --- | --- | --- | --- | --- | --- |
 | Saki * |  | Dreamtonics |  | 第 3 代 | ver.101 |
-| Saki |  | Dreamtonics |  | 第 5 代 | ver.118 |
+| Saki |  | Dreamtonics |  | 第 5 代 | ver.119 |
 | 小春六花 <br/> Rikka * | Aoyama Yoshino | AH-Software |  | 第 2 代 | ver.101 |
 | 小春六花 <br/> Rikka | Aoyama Yoshino | AH-Software |  | 第 5 代 | ver.116 |
 | 弦卷真纪 <br/> Maki * | Tanaka Manami | AH-Software |  | 第 3 代 | ver.101 |
@@ -44,7 +44,7 @@ title: 日文声库
 | 追傩酱 <br/> Tsuina | MA Kadowaki | AH-Software | B3 - C5 | 第 5 代 | ver.103 |
 | 京町精华 <br/> Kyomachi Seika * | Rika Tachibana | AH-Software |  | 第 5 代 | ver.100 |
 | 京町精华 <br/> Kyomachi Seika | Rika Tachibana | AH-Software | B3 - D5 | 第 5 代 | ver.100 |
-| Ryo |  | Dreamtonics |  | 第 5 代 | ver.100 |
+| Ryo |  | Dreamtonics |  | 第 5 代 | ver.102 |
 
 :::tip
 带 * 标记的为免费提供的 Lite 声库，你可以在 [这里](../../download/voice.md) 下载
@@ -70,7 +70,7 @@ title: 日文声库
  * 弦卷真纪：[来自平凡的我](https://www.bilibili.com/video/BV1qh411h7SL)
  * 追傩酱：[琥珀の扉](https://www.bilibili.com/video/BV1s44y1e7N5) 、 [naN de ya neN！](https://www.bilibili.com/video/BV1s44y1e7N5)
  * 京町精华：[翼](https://www.bilibili.com/video/BV1Zr4y1U74M)
- * Ryo：[翼](https://www.bilibili.com/video/BV1RF411J7ho)
+ * Ryo：[翼](https://www.bilibili.com/video/BV1RF411J7ho) 、[アレカコニア](https://www.bilibili.com/video/BV1Qu411q74h)
 
 ### 声库购买
 
