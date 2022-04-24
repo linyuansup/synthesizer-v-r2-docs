@@ -153,6 +153,7 @@ getVoice() → {object}
 - `paramTension`: `数字` 参数 - 张力
 - `paramBreathiness`: `数字` 参数 - 气声
 - `paramGender`: `数字` 参数 - 性别
+- `paramToneShift`: `number` 参数 - 音区偏移
 
 #### 返回：
 
