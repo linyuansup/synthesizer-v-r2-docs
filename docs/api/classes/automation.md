@@ -99,6 +99,7 @@ getDefinition() → {object}
 | "气声" | "气声" | -1.0, 1.0 | 气声 <-> 清晰 | 0 |
 | "发声" | "发声" | 0.0, 1.0 | 有声 <-> 无声 | 1 |
 | "性别" | "性别" | -1.0, 1.0 | 男性 <-> 女性 | 0 |
+| "音区偏移" | "音区偏移" | -400, 400 | 音分 | 0 |
 
 :::tip
 以下为原版英文表格，请酌情参考：
@@ -112,6 +113,7 @@ getDefinition() → {object}
 | "Breathiness" | "breathiness" | -1.0, 1.0 | Breathy <-> Clean | 0 |
 | "Voicing" | "voicing" | 0.0, 1.0 | Voiced <-> Unvoiced | 1 |
 | "Gender" | "gender" | -1.0, 1.0 | Masculine <-> Feminine | 0 |
+| "Tone Shift" | "toneShift" | -400, 400 | cents | 0 |
 :::
 
 #### 返回：
