@@ -37,7 +37,7 @@ title: 日文声库
 | Saki * |  | Dreamtonics |  | 第 3 代 | ver.101 |
 | Saki |  | Dreamtonics |  | 第 5 代 | ver.119 |
 | 小春六花 <br/> Rikka * | Aoyama Yoshino | AH-Software |  | 第 2 代 | ver.101 |
-| 小春六花 <br/> Rikka | Aoyama Yoshino | AH-Software |  | 第 5 代 | ver.116 |
+| 小春六花 <br/> Rikka | Aoyama Yoshino | AH-Software | G3 - F#5 | 第 5 代 | ver.116 |
 | 弦卷真纪 <br/> Maki * | Tanaka Manami | AH-Software |  | 第 3 代 | ver.101 |
 | 弦卷真纪 <br/> Maki | Tanaka Manami | AH-Software | A#3 - D#5 | 第 5 代 | ver.107 |
 | 追傩酱 <br/> Tsuina * | MA Kadowaki | AH-Software |  | 第 4 代 | ver.100 |
@@ -45,6 +45,8 @@ title: 日文声库
 | 京町精华 <br/> Kyomachi Seika * | Rika Tachibana | AH-Software |  | 第 5 代 | ver.100 |
 | 京町精华 <br/> Kyomachi Seika | Rika Tachibana | AH-Software | B3 - D5 | 第 5 代 | ver.100 |
 | Ryo |  | Dreamtonics |  | 第 5 代 | ver.102 |
+| 夏色花梨 <br/> Natsuki Karin * | Miyu Takagi | AH-Software | | 第 5 代 | ver.100 |
+| 夏色花梨 <br/> Natsuki Karin | Miyu Takagi | AH-Software | G3 - C6 | 第 5 代 | ver.100 |
 
 :::tip
 带 * 标记的为免费提供的 Lite 声库，你可以在 [这里](../../download/voice.md) 下载
@@ -55,7 +57,6 @@ title: 日文声库
 | 声库 | 声源 | 所属组织 | 相关情报 |
 | --- | --- | --- | --- |
 | 花隈千冬 <br/> Hanakuma Chifuyu | Okuno Kaya | AH-Software | 预计 2022 发售 |
-| 夏色花梨 <br/> Natsuki Karin | Miyu Takagi | AH-Software | 预计 2022 / 04 发售 |
 | Rosa | Shirayuki | ZAN-SHIN |  |
 
 ## 购买完整版
@@ -71,6 +72,7 @@ title: 日文声库
  * 追傩酱：[琥珀の扉](https://www.bilibili.com/video/BV1s44y1e7N5) 、 [naN de ya neN！](https://www.bilibili.com/video/BV1s44y1e7N5)
  * 京町精华：[翼](https://www.bilibili.com/video/BV1Zr4y1U74M)
  * Ryo：[翼](https://www.bilibili.com/video/BV1RF411J7ho) 、[アレカコニア](https://www.bilibili.com/video/BV1Qu411q74h)
+ * 夏色花梨：[イエナイコトバ](https://www.bilibili.com/video/BV1ET4y1e7P5) 、 [ゼロになって](https://www.bilibili.com/video/BV1MR4y1N7nU) 、 [シャニシャニ☆デイズ](https://www.bilibili.com/video/BV1qS4y1Y7Df) 、 [Datte](https://www.bilibili.com/video/BV1RB4y1m7e9)
 
 ### 声库购买
 
