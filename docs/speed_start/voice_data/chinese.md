@@ -4,7 +4,7 @@ title: 中文声库
 
 ## 声库详情
 
-目前，中文声库有赤羽、海伊、苍穹、诗岸、牧心、星尘 Minus、星尘 Infinity、青溯、MAN-M2、艾可，他们的详细信息如下：
+目前，中文声库有赤羽、海伊、苍穹、诗岸、牧心、星尘 Minus、星尘 Infinity、青溯、默辰、岸晓、艾可，他们的详细信息如下：
 
 ### 非 AI 声库
 
@@ -28,13 +28,10 @@ title: 中文声库
 
 | 声库 | 声源 | 所属组织 | 自动音高调校 | 最新版本 |
 | --- | --- | --- | --- | --- |
-| 青溯 <br/> Qingsu |  | Dreamtonics | 第 5 代 | ver.105 |
+| 青溯 <br/> Qing Su |  | Dreamtonics | 第 5 代 | ver.105 |
+| 默辰 <br/> Mo Chen |  | Dreamtonics | 第 5 代 | ver.100 |
+| 岸晓 <br/> An Xiao |  | Dreamtonics | 第 5 代 | ver.100 |
 | 星尘 Infinity <br/>  Infinity | 茶理理 | 五维介质 | 第 5 代 | ver.102 |
-
-### 未发售声库
-| 声库  | 声源 | 所属组织 | 相关情报 |
-| --- | --- | --- | --- |
-| MAN-M2 | | Dreamtonics | 声库名称征集中，征名结果将于 2022-04-03 公布  |
 
 ## 购买完整版
 
@@ -48,7 +45,8 @@ title: 中文声库
  * 艾可：[与你的2次元旅行](https://www.bilibili.com/video/BV1mb41117LM)
  * 青溯：[一生所幸](https://www.bilibili.com/video/BV1eh411J74T)
  * 星尘 Infinity：[零和Zero-Sum](https://www.bilibili.com/video/BV1f5411f7Cr) 、[淋雨一直走](https://www.bilibili.com/video/BV1pL4y1t7W6) 、[残响散歌](https://www.bilibili.com/video/BV1ET4y1y7ss) 、[7 rings](https://www.bilibili.com/video/BV1i34y117b5) 、[最终祈愿](https://www.bilibili.com/video/BV1uP4y1g7c3) 、[涟漪](https://www.bilibili.com/video/BV1gZ4y1B7rm)
- * MAN-M2：[这感觉](https://www.bilibili.com/video/BV1xY4y1s7Ge)
+ * 默辰：[这感觉](https://www.bilibili.com/video/BV1xY4y1s7Ge)
+ * 岸晓：[远方有星辰](https://www.bilibili.com/video/BV1iY411w7vm)
 
  :::tip
  以下为 R1 版本试听曲，不代表最终质量
