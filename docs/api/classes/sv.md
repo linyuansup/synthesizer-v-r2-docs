@@ -152,6 +152,18 @@ create(type) → {object}
 | "[`TimeAxis`](time_axis.md)"（时间轴） | 一个针对整个项目的对象，用于存储节拍、拍号标记；负责物理时间和音乐时间的转换。 |
 | "[`Project`](project.md)"（项目） | 可用的最大的对象，包含了音轨、时间轴、音符组等。 |
 
+:::tip
+根据 Synthesizer V 论坛用户 @dcuny 的帖子 [#6013](https://forum.synthesizerv.com/t/topic/6013)，应以如下方式调用该函数：
+```
+SV:create(type:string, typeName:string) → {object}
+
+```
+举个例子，如果要新建一个 `Automation` 类中的 `Loudness` 类型变量，调用方法应该为：
+```
+local loudnessAutomation = SV:create("Automation", "loudness")
+```
+:::
+
 #### 参数：
 
 | 参数名 | 类型 | 描述 |

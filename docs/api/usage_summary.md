@@ -135,7 +135,7 @@ if (result.status == "Yes") {
 }
 ```
 
-#### 另:ComboBox添加选项
+#### 另：ComboBox添加选项
 
 ```js
 //[2]:widgets数组中ComboBox2(cb2)所在的索引;
@@ -181,7 +181,7 @@ myForm.widgets[2].choices.unshift("而这个选项则会被添加到开头，其
 
 ### SV.create(type) → {object}
 
-略
+见 [SV](classes/sv.md)
 
 ### SV.getHostInfo() → {object}
 
