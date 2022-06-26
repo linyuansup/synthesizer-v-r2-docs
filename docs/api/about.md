@@ -56,3 +56,18 @@ JavaScript 使用零基索引，Lua 使用单基索引。这也适用于脚本 A
 Lua API 基于元表，调用方式是 `Class:Method(...)` 。
 
 但是，即使在 Lua（例如 [`SV#QUARTER`](classes/sv.md)）中，成员对象仍可以使用点访问。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

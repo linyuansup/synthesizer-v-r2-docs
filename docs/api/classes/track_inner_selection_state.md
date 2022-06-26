@@ -7,18 +7,20 @@ title: TrackInnerSelectionState
 
 访问 `轨道内部选择状态` (TrackInnerSelectionState) 对象的方法
 
--   JavaScript： `SV.getMainEditor().getSelection()`
--   Lua： `SV:getMainEditor():getSelection()`
+ * JavaScript： `SV.getMainEditor().getSelection()`
+ * Lua： `SV:getMainEditor():getSelection()`
 
 ## 扩展
 
--   [嵌套对象](nested_object.md)
--   [选择状态](selection_state_base.md)
--   [音符组选择](group_selection.md)
+ * [嵌套对象](nested_object.md)
+ * [选择状态](selection_state_base.md)
+ * [音符组选择](group_selection.md)
 
 ## 方法
 
-``` js
+### clearAll
+
+```js
 clearAll() → {boolean}
 ```
 
@@ -26,11 +28,13 @@ clearAll() → {boolean}
 
 取消选择此选择状态下的所有对象类型。 如果选择项已更改，则返回 `true` 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### clearGroups
+
+```js
 clearGroups() → {boolean}
 ```
 
@@ -38,44 +42,52 @@ clearGroups() → {boolean}
 
 取消选择所有 [`音符组引用`](note_group_reference.md)。如果选择项已更改，则返回 `true` 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### clearNotes
+
+```js
 clearNotes() → {boolean}
 ```
 
 取消选择所有音符。 如果选择已更改，则返回 `true`。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### getIndexInParent
+
+```js
 getIndexInParent() → {number}
 ```
 
 > 继承自[嵌套对象 - getIndexInParent](nested_object.md)
 
 获取当前对象在其父对象中的索引。 在 Lua 中，这个索引从 1 开始。在 JavaScript 中，这个索引从 0 开始。
-#### 返回
+#### 返回：
 
 类型：数
 
-``` js
-getParent() → {嵌套对象| `undefined` }
+### getParent
+
+```js
+getParent() → {NeastedObject|undefined}
 ```
 
-> 继承自[嵌套对象 - getParent](nested_object.md)
+> 继承自 [嵌套对象 - getParent](nested_object.md)
 
 获取父级 [`嵌套对象`](nested_object.md)。 如果当前对象未附加到父对象，则返回 `undefined` 。
 
-#### 返回
+#### 返回：
 
 类型：[嵌套对象](nested_object.md) | `undefined`
 
-``` js
+### getSelectedGroups
+
+```js
 getSelectedGroups() → {array}
 ```
 
@@ -83,24 +95,28 @@ getSelectedGroups() → {array}
 
 按照选择的顺序获取一组选定的 [`音符组引用`](note_group_reference.md)。
 
-#### 返回
+#### 返回：
 
 一 `组` (array) [`音符组引用`](note_group_reference.md)
 
 类型：组
 
-``` js
+### getSelectedNotes
+
+```js
 getSelectedNotes() → {array}
 ```
 
 按照选择的顺序获取一组选定的 [`音符`](note.md)。
-#### 返回
+#### 返回：
 
 一组[`音符`](note.md)
 
 类型：组
 
-``` js
+### hasSelectedContent
+
+```js
 hasSelectedContent() → {boolean}
 ```
 
@@ -108,11 +124,13 @@ hasSelectedContent() → {boolean}
 
 检查是否有任何选择。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### hasSelectedGroups
+
+```js
 hasSelectedGroups() → {boolean}
 ```
 
@@ -120,21 +138,25 @@ hasSelectedGroups() → {boolean}
 
 检查是否选择了至少一个 [`音符组引用`](note_group_reference.md) 。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### hasSelectedNotes
+
+```js
 hasSelectedNotes() → {boolean}
 ```
 
 检查是否选择了至少一个 [`音符`](note.md) .
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### hasUnfinishedEdits
+
+```js
 hasUnfinishedEdits() → {boolean}
 ```
 
@@ -144,22 +166,27 @@ hasUnfinishedEdits() → {boolean}
 
 例如，如果用户在几个音符/控制点周围拖动但尚未释放鼠标，这将返回 true。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### isMemoryManaged
+
+```js
 isMemoryManaged() → {boolean}
 ```
 
 > 继承自[嵌套对象 - isMemoryManaged](nested_object.md)
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
-#### 返回
+
+#### 返回：
 
 类型：布尔
 
-``` js
+### selectGroup
+
+```js
 selectGroup(reference)
 ```
 
@@ -175,9 +202,9 @@ selectGroup(reference)
 | --- | --- | --- |
 `reference`
 
-[NoteGroupReference](note_group_reference.md)
+[音符组引用](note_group_reference.md)
 
-#### selectNote(note)
+### selectNote(note)
 
 选择一个 [`音符`](note.md)。 音符必须在钢琴卷中打开的当前 [`音符组引用`](note_group_reference.md) 内（请参阅 [`MainEditorView - getCurrentGroup`](main_editor_view.md）。
 
@@ -185,9 +212,11 @@ selectGroup(reference)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `note` | [音符](note.md)) |  |
+| `note` | [音符](note.md)|  |
 
-``` js
+### unselectGroup
+
+```js
 unselectGroup(reference) → {boolean}
 ```
 
@@ -201,11 +230,13 @@ unselectGroup(reference) → {boolean}
 | --- | --- | --- |
 |`reference` | [音符组引用](note_group_reference.md) |  |
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
-``` js
+### unselectNote
+
+```js
 unselectNote(note) → {boolean}
 ```
 
@@ -215,8 +246,23 @@ unselectNote(note) → {boolean}
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-|`note`|[Note](note.md)| |
+|`note`|[Note](note.md)|  |
 
-#### 返回
+#### 返回：
 
 类型：布尔
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

@@ -14,6 +14,8 @@ title: Track
 
 ## 方法
 
+### addGroupReference
+
 ```js
 addGroupReference(group) → {number}
 ```
@@ -26,11 +28,11 @@ addGroupReference(group) → {number}
 | --- | --- | --- |
 | `group` | [音符组引用](note_group_reference.md) |  |
 
-#### 返回
+#### 返回：
 
 类型：数
 
----
+### clone
 
 ```js
 clone() → {Track}
@@ -38,11 +40,11 @@ clone() → {Track}
 
 深复制当前对象。
 
-#### 返回
+#### 返回：
 
 类型：[轨道](track.md)
 
----
+### getDisplayColor
 
 ```js
 getDisplayColor() → {string}
@@ -50,22 +52,22 @@ getDisplayColor() → {string}
 
 获得轨道的颜色（十六进制字符串）
 
-#### 返回
+#### 返回：
 
 类型：字符串
 
----
+### getDisplayOrder
 
 ```js
 getDisplayOrder() → {number}
 ```
 
 获取父 [工程](project.md) 中轨道的显示顺序。轨道的显示顺序可以与其储存的索引不同。在编曲区界面中显示的轨道顺序总是基于显示顺序。
-#### 返回
+#### 返回：
 
 类型：数
 
----
+### getDuration
 
 ```js
 getDuration() → {number}
@@ -73,11 +75,11 @@ getDuration() → {number}
 
 获取 `轨道` 的持续时间，被定义为最后一个 [音符组引用](note_group_reference.md) 结束的位置，以块 (blicks) 为单位，
 
-#### 返回
+#### 返回：
 
 类型：数
 
----
+### getGroupReference
 
 ```js
 getGroupReference(index) → {NoteGroupReference}
@@ -89,14 +91,14 @@ getGroupReference(index) → {NoteGroupReference}
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `index` | number | |
+| `index` | 数字 |  |
 
 
-#### 返回
+#### 返回：
 
 类型：[音符组引用](note_group_reference.md)
 
----
+### getIndexInParent
 
 ```js
 getIndexInParent() → {number}
@@ -105,11 +107,11 @@ getIndexInParent() → {number}
 > 继承自：[嵌套对象 - getIndexInParent](nested_object.md)
 
 获取当前对象在其父对象中的索引。 在 Lua 中，这个索引从 1 开始。在 JavaScript 中，这个索引从 0 开始。
-#### 返回
+#### 返回：
 
 类型：数
 
----
+### getName
 
 ```js
 getName() → {string}
@@ -117,11 +119,11 @@ getName() → {string}
 
 获得轨道名称。
 
-#### 返回
+#### 返回：
 
 类型：字符串
 
----
+### getNumGroups
 
 ```js
 getNumGroups() → {number}
@@ -129,11 +131,11 @@ getNumGroups() → {number}
 
 获取该 `轨道` 中的 [音符组引用](note_group_reference.md) 的数量，包括主要组。
 
-#### 返回
+#### 返回：
 
 类型：数
 
----
+### getParent
 
 ```js
 getParent() → {NestedObject|undefined}
@@ -143,22 +145,23 @@ getParent() → {NestedObject|undefined}
 
 获取父 [嵌套对象](nested_object.md) 。如果当前对象未附加到父对象，则返回 `undefined` 。
 
-#### 返回
+#### 返回：
 
 类型：[嵌套对象](nested_object.md) | `undefined`
 
----
+### getParent
+
 ```js
 isBounced() → {boolean}
 ```
 
 用于决定是否导出到文件，它显示在"渲染面板 - 音轨"中。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
----
+### isMemoryManaged
 
 ```js
 isMemoryManaged() → {boolean}
@@ -168,11 +171,11 @@ isMemoryManaged() → {boolean}
 
 检测选中的对象是否被内存管理（即脚本环境的垃圾回收）。
 
-#### 返回
+#### 返回：
 
 类型：布尔
 
----
+### removeGroupReference
 
 ```js
 removeGroupReference(index)
@@ -184,9 +187,10 @@ removeGroupReference(index)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `index` | number |  |
+| `index` | 数字 |  |
 
----
+### setBounced
+
 ```js
 setBounced(enabled)
 ```
@@ -197,9 +201,9 @@ setBounced(enabled)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `enabled` | boolean | |
+| `enabled` | 布尔 |  |
 
----
+### setDisplayColor
 
 ```js
 setDisplayColor(colorStr)
@@ -211,8 +215,10 @@ setDisplayColor(colorStr)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `colorStr` | string |  |
----
+| `colorStr` | 字符串 |  |
+
+### setName
+
 ```js
 setName(name)
 ```
@@ -223,4 +229,19 @@ setName(name)
 
 | 参数名 | 类型 | 说明 |
 | --- | --- | --- |
-| `name` | string |  |
+| `name` | 字符串 |  |
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

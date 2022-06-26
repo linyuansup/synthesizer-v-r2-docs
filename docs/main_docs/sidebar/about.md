@@ -13,3 +13,18 @@ Synthesizer V Studio 的侧边栏如下：
 同时，侧边栏是可以拖动的。按住上方的 Synthesizer V Studio 图标并拖动可以切换到左停靠或右停靠。
 
 点击侧边栏项目的大标题，可以展开 / 折叠该标题下的内容。
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

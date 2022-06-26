@@ -6,8 +6,29 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        translations:
+        {
+          "search_placeholder": "搜索",
+          "see_all_results": "所有结果",
+          "no_results": "无结果",
+          "search_results_for": "按 \"{{ keyword }}\" 搜索结果",
+          "search_the_documentation": "搜索文档",
+          "count_documents_found": "找到 {{ count }} 篇文档",
+          "count_documents_found_plural": "找到 {{ count }} 篇文档",
+          "no_documents_were_found": "无结果"
+        }
+      },
+    ],
+  ],
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '新年快乐！脚本 API 文档即将完工！',
+  tagline: '脚本 API 文档即将完工，已支持评论系统！',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -178,7 +199,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 12 适配到 Synthesizer V Studio 1.5.0`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 26 适配到 Synthesizer V Studio 1.5.1`,
       },
       prism: {
         theme: lightCodeTheme,

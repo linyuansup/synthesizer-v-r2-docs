@@ -42,9 +42,15 @@ Synthesizer V Studio 不支持 Windows 7
 
 双击下载的安装包，出现欢迎界面。点击继续。
 
+:::tip
+从 1.5.1 版本开始，Synthesizer V Studio 原生支持 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814)（Apple Silicon M1 芯片）
+
+详见 Dreamtonics 针对 M1 芯片适配的说明：[点击查看](https://t.bilibili.com/629995007175032864)
+:::
+
 :::caution
 
-如果你使用的是 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814)，目前需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
+对于 1.5.0 及更早版本的 Synthesizer V Studio，在 [搭载 Apple 芯片的 Mac](https://support.apple.com/zh-cn/HT211814) 上，则需要 Rosetta 2 来运行 Synthesizer V Studio。如果系统提示安装 Rosetta，请点击安装。
 
 :::
 
@@ -117,3 +123,18 @@ AU 和 VST3 插件仅存在于 Pro 版本。如果是 Basic 版本，则只包�
 声库安装完成后会自动弹出授权与激活对话框，在这里可以找到你安装的声库。
 
 ![安装结果](/docs/speed_start/install/17.png)
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

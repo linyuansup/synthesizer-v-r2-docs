@@ -8,7 +8,8 @@ title: 编辑器下载
 
 | 版本号 | 下载点 1 |
 | --- | --- |
-| 1.5.0 (Latest) | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ERL6TKgP3QpElJ6gNwcM2XABFqPHJg1roAEgJj8oPm62hw?e=kUWbWV) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EWN8iUPDnYJLmdebv_0AMN0BiF3hwKcf4vwcRQ-A-9Z0Vg?e=2YZfp9) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EVfZy3SkG8hGs5hSSizDlqwBgJNl8OhqosXOkx1o1JuR5A?e=VOidxw) |
+| 1.5.1 (Latest - macOS) | [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EUpEgbaaIDJDm_ILn2SN6-YB6HsS-kyHvVRwoBdQmxhi7A?e=YNiTuX) |
+| 1.5.0 (Latest - Windows, Linux) | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ERL6TKgP3QpElJ6gNwcM2XABFqPHJg1roAEgJj8oPm62hw?e=kUWbWV) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EWN8iUPDnYJLmdebv_0AMN0BiF3hwKcf4vwcRQ-A-9Z0Vg?e=2YZfp9) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EVfZy3SkG8hGs5hSSizDlqwBgJNl8OhqosXOkx1o1JuR5A?e=VOidxw) |
 | 1.4.1 | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EYI6ufeJ_OBOp-TMbhDAEQ4BnEs_a3AJZ_BCf4TBYR29Xw?e=Yu4Ok3) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EXrTejHeihNKuyvrO4c-x5kB2VtLFDgqgFyWPFsk4mrOGw?e=5sC7rF) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EQrHvx8cetFHueH2TzCwj_8B46Yefp6EG9YrMHEDGeyokQ?e=DPmDac) |
 | 1.4.0 | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EQxAoEpNu8BOpnabz3OwSLYBLEvxzt0teoQXlFOBfK82Kg?e=GGbhrl) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EfCwYhph_pZNqi0DanREGsABd41NUAnX38e8Md_SXo3yvA?e=1rscWP) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ERHVyDTQNbpHqkHioWI1AwkBn71BoMwMpzu1mYZEo_UC4w?e=rjTsjs) |
 | 1.3.0 | [Windows](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EUTBtAMBfvtIsu_lLj3BkzYBfKgm2Z7GAkGD-dqFy0hQ0w?e=Cdae8E) [Linux](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/ETBqQhRBRXNEiQujxf4YKgsBnBVV2-J1xDv9l25reWW7yA?e=B75d5x) [macOS](https://yzweb-my.sharepoint.com/:u:/g/personal/bilibililty_bujigegroup_site/EbREEfNXLOpAgrKT-FGBKMQB_QPdczjxXKfxh58Yu5k-ww?e=JcypOj) |
@@ -17,5 +18,28 @@ title: 编辑器下载
   * 下载点 1 为 OneDrive 地址（世纪互联），已经进行国内加速
 
 :::tip
+Synthesizer V Studio 从 1.5.1 开始原生支持基于 ARM 芯片的 Mac 设备
+:::
+
+:::danger
+据报告，1.5.1 对 Std 声库有严重的兼容问题。如果对 Std 声库有需求，请暂时不要更新
+:::
+
+:::tip
 1.2.4 之前的版本由于一些安全问题，暂不提供下载
 :::
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

@@ -36,11 +36,11 @@ getParent() → {NestedObject|undefined}
 
 > 继承自：[嵌套对象 - getParent](nested_object.md)
 
-获取父 [NestedObject](nested_object.md)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
+获取父 [嵌套对象](nested_object.md)。如果当前对象未连接到一个父对象，则返回 `undefined` 。
 
 #### 返回：
 
-类型：[NestedObject](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | **undefined**
 
 ### getTimePxPerUnit
 
@@ -68,7 +68,7 @@ getTimeViewRange() → {array}
 
 一个 `number` 型数组。
 
-类型：数组
+类型：组
 
 ### getValuePxPerUnit
 
@@ -96,7 +96,7 @@ getValueViewRange() → {array}
 
 一个 `number` 型数组
 
-类型：数组
+类型：组
 
 ### isMemoryManaged
 
@@ -134,7 +134,7 @@ setTimeRight(time)
 
 将可见区域移动至其右端位于 `time` 。
 
-##### 参数：
+#### 参数：
 
 | 参数名 | 类型 | 描述 |
 | --- | --- | --- |
@@ -259,3 +259,18 @@ y2v(y) → {number}
 #### 返回：
 
 类型：数
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';

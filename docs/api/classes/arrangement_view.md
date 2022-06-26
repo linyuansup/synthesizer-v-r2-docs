@@ -36,7 +36,7 @@ getNavigation() → {CoordinateSystem}
 
 #### 返回：
 
-类型：[CoordinateSystem](coordinate_system.md)
+类型：[坐标系](coordinate_system.md)
 
 ### getParent
 
@@ -45,11 +45,11 @@ getParent() → {NestedObject|undefined}
 ```
 >继承自：[嵌套对象 - getParent](nested_object.md)
 
-获取父级 [NestedObject](nested_object.md) 对象。如果不存在则返回 `undefined`。
+获取父级 [嵌套对象](nested_object.md) 对象。如果不存在则返回 `undefined`。
 
 #### 返回：
 
-类型：[NestedObject](nested_object.md) | undefined
+类型：[嵌套对象](nested_object.md) | **undefined**
 
 ### getSelection
 
@@ -75,3 +75,18 @@ isMemoryManaged() → {boolean}
 #### 返回：
 
 类型：布尔
+
+<BrowserOnly fallback={<div></div>}>{() => <GitalkComponent options={{
+    clientID: '2537efeef8962e53223d',
+    clientSecret: 'da454b36ea826630b34f708d39992fd962726a39',
+    repo: 'synthesizer-v-r2-docs',
+    owner: 'linyuansup',
+    admin: ['linyuansup'],
+    id: decodeURI(location.pathname),
+    }} />}
+</BrowserOnly>
+
+import Gitalk from 'gitalk';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component';
+import BrowserOnly from '@docusaurus/BrowserOnly';
