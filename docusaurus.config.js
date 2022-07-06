@@ -28,7 +28,7 @@ const config = {
     ],
   ],
   title: 'Synthesizer V Studio 用户手册',
-  tagline: '脚本 API 文档即将完工，已支持评论系统！',
+  tagline: '脚本 API 文档已完工',
   url: 'https://synthesizer-v-r2-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -76,68 +76,68 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            label: "快速开始",
-            position: 'left',
-            items: [
-              {
-                label: "Synthesizer V Studio 简介",
-                to: 'docs/speed_start/about'
-              },
-              {
-                label: "安装编辑器与声库",
-                to: 'docs/speed_start/install',
-              },
-              {
-                label: "声库详细介绍",
-                to: 'docs/speed_start/voice_data/chinese',
-              },
-            ],
-          },
-          {
-            type: 'doc',
-            docId: 'main_docs/menu/about',
-            position: 'left',
-            label: '详细文档',
-          },
+          // {
+          //   label: "快速开始",
+          //   position: 'left',
+          //   items: [
+          //     {
+          //       label: "Synthesizer V Studio 简介",
+          //       to: 'docs/speed_start/about'
+          //     },
+          //     {
+          //       label: "安装编辑器与声库",
+          //       to: 'docs/speed_start/install',
+          //     },
+          //     {
+          //       label: "声库详细介绍",
+          //       to: 'docs/speed_start/voice_data/chinese',
+          //     },
+          //   ],
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'main_docs/menu/about',
+          //   position: 'left',
+          //   label: '详细文档',
+          // },
           {
             type: 'doc',
             docId: 'api/about',
             position: 'left',
             label: '脚本 API 中文文档',
           },
-          {
-            label: '资源下载',
-            position: 'right',
-            items: [
-              {
-                label: '编辑器',
-                to: 'docs/download/editor',
-              },
-              {
-                label: '声库',
-                to: 'docs/download/voice',
-              },
-              {
-                label: 'Pro 脚本',
-                to: 'docs/download/script',
-              },
-              {
-                label: '其他资源',
-                to: 'docs/download/other',
-              },
-            ],
-          },
-          {
-            label: '制作人员',
-            position: 'right',
-            to: 'docs/other/author',
-          },
-          {
-            href: 'https://message.bilibili.com/#/whisper/mid273891297',
-            label: '意见 / 建议',
-            position: 'right',
-          },
+          // {
+          //   label: '资源下载',
+          //   position: 'right',
+          //   items: [
+          //     {
+          //       label: '编辑器',
+          //       to: 'docs/download/editor',
+          //     },
+          //     {
+          //       label: '声库',
+          //       to: 'docs/download/voice',
+          //     },
+          //     {
+          //       label: 'Pro 脚本',
+          //       to: 'docs/download/script',
+          //     },
+          //     {
+          //       label: '其他资源',
+          //       to: 'docs/download/other',
+          //     },
+          //   ],
+          // },
+          // {
+          //   label: '制作人员',
+          //   position: 'right',
+          //   to: 'docs/other/author',
+          // },
+          // {
+          //   href: 'https://message.bilibili.com/#/whisper/mid273891297',
+          //   label: '意见 / 建议',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -199,7 +199,7 @@ const config = {
             ],
           },
         ],
-        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 02 / 26 适配到 Synthesizer V Studio 1.5.1`,
+        copyright: `磷元素P & 不羁阁 - Synthesizer V Studio Docs 更新于 2022 / 07 / 06 适配到 Synthesizer V Studio 1.6.1`,
       },
       prism: {
         theme: lightCodeTheme,
