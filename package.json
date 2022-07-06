@@ -23,7 +23,7 @@
         "file-loader": "^6.2.0",
         "gitalk": "^1.7.2",
         "hast-util-is-element": "1.1.0",
-        "mermaid": "^8.14.0",
+        "mermaid": "^9.1.2",
         "nodejieba": "2.5.2",
         "prism-react-renderer": "^1.2.1",
         "react": "^17.0.1",
